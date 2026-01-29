@@ -3,8 +3,22 @@ import { useEffect } from 'react';
 import { getTutorialById } from '@learnmath/tutorials';
 import { useTutorialStore } from '@/store';
 import Scene3D from '@/components/scene/Scene3D';
+import TrigGraphScene from '@/components/scene/TrigGraphScene';
 import TutorialControls from '@/components/ui/TutorialControls';
 import GlossaryText from '@/components/ui/GlossaryText';
+
+function renderScene(customScene: string | undefined, sceneConfig: import('@learnmath/tutorials').SceneConfig) {
+  switch (customScene) {
+    case 'cos-graph':
+      return <TrigGraphScene mode="cos" />;
+    case 'sin-graph':
+      return <TrigGraphScene mode="sin" />;
+    case 'trig-sync-animation':
+      return <TrigGraphScene mode="both" />;
+    default:
+      return <Scene3D sceneConfig={sceneConfig} />;
+  }
+}
 
 export default function TutorialPage() {
   const { id } = useParams<{ id: string }>();
@@ -39,7 +53,7 @@ export default function TutorialPage() {
       </header>
       <div className="flex-1 flex">
         <div className="flex-1 relative">
-          <Scene3D sceneConfig={currentStep.sceneConfig} />
+          {renderScene(currentStep.customScene, currentStep.sceneConfig)}
         </div>
         <aside className="w-80 bg-slate-800 p-4 flex flex-col">
           <h2 className="text-xl font-semibold mb-2">{currentStep.title}</h2>

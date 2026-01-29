@@ -8,6 +8,7 @@ export interface TutorialStep {
   interactive: boolean;
   nextCondition?: 'click' | 'timeout' | 'interaction';
   duration?: number;
+  customScene?: string;
 }
 
 export interface CircleConfig {
