@@ -24,14 +24,14 @@ export const useTutorialStore = create<TutorialState>((set, get) => ({
   nextStep: () => {
     const { currentTutorial, currentStepIndex } = get();
     if (currentTutorial && currentStepIndex < currentTutorial.steps.length - 1)
-      set({ currentStepIndex: currentStepIndex + 1, animationProgress: 0 });
+      set({ currentStepIndex: currentStepIndex + 1, animationProgress: 0, isPlaying: false });
   },
   prevStep: () => {
     const { currentStepIndex } = get();
-    if (currentStepIndex > 0) set({ currentStepIndex: currentStepIndex - 1, animationProgress: 0 });
+    if (currentStepIndex > 0) set({ currentStepIndex: currentStepIndex - 1, animationProgress: 0, isPlaying: false });
   },
-  goToStep: (index) => set({ currentStepIndex: index, animationProgress: 0 }),
-  setPlaying: (playing) => set({ isPlaying: playing }),
+  goToStep: (index) => set({ currentStepIndex: index, animationProgress: 0, isPlaying: false }),
+  setPlaying: (playing) => set({ isPlaying: playing, ...(playing ? { animationProgress: 0 } : {}) }),
   setAnimationProgress: (progress) => set({ animationProgress: progress }),
   reset: () => set({ currentTutorial: null, currentStepIndex: 0, isPlaying: false, animationProgress: 0 })
 }));

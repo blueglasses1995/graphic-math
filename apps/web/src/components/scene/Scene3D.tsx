@@ -4,12 +4,13 @@ import { SceneConfig } from '@learnmath/tutorials';
 import Grid3D from './Grid3D';
 import Axes3D from './Axes3D';
 import Vector3D from './Vector3D';
+import Circle3D from './Circle3D';
 import TransformableGroup from './TransformableGroup';
 
 interface Scene3DProps { sceneConfig: SceneConfig; }
 
 export default function Scene3D({ sceneConfig }: Scene3DProps) {
-  const { showGrid, showAxes, vectors = [], transform, animateTransform, cameraPosition = [5, 5, 5] } = sceneConfig;
+  const { showGrid, showAxes, vectors = [], circles = [], transform, animateTransform, cameraPosition = [5, 5, 5] } = sceneConfig;
   return (
     <Canvas className="w-full h-full">
       <PerspectiveCamera makeDefault position={cameraPosition} fov={50} />
@@ -19,6 +20,9 @@ export default function Scene3D({ sceneConfig }: Scene3DProps) {
       <color attach="background" args={['#0f172a']} />
       {showGrid && <Grid3D />}
       {showAxes && <Axes3D />}
+      {circles.map((circle, i) => (
+        <Circle3D key={i} radius={circle.radius} color={circle.color} plane={circle.plane} />
+      ))}
       <TransformableGroup matrix={transform?.elements} animate={animateTransform}>
         {vectors.map((vec) => (
           <Vector3D key={vec.id} vector={[vec.vector.x, vec.vector.y, vec.vector.z]} color={vec.color} label={vec.label} showComponents={vec.showComponents} />

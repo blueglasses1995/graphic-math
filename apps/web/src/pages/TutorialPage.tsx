@@ -4,6 +4,7 @@ import { getTutorialById } from '@learnmath/tutorials';
 import { useTutorialStore } from '@/store';
 import Scene3D from '@/components/scene/Scene3D';
 import TutorialControls from '@/components/ui/TutorialControls';
+import GlossaryText from '@/components/ui/GlossaryText';
 
 export default function TutorialPage() {
   const { id } = useParams<{ id: string }>();
@@ -42,7 +43,7 @@ export default function TutorialPage() {
         </div>
         <aside className="w-80 bg-slate-800 p-4 flex flex-col">
           <h2 className="text-xl font-semibold mb-2">{currentStep.title}</h2>
-          <p className="text-gray-300 flex-1">{currentStep.content}</p>
+          <p className="text-gray-300 flex-1 leading-relaxed"><GlossaryText text={currentStep.content} /></p>
           <TutorialControls />
         </aside>
       </div>

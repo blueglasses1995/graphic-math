@@ -10,10 +10,17 @@ export interface TutorialStep {
   duration?: number;
 }
 
+export interface CircleConfig {
+  radius?: number;
+  color?: string;
+  plane?: 'xy' | 'xz' | 'yz';
+}
+
 export interface SceneConfig {
   showGrid: boolean;
   showAxes: boolean;
   vectors?: VectorConfig[];
+  circles?: CircleConfig[];
   transform?: Matrix3;
   animateTransform?: boolean;
   highlightElements?: string[];
