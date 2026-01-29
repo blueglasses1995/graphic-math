@@ -1,0 +1,18 @@
+{
+  "name": "learnmath",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --filter @learnmath/web dev",
+    "dev:mobile": "pnpm --filter @learnmath/mobile start",
+    "build": "pnpm --filter @learnmath/web build",
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  }
+}
