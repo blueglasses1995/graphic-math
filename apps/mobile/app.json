@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "LearnMath",
+    "slug": "learnmath",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "learnmath",
+    "userInterfaceStyle": "dark",
+    "ios": { "supportsTablet": true },
+    "android": { "adaptiveIcon": { "backgroundColor": "#0f172a" } }
+  }
+}
