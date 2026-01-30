@@ -6,6 +6,10 @@ import Scene3D from '@/components/scene/Scene3D';
 import TrigGraphScene from '@/components/scene/TrigGraphScene';
 import InteractiveUnitCircle from '@/components/scene/InteractiveUnitCircle';
 import PendulumScene from '@/components/scene/PendulumScene';
+import WaveScene from '@/components/scene/WaveScene';
+import CircularMotionScene from '@/components/scene/CircularMotionScene';
+import SpringScene from '@/components/scene/SpringScene';
+import DoubleAngleScene from '@/components/scene/DoubleAngleScene';
 import TutorialControls from '@/components/ui/TutorialControls';
 import GlossaryText from '@/components/ui/GlossaryText';
 import QuizOverlay from '@/components/ui/QuizOverlay';
@@ -32,6 +36,18 @@ function renderScene(customScene: string | undefined, sceneConfig: import('@lear
       return <InteractiveUnitCircle showCos showSin={false} />;
     case 'interactive-sin':
       return <InteractiveUnitCircle showCos={false} showSin />;
+    case 'wave-superposition':
+      return <WaveScene />;
+    case 'circular-motion':
+      return <CircularMotionScene />;
+    case 'spring':
+      return <SpringScene />;
+    case 'double-angle':
+      return <DoubleAngleScene multiplier={2} label="2θ" />;
+    case 'half-angle':
+      return <DoubleAngleScene multiplier={0.5} label="θ/2" />;
+    case 'triple-angle':
+      return <DoubleAngleScene multiplier={3} label="3θ" />;
     default:
       return <Scene3D sceneConfig={sceneConfig} />;
   }
