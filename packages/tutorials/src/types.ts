@@ -63,7 +63,20 @@ export interface Tutorial {
   id: string;
   title: string;
   description: string;
-  category: 'linear-algebra' | 'trigonometry' | 'calculus' | 'probability';
+  category:
+    | 'trigonometry'
+    | 'linear-algebra'
+    | 'differential-calculus'
+    | 'integral-calculus'
+    | 'exponential'
+    | 'logarithmic'
+    | 'set-theory'
+    | 'topology'
+    | 'probability'
+    | 'statistics'
+    | 'algebra'
+    | 'discrete-math'
+    | 'complex-numbers';
   steps: TutorialStep[];
   prerequisites?: string[];
 }
