@@ -76,7 +76,13 @@ export interface Tutorial {
     | 'statistics'
     | 'algebra'
     | 'discrete-math'
-    | 'complex-numbers';
+    | 'complex-numbers'
+    | 'graph-theory'
+    | 'category-theory'
+    | 'ode'
+    | 'pde'
+    | 'laplace'
+    | 'fourier';
   steps: TutorialStep[];
   prerequisites?: string[];
 }

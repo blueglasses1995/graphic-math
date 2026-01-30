@@ -1,0 +1,85 @@
+import { Tutorial } from '../types';
+
+export const syntaxTreeTutorial: Tutorial = {
+  id: 'syntax-tree',
+  title: 'コンパイラと構文木',
+  description: 'プログラミング言語の解析における木構造の役割を学びます。',
+  category: 'graph-theory',
+  steps: [
+    {
+      id: 'hook',
+      title: 'コードを木で表す',
+      content: 'プログラムのコードはコンパイラによって木構造に変換されます。\n\n抽象構文木（AST）は、コードの構造を階層的に表現したものです。\n\n式が構文木に変換されるアニメーションを見てみましょう。',
+      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      interactive: false,
+      nextCondition: 'click',
+      stepType: 'animation',
+    },
+    {
+      id: 'touch',
+      title: '構文木を作ろう',
+      content: '数式「(2 + 3) * 4」の構文木を構成してみましょう。\n\n演算子が内部ノード、数値が葉ノードになります。\n\nノードをドラッグして正しい木を作ってください。',
+      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      interactive: true,
+      nextCondition: 'interaction',
+      stepType: 'interactive',
+    },
+    {
+      id: 'example-1',
+      title: '抽象構文木（AST）',
+      content: 'ASTの構造：\n\n- 葉ノード：変数、定数\n- 内部ノード：演算子、制御構造\n\n例：「a + b * c」のAST\n  (+)\n  / \
+ (a) (*)\n    / \
+   (b) (c)\n\n構文解析器（パーサー）がソースコードからASTを生成します。',
+      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      interactive: false,
+      nextCondition: 'click',
+      stepType: 'explanation',
+    },
+    {
+      id: 'example-2',
+      title: 'ASTの応用',
+      content: 'ASTの活用：\n\n- コード最適化：不要な計算の除去\n- 型チェック：型の整合性を木の走査で検証\n- コード変換：別言語への変換（トランスパイラ）\n- 静的解析：バグの自動検出\n\nESLintやPrettierもASTを操作しています。',
+      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      interactive: false,
+      nextCondition: 'click',
+      stepType: 'explanation',
+    },
+    {
+      id: 'predict',
+      title: '確認クイズ',
+      content: 'クイズに答えましょう。',
+      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      interactive: false,
+      nextCondition: 'click',
+      stepType: 'quiz',
+      quiz: {
+        question: '抽象構文木（AST）で演算子はどこに配置されますか？',
+        options: [
+          { id: 'a', label: '葉ノード', correct: false },
+          { id: 'b', label: '内部ノード', correct: true },
+          { id: 'c', label: 'ルートノードのみ', correct: false },
+          { id: 'd', label: 'ランダムな位置', correct: false },
+        ],
+        explanation: 'ASTでは演算子が内部ノード、変数や定数が葉ノードになります。',
+      },
+    },
+    {
+      id: 'alternate',
+      title: '式の評価と走査',
+      content: 'ASTの走査方法：\n\n- 前順走査（preorder）：前置記法（+ a b）\n- 中順走査（inorder）：中置記法（a + b）\n- 後順走査（postorder）：後置記法（a b +）\n\n後順走査はスタックマシンでの式の評価に対応します。',
+      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      interactive: false,
+      nextCondition: 'click',
+      stepType: 'explanation',
+    },
+    {
+      id: 'summary',
+      title: 'まとめ',
+      content: '今回学んだポイント：\n\n1. 構文木はプログラムの構造を木で表現\n2. 演算子が内部ノード、値が葉ノード\n3. コンパイラの最適化や静的解析に活用\n\n構文木を操作して確認しましょう！',
+      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      interactive: true,
+      nextCondition: 'click',
+      stepType: 'interactive',
+    },
+  ],
+};

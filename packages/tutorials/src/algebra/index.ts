@@ -28,6 +28,36 @@ export { burnsideTutorial } from './burnside';
 export { ellipticCurveTutorial } from './elliptic-curve';
 export { molecularSymmetryTutorial } from './molecular-symmetry';
 export { musicGroupTheoryTutorial } from './music-group-theory';
+export { normalSubgroupTutorial } from './normal-subgroup';
+export { quotientGroupTutorial } from './quotient-group';
+export { directProductTutorial } from './direct-product';
+export { lagrangeTheoremTutorial } from './lagrange-theorem';
+export { sylowTheoremTutorial } from './sylow-theorem';
+export { permutationAlternatingTutorial } from './permutation-alternating';
+export { representationTheoryTutorial } from './representation-theory';
+export { galoisIntroTutorial } from './galois-intro';
+export { fieldExtensionTutorial } from './field-extension';
+export { algebraicClosureTutorial } from './algebraic-closure';
+export { discreteLogTutorial } from './discrete-log';
+export { diffieHellmanTutorial } from './diffie-hellman';
+export { rsaMathTutorial } from './rsa-math';
+export { ellipticCurveCryptoTutorial } from './elliptic-curve-crypto';
+export { aesAlgebraTutorial } from './aes-algebra';
+export { hashFunctionTutorial } from './hash-function';
+export { digitalSignatureTutorial } from './digital-signature';
+export { zeroKnowledgeTutorial } from './zero-knowledge';
+export { homomorphicEncryptionTutorial } from './homomorphic-encryption';
+export { quantumCryptoTutorial } from './quantum-crypto';
+export { latticeCryptoTutorial } from './lattice-crypto';
+export { secretSharingTutorial } from './secret-sharing';
+export { finiteGroupClassificationTutorial } from './finite-group-classification';
+export { groupPuzzleTutorial } from './group-puzzle';
+export { codingLinearAlgebraTutorial } from './coding-linear-algebra';
+export { blockchainMathTutorial } from './blockchain-math';
+export { bitcoinEllipticTutorial } from './bitcoin-elliptic';
+export { postQuantumTutorial } from './post-quantum';
+export { cryptoProtocolTutorial } from './crypto-protocol';
+export { algebraCryptoOverviewTutorial } from './algebra-crypto-overview';
 
 import { TutorialCategory } from '../types';
 import { symmetryIntroTutorial } from './symmetry-intro';
@@ -60,11 +90,41 @@ import { burnsideTutorial } from './burnside';
 import { ellipticCurveTutorial } from './elliptic-curve';
 import { molecularSymmetryTutorial } from './molecular-symmetry';
 import { musicGroupTheoryTutorial } from './music-group-theory';
+import { normalSubgroupTutorial } from './normal-subgroup';
+import { quotientGroupTutorial } from './quotient-group';
+import { directProductTutorial } from './direct-product';
+import { lagrangeTheoremTutorial } from './lagrange-theorem';
+import { sylowTheoremTutorial } from './sylow-theorem';
+import { permutationAlternatingTutorial } from './permutation-alternating';
+import { representationTheoryTutorial } from './representation-theory';
+import { galoisIntroTutorial } from './galois-intro';
+import { fieldExtensionTutorial } from './field-extension';
+import { algebraicClosureTutorial } from './algebraic-closure';
+import { discreteLogTutorial } from './discrete-log';
+import { diffieHellmanTutorial } from './diffie-hellman';
+import { rsaMathTutorial } from './rsa-math';
+import { ellipticCurveCryptoTutorial } from './elliptic-curve-crypto';
+import { aesAlgebraTutorial } from './aes-algebra';
+import { hashFunctionTutorial } from './hash-function';
+import { digitalSignatureTutorial } from './digital-signature';
+import { zeroKnowledgeTutorial } from './zero-knowledge';
+import { homomorphicEncryptionTutorial } from './homomorphic-encryption';
+import { quantumCryptoTutorial } from './quantum-crypto';
+import { latticeCryptoTutorial } from './lattice-crypto';
+import { secretSharingTutorial } from './secret-sharing';
+import { finiteGroupClassificationTutorial } from './finite-group-classification';
+import { groupPuzzleTutorial } from './group-puzzle';
+import { codingLinearAlgebraTutorial } from './coding-linear-algebra';
+import { blockchainMathTutorial } from './blockchain-math';
+import { bitcoinEllipticTutorial } from './bitcoin-elliptic';
+import { postQuantumTutorial } from './post-quantum';
+import { cryptoProtocolTutorial } from './crypto-protocol';
+import { algebraCryptoOverviewTutorial } from './algebra-crypto-overview';
 
 export const algebraCategory: TutorialCategory = {
   id: 'algebra',
   name: '代数学',
-  description: '群・環・体の構造を視覚的に理解する',
+  description: '群・環・体・暗号理論の構造を視覚的に理解する',
   tutorials: [
     // 基礎編
     symmetryIntroTutorial,
@@ -98,5 +158,38 @@ export const algebraCategory: TutorialCategory = {
     ellipticCurveTutorial,
     molecularSymmetryTutorial,
     musicGroupTheoryTutorial,
+    // 発展編：群論の深化
+    normalSubgroupTutorial,
+    quotientGroupTutorial,
+    directProductTutorial,
+    lagrangeTheoremTutorial,
+    sylowTheoremTutorial,
+    permutationAlternatingTutorial,
+    representationTheoryTutorial,
+    galoisIntroTutorial,
+    fieldExtensionTutorial,
+    algebraicClosureTutorial,
+    // 暗号理論編
+    discreteLogTutorial,
+    diffieHellmanTutorial,
+    rsaMathTutorial,
+    ellipticCurveCryptoTutorial,
+    aesAlgebraTutorial,
+    hashFunctionTutorial,
+    digitalSignatureTutorial,
+    zeroKnowledgeTutorial,
+    homomorphicEncryptionTutorial,
+    quantumCryptoTutorial,
+    // 応用・総合編
+    latticeCryptoTutorial,
+    secretSharingTutorial,
+    finiteGroupClassificationTutorial,
+    groupPuzzleTutorial,
+    codingLinearAlgebraTutorial,
+    blockchainMathTutorial,
+    bitcoinEllipticTutorial,
+    postQuantumTutorial,
+    cryptoProtocolTutorial,
+    algebraCryptoOverviewTutorial,
   ],
 };

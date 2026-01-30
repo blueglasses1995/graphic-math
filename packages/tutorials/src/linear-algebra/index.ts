@@ -32,6 +32,38 @@ export { pcaIntroTutorial } from './pca-intro';
 export { markovChainsTutorial } from './markov-chains';
 export { pagerankTutorial } from './pagerank';
 
+// ── 発展編 ──
+export { svdIntroTutorial } from './svd-intro';
+export { svdImageTutorial } from './svd-image';
+export { orthonormalBasisTutorial } from './orthonormal-basis';
+export { qrDecompositionTutorial } from './qr-decomposition';
+export { luDecompositionTutorial } from './lu-decomposition';
+export { symmetricEigenvalueTutorial } from './symmetric-eigenvalue';
+export { positiveDefiniteTutorial } from './positive-definite';
+export { tensorIntroTutorial } from './tensor-intro';
+export { normsDistancesTutorial } from './norms-distances';
+export { projectionDistanceTutorial } from './projection-distance';
+export { matrixComplexityTutorial } from './matrix-complexity';
+export { sparseMatrixTutorial } from './sparse-matrix';
+export { gpuMatrixTutorial } from './gpu-matrix';
+export { neuralNetMatrixTutorial } from './neural-net-matrix';
+export { gradientDescentTutorial } from './gradient-descent';
+export { matrixFactorizationRecTutorial } from './matrix-factorization-rec';
+export { word2vecIntroTutorial } from './word2vec-intro';
+export { renderingPipelineTutorial } from './rendering-pipeline';
+export { quaternionRotationTutorial } from './quaternion-rotation';
+export { bezierMatrixTutorial } from './bezier-matrix';
+export { iterativeSolverTutorial } from './iterative-solver';
+export { eigenvalueNumericalTutorial } from './eigenvalue-numerical';
+export { pagerankAdvancedTutorial } from './pagerank-advanced';
+export { pcaAdvancedTutorial } from './pca-advanced';
+export { kernelPcaTutorial } from './kernel-pca';
+export { matrixCompletionTutorial } from './matrix-completion';
+export { skinningAnimationTutorial } from './skinning-animation';
+export { graphLaplacianTutorial } from './graph-laplacian';
+export { compressedSensingTutorial } from './compressed-sensing';
+export { laCsOverviewTutorial } from './la-cs-overview';
+
 import { TutorialCategory } from '../types';
 
 // ── 基礎編 ──
@@ -68,10 +100,42 @@ import { pcaIntroTutorial } from './pca-intro';
 import { markovChainsTutorial } from './markov-chains';
 import { pagerankTutorial } from './pagerank';
 
+// ── 発展編 ──
+import { svdIntroTutorial } from './svd-intro';
+import { svdImageTutorial } from './svd-image';
+import { orthonormalBasisTutorial } from './orthonormal-basis';
+import { qrDecompositionTutorial } from './qr-decomposition';
+import { luDecompositionTutorial } from './lu-decomposition';
+import { symmetricEigenvalueTutorial } from './symmetric-eigenvalue';
+import { positiveDefiniteTutorial } from './positive-definite';
+import { tensorIntroTutorial } from './tensor-intro';
+import { normsDistancesTutorial } from './norms-distances';
+import { projectionDistanceTutorial } from './projection-distance';
+import { matrixComplexityTutorial } from './matrix-complexity';
+import { sparseMatrixTutorial } from './sparse-matrix';
+import { gpuMatrixTutorial } from './gpu-matrix';
+import { neuralNetMatrixTutorial } from './neural-net-matrix';
+import { gradientDescentTutorial } from './gradient-descent';
+import { matrixFactorizationRecTutorial } from './matrix-factorization-rec';
+import { word2vecIntroTutorial } from './word2vec-intro';
+import { renderingPipelineTutorial } from './rendering-pipeline';
+import { quaternionRotationTutorial } from './quaternion-rotation';
+import { bezierMatrixTutorial } from './bezier-matrix';
+import { iterativeSolverTutorial } from './iterative-solver';
+import { eigenvalueNumericalTutorial } from './eigenvalue-numerical';
+import { pagerankAdvancedTutorial } from './pagerank-advanced';
+import { pcaAdvancedTutorial } from './pca-advanced';
+import { kernelPcaTutorial } from './kernel-pca';
+import { matrixCompletionTutorial } from './matrix-completion';
+import { skinningAnimationTutorial } from './skinning-animation';
+import { graphLaplacianTutorial } from './graph-laplacian';
+import { compressedSensingTutorial } from './compressed-sensing';
+import { laCsOverviewTutorial } from './la-cs-overview';
+
 export const linearAlgebraCategory: TutorialCategory = {
   id: 'linear-algebra',
   name: '線形代数',
-  description: 'ベクトル、行列、線形変換を3Dで視覚的に理解する',
+  description: 'ベクトル・行列・変換・CS応用を視覚的に理解する',
   tutorials: [
     // ── 基礎編 ──
     vectorsIntroTutorial,
@@ -105,5 +169,36 @@ export const linearAlgebraCategory: TutorialCategory = {
     pcaIntroTutorial,
     markovChainsTutorial,
     pagerankTutorial,
+    // ── 発展編 ──
+    svdIntroTutorial,
+    svdImageTutorial,
+    orthonormalBasisTutorial,
+    qrDecompositionTutorial,
+    luDecompositionTutorial,
+    symmetricEigenvalueTutorial,
+    positiveDefiniteTutorial,
+    tensorIntroTutorial,
+    normsDistancesTutorial,
+    projectionDistanceTutorial,
+    matrixComplexityTutorial,
+    sparseMatrixTutorial,
+    gpuMatrixTutorial,
+    neuralNetMatrixTutorial,
+    gradientDescentTutorial,
+    matrixFactorizationRecTutorial,
+    word2vecIntroTutorial,
+    renderingPipelineTutorial,
+    quaternionRotationTutorial,
+    bezierMatrixTutorial,
+    iterativeSolverTutorial,
+    eigenvalueNumericalTutorial,
+    pagerankAdvancedTutorial,
+    pcaAdvancedTutorial,
+    kernelPcaTutorial,
+    matrixCompletionTutorial,
+    skinningAnimationTutorial,
+    graphLaplacianTutorial,
+    compressedSensingTutorial,
+    laCsOverviewTutorial,
   ],
 };
