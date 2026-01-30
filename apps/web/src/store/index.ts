@@ -1,6 +1,8 @@
 import { create } from 'zustand';
 import { Tutorial } from '@learnmath/tutorials';
 
+export * from './userProgressStore';
+
 interface TutorialState {
   currentTutorial: Tutorial | null;
   currentStepIndex: number;
