@@ -1,5 +1,25 @@
 import { Matrix3, Vector3 } from '@learnmath/core';
 
+export type StepType = 'explanation' | 'interactive' | 'quiz' | 'animation';
+
+export interface QuizOption {
+  id: string;
+  label: string;
+  correct: boolean;
+}
+
+export interface QuizConfig {
+  question: string;
+  options: QuizOption[];
+  explanation: string;
+}
+
+export interface InteractiveConfig {
+  type: 'drag-unit-circle' | 'angle-slider' | 'parameter-sliders';
+  initialAngle?: number;
+  parameters?: { name: string; min: number; max: number; step: number; initial: number }[];
+}
+
 export interface TutorialStep {
   id: string;
   title: string;
@@ -9,6 +29,9 @@ export interface TutorialStep {
   nextCondition?: 'click' | 'timeout' | 'interaction';
   duration?: number;
   customScene?: string;
+  stepType?: StepType;
+  quiz?: QuizConfig;
+  interactiveConfig?: InteractiveConfig;
 }
 
 export interface CircleConfig {
