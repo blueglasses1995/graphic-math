@@ -138,6 +138,27 @@ export const glossary: Record<string, GlossaryEntry> = {
     term: '単位行列',
     definition: '対角成分がすべて1、他が0の行列。何も変換しない「何もしない変換」を表します。Iv = v です。',
     relatedTerms: ['matrix']
+  },
+  'quadrant': {
+    id: 'quadrant',
+    term: '象限',
+    reading: 'しょうげん',
+    definition: '座標平面を原点で4つに区切った領域。右上が第1象限（sin+, cos+）、左上が第2象限（sin+, cos−）、左下が第3象限（sin−, cos−）、右下が第4象限（sin−, cos+）です。',
+    relatedTerms: ['unit-circle', 'sin', 'cos']
+  },
+  'periodicity': {
+    id: 'periodicity',
+    term: '周期性',
+    reading: 'しゅうきせい',
+    definition: '一定の間隔で同じ値を繰り返す性質。sin と cos は360°（2π）ごとに同じ値に戻ります。sin(θ + 360°) = sin(θ) です。',
+    relatedTerms: ['sin', 'cos', 'radian']
+  },
+  'projection': {
+    id: 'projection',
+    term: '射影',
+    reading: 'しゃえい',
+    definition: 'あるベクトルや点を、軸や平面に「影」として落とすこと。単位円上の点のX軸への射影が cos θ、Y軸への射影が sin θ です。',
+    relatedTerms: ['unit-circle', 'sin', 'cos', 'vector']
   }
 };
 
