@@ -11,6 +11,7 @@ export const acCircuitTutorial: Tutorial = {
       title: 'なぜ電気工学に複素数？',
       content:
         '交流（AC）は V(t) = V₀ cos(ωt) という正弦波です。\n\nオイラーの公式を使うと:\nV₀ cos(ωt) = Re(V₀ e^(iωt))\n\n複素数表現にすると、微分方程式が代数方程式になり、計算が劇的に簡単になります。\n\nこれが電気工学で複素数が不可欠な理由です。',
+      customScene: 'ac-circuit-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -112,6 +113,7 @@ export const acCircuitTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '交流回路と複素数:\n\n・インピーダンス Z で抵抗・コイル・コンデンサを統一\n・V = IZ（複素オームの法則）\n・|Z| = 振幅比、arg(Z) = 位相差\n・共振: ωL = 1/(ωC) で虚部が消える\n・フェーザ図で回路の振る舞いを可視化\n\n複素数は電気工学の必須ツールです。',
+      customScene: 'ac-circuit-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

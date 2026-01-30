@@ -11,6 +11,7 @@ export const logisticGrowthTutorial: Tutorial = {
       title: 'S字カーブの世界',
       content:
         'SNSのユーザー数は最初ゆっくり増え、途中で爆発的に増え、やがて飽和する。このS字型の曲線がロジスティック成長です。指数的成長に「天井」を加えたモデルのアニメーションを見てみましょう。',
+      customScene: "logistic-growth-animation",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const logisticGrowthTutorial: Tutorial = {
       title: 'パラメータを変えてみよう',
       content:
         '成長率r、環境収容力K、初期値N₀を変えて、S字カーブがどう変形するか観察しましょう。Kが大きいほど天井が高く、rが大きいほど急峻なS字になります。',
+      customScene: "logistic-growth-interactive",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +107,7 @@ export const logisticGrowthTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'ロジスティック成長：\n• 上限Kのある指数的成長\n• S字カーブを描く\n• dP/dt = rP(1-P/K)\n• P=K/2で成長速度が最大\n• 技術普及、感染症、学習など広く応用\n\n指数関数の「現実版」として非常に重要なモデルです。',
+      customScene: "logistic-growth-summary",
       sceneConfig: {
         showGrid: true,
         showAxes: true,

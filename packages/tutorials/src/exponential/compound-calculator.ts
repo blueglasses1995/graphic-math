@@ -11,6 +11,7 @@ export const compoundCalculatorTutorial: Tutorial = {
       title: '100万円を30年間運用すると？',
       content:
         '100万円を年利5%で30年間複利運用すると432万円。毎月3万円を追加投資すると？約2,500万円に。積立の威力と複利の効果をアニメーションで見てみましょう。',
+      customScene: "compound-calculator-animation",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const compoundCalculatorTutorial: Tutorial = {
       title: '自分の投資をシミュレーション',
       content:
         '元本、年利、期間、毎月の積立額を入力して、将来の資産額を計算してみましょう。利率がわずか1%違うだけで長期的な差は大きくなります。',
+      customScene: "compound-calculator-interactive",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +107,7 @@ export const compoundCalculatorTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '複利計算機：\n• 元本の成長：P(1+r)ⁿ\n• 積立の成長：m·((1+r)ⁿ-1)/r\n• 早く始めるほど複利の効果大\n• 10年の差が資産を2倍にする\n• インフレを考慮した実質リターンが重要\n\n指数関数の理解がお金の未来を変えます。',
+      customScene: "compound-calculator-summary",
       sceneConfig: {
         showGrid: true,
         showAxes: true,

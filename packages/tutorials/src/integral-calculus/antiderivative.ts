@@ -11,6 +11,7 @@ export const antiderivativeTutorial: Tutorial = {
       title: '微分の逆をたどる',
       content:
         'f(x) = 2x を微分すると何になりますか？ 答えは 2 です。\n\nでは逆に、微分して 2x になる関数は？ 答えは x² です。\n\n...本当にそれだけでしょうか？ x² + 1 を微分しても 2x です。\n\nx² + 100 でも同じ。定数を足しても微分には影響しません。',
+      customScene: 'antiderivative-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const antiderivativeTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '定数 C をスライダーで変えてみてください。\n\nグラフの形は変わらず、上下に平行移動するだけです。\n\nどの C を選んでも、微分すると同じ関数 f(x) になります。',
+      customScene: 'antiderivative-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const antiderivativeTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '不定積分 ∫ f(x) dx = F(x) + C は「微分の逆」です。\n\n+ C は微分で失われる定数を補うもの。初期条件で決定できます。\n\n定積分では C が打ち消し合うので不要です。\n\nスライダーで C を変えて、原始関数の族を眺めてみてください。',
+      customScene: 'antiderivative-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

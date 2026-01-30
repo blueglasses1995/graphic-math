@@ -12,6 +12,7 @@ export const zeroKnowledgeTutorial: Tutorial = {
       content:
         '「私はこの扉のパスワードを知っている」\n\nこれを証明したいが、パスワード自体は教えたくない。\n\nそんな「矛盾」を解決するのがゼロ知識証明です。\n\n秘密の情報を一切漏らさずに、\n知識を持っていることだけを証明できます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'zero-knowledge-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -22,6 +23,7 @@ export const zeroKnowledgeTutorial: Tutorial = {
       content:
         '洞窟には左右のルートがあり、奥で魔法の扉で繋がっています。\n\n証明者（ペギー）: 扉のパスワードを知っている\n検証者（ビクター）: パスワードを知りたくないが、ペギーが知っているか確認したい\n\n手順:\n1. ペギーがランダムに左右どちらかに入る\n2. ビクターが「左から出てこい」or「右から出てこい」と指示\n3. ペギーが指示通りに出てくる\n\nこれを繰り返すと確信が高まります。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'zero-knowledge-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -82,6 +84,7 @@ export const zeroKnowledgeTutorial: Tutorial = {
       content:
         'ゼロ知識証明:\n\n• 秘密を漏らさずに知識を証明\n• 完全性・健全性・ゼロ知識性の3条件\n• シュノアプロトコル等の具体的な方式\n• zk-SNARKs等の最新技術\n• ブロックチェーン・プライバシーに応用\n\n暗号学と代数学の最先端の交差点です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'zero-knowledge-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

@@ -12,6 +12,7 @@ export const diffieHellmanTutorial: Tutorial = {
       content:
         'アリスとボブが電話で秘密の暗号鍵を共有したい。\nでも盗聴されているかもしれない。\n\n全ての通信が傍受されていても、安全に秘密鍵を共有できる。\nそれがディフィー・ヘルマン鍵交換です。\n\n色の混合に例えて理解しましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'diffie-hellman-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -22,6 +23,7 @@ export const diffieHellmanTutorial: Tutorial = {
       content:
         '公開パラメータ: 素数 p = 23, 生成元 g = 5\n\nアリス: 秘密の a を選び、A = g^a mod p を公開\nボブ: 秘密の b を選び、B = g^b mod p を公開\n\n共有鍵: K = B^a = A^b = g^{ab} mod p\n\na と b を選んで鍵交換を体験しましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'diffie-hellman-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -82,6 +84,7 @@ export const diffieHellmanTutorial: Tutorial = {
       content:
         'ディフィー・ヘルマン鍵交換:\n\n• 公開通信路で秘密鍵を共有\n• 離散対数問題の困難性に基づく\n• g^a, g^b → g^{ab} の計算が困難\n• 中間者攻撃には認証が必要\n• TLS/SSLの基盤技術\n\n1976年の発明以来、暗号通信の基礎です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'diffie-hellman-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

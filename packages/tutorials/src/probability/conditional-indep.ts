@@ -11,7 +11,10 @@ export const conditionalIndepTutorial: Tutorial = {
       title: '独立が崩れる瞬間',
       content:
         '2人の学生のテスト結果は独立に見えますが、「同じ先生に教わった」と知ったら？共通の原因を知ることで関係が見えたり消えたりします。これが条件付き独立です。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'conditional-indep-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',
@@ -41,7 +44,10 @@ export const conditionalIndepTutorial: Tutorial = {
       title: '条件による独立性の変化',
       content:
         '条件をつけたり外したりして、2つの事象の独立性がどう変化するか確認しましょう。ベイジアンネットワークの構造が直感的に分かります。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'conditional-indep-interactive',
       interactive: true,
       nextCondition: 'click',
       stepType: 'interactive',
@@ -81,7 +87,10 @@ export const conditionalIndepTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '条件付き独立:\n\n• P(X,Y|Z) = P(X|Z)P(Y|Z)\n• 無条件独立とは別の概念\n• Explaining Away: 結果を知ると原因が依存\n• ベイジアンネットワークの基礎\n\n確率モデルの構造を理解する鍵概念です。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'conditional-indep-summary',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',

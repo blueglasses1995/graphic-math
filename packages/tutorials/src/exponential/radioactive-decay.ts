@@ -11,6 +11,7 @@ export const radioactiveDecayTutorial: Tutorial = {
       title: '原子が崩壊する',
       content:
         '放射性原子は自発的に崩壊して別の元素に変わります。いつ崩壊するかは予測できませんが、大量の原子の統計的な振る舞いは指数関数で正確に記述できます。崩壊のアニメーションを見てみましょう。',
+      customScene: "radioactive-decay-animation",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const radioactiveDecayTutorial: Tutorial = {
       title: '崩壊をシミュレーション',
       content:
         '放射性物質の種類（半減期）を選んで、残存量が時間とともにどう変化するか観察しましょう。',
+      customScene: "radioactive-decay-interactive",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +107,7 @@ export const radioactiveDecayTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '放射性崩壊：\n• N(t) = N₀·e⁻λᵗ\n• λ = ln2/T₁/₂\n• 半減期n回で(1/2)ⁿに減少\n• 炭素年代測定に応用\n• 放射性廃棄物管理の基礎\n\n指数的減衰の最も重要な実用例の一つです。',
+      customScene: "radioactive-decay-summary",
       sceneConfig: {
         showGrid: true,
         showAxes: true,

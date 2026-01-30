@@ -12,6 +12,7 @@ export const polarFormTutorial: Tutorial = {
       title: '2つの表し方',
       content:
         '複素数には2つの表し方があります。\n\n直交形式: z = a + bi（実部と虚部）\n極形式: z = r(cos θ + i sin θ)（絶対値と偏角）\n\nここで r = |z|、θ = arg(z) です。\n\n直交座標と極座標の関係と同じです。',
+      customScene: 'polar-form-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -74,6 +75,7 @@ export const polarFormTutorial: Tutorial = {
       title: '極形式を体験',
       content:
         'rとθを変えて、複素数がどう動くか観察しましょう。\n\nrを変えると原点からの距離が変わり、θを変えると方向が変わります。',
+      customScene: 'polar-form-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -134,6 +136,7 @@ export const polarFormTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '極形式のポイント:\n\n・z = r(cos θ + i sin θ) = r cis θ\n・r = |z|（絶対値）、θ = arg(z)（偏角）\n・直交 ↔ 極の変換は三角関数で\n・掛け算では「絶対値は積、偏角は和」\n\n次は極形式での掛け算を詳しく見ましょう。',
+      customScene: 'polar-form-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

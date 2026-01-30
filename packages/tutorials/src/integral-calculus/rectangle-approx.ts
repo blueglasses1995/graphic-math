@@ -11,6 +11,7 @@ export const rectangleApproxTutorial: Tutorial = {
       title: '長方形で埋めてみる',
       content:
         '曲線の下に長方形が並んでいます。\n\n長方形の合計面積は、曲線の下の面積の「近似値」です。\n\n長方形の数を増やすとどうなるでしょうか？\n\nアニメーションを見てみましょう。',
+      customScene: 'rectangle-approx-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const rectangleApproxTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'スライダーで長方形の本数を変えてみてください。\n\n本数を増やすと、長方形の上端が曲線に近づいていきますね。\n\nこれが「近似が精密になる」ということです。',
+      customScene: 'rectangle-approx-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const rectangleApproxTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '曲線の下の面積は、長方形の和で近似できます。\n\n長方形を細かくすればするほど、近似は正確になります。\n\n無限に細かくした極限が「定積分」です。\n\nスライダーで本数を変えて、収束の様子を確かめてみてください。',
+      customScene: 'rectangle-approx-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

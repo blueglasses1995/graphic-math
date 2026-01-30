@@ -11,6 +11,7 @@ export const integralMvtTutorial: Tutorial = {
       title: '平均の高さ',
       content:
         '曲線の下の面積を長方形で「ちょうど同じ面積」にできるでしょうか？\n\nその長方形の高さが、関数の「平均値」です。\n\nアニメーションで曲線と同面積の長方形を見てみましょう。',
+      customScene: 'integral-mvt-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const integralMvtTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '関数の形を変えてみてください。\n\nどんな形でも、同面積の長方形（平均の高さ）が存在します。\n\n平均の高さは、関数のどの辺りの値に近いですか？',
+      customScene: 'integral-mvt-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const integralMvtTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '積分の平均値定理：連続関数には必ず「平均の高さ」f(c) が存在します。\n\nfₐᵥₑ = (1/(b-a)) · ∫ₐᵇ f(x) dx\n\nこれは日常の「平均」を連続関数に拡張した概念です。\n\nグラフを操作して、平均値の長方形を確かめてみてください。',
+      customScene: 'integral-mvt-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

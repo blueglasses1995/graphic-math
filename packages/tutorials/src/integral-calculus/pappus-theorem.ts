@@ -11,6 +11,7 @@ export const pappusTheoremTutorial: Tutorial = {
       title: '重心が描く円',
       content:
         '平面図形を回転させた立体の体積は、\n\n面積 × 重心が動く距離（円周）で求められます。\n\nV = 2π · ȳ · A\n\nこの美しい定理が「パップスの定理」です。',
+      customScene: 'pappus-theorem-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const pappusTheoremTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '平面図形を回転させる様子を観察してみましょう。\n\n図形の重心の位置をマーカーで示しています。\n\n重心が描く円の半径と図形の面積から体積が計算できます。',
+      customScene: 'pappus-theorem-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const pappusTheoremTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'パップスの定理：V = 2πȳA（体積）、S = 2πȳL（表面積）\n\n重心の概念と回転体を結びつける強力な定理です。\n\n図形を回転させて、トーラスなどの立体を作ってみてください。',
+      customScene: 'pappus-theorem-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

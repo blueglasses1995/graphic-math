@@ -12,6 +12,7 @@ export const fieldExtensionTutorial: Tutorial = {
       content:
         'Q（有理数）→ Q(√2)（√2を添加）→ Q(√2, √3) → ...\n\n新しい数を「添加」して体を広げていく。\nこの過程が「体の拡大」です。\n\n方程式の根を次々と添加して、全ての根を含む体を作ります。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'field-extension-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -22,6 +23,7 @@ export const fieldExtensionTutorial: Tutorial = {
       content:
         'Q(√2) = {a + b√2 | a, b ∈ Q}\n\nこの体では四則演算が閉じています。\n\n(1 + √2)(3 - √2) = 3 - √2 + 3√2 - 2 = 1 + 2√2\n\na, b の値を変えて Q(√2) の元の演算を試しましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'field-extension-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -82,6 +84,7 @@ export const fieldExtensionTutorial: Tutorial = {
       content:
         '拡大体:\n\n• 新しい元を添加して体を拡張\n• 拡大次数 = ベクトル空間としての次元\n• 代数拡大 vs 超越拡大\n• 分解体: 多項式の全ての根を含む最小拡大\n• ガロア理論の舞台を提供\n\n数の世界を自在に広げる道具です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'field-extension-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

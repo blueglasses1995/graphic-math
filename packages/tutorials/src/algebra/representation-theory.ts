@@ -12,6 +12,7 @@ export const representationTheoryTutorial: Tutorial = {
       content:
         '抽象的な群の元を、具体的な行列として表現できたら？\n\n群の表現論は、群の元を行列（線形変換）に対応させることで、\n抽象代数を線形代数の道具で分析する強力な手法です。\n\n物理学では素粒子の分類に使われています。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'representation-theory-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -22,6 +23,7 @@ export const representationTheoryTutorial: Tutorial = {
       content:
         'Z₃ = {0, 1, 2} の2次元表現を見てみましょう。\n\nω = e^{2πi/3} として:\n0 → 単位行列\n1 → 回転行列(120°)\n2 → 回転行列(240°)\n\n群の演算が行列の積に対応することを確認しましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'representation-theory-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -82,6 +84,7 @@ export const representationTheoryTutorial: Tutorial = {
       content:
         '表現論:\n\n• 群の元を行列として実現\n• 既約表現に分解して分析\n• 既約表現の数 = 共役類の数\n• 指標で表現を簡潔に記述\n• 物理学・化学で広く応用\n\n抽象と具体を橋渡しする美しい理論です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'representation-theory-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

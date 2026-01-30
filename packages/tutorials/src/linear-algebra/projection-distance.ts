@@ -1,3 +1,4 @@
+import { Vector3 } from '@learnmath/core';
 import { Tutorial } from '../types';
 
 export const projectionDistanceTutorial: Tutorial = {
@@ -16,7 +17,8 @@ export const projectionDistanceTutorial: Tutorial = {
         'その距離が最短距離になります。\n\n' +
         'この単純な幾何学的アイデアが、\n' +
         '最小二乗法やフーリエ近似の数学的基盤です。',
-      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      sceneConfig: { showGrid: true, showAxes: true, vectors: [{ id: 'v1', vector: new Vector3(1, 0, 0), color: '#ff5722', label: 'e₁' }, { id: 'v2', vector: new Vector3(0, 1, 0), color: '#4caf50', label: 'e₂' }], cameraPosition: [0, 0, 5] },
+      customScene: 'projection-distance-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -34,6 +36,7 @@ export const projectionDistanceTutorial: Tutorial = {
         '部分空間への射影行列 P = A(A^TA)⁻¹A^T も\n' +
         '同じ原理から導かれます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'projection-distance-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -121,6 +124,7 @@ export const projectionDistanceTutorial: Tutorial = {
         '5. フーリエ近似も射影の一種\n\n' +
         '射影は近似と最適化の幾何学的基盤です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 6] },
+      customScene: 'projection-distance-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

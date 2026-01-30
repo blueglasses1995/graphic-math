@@ -1,3 +1,4 @@
+import { Vector3 } from '@learnmath/core';
 import { Tutorial } from '../types';
 
 export const neuralNetMatrixTutorial: Tutorial = {
@@ -17,7 +18,8 @@ export const neuralNetMatrixTutorial: Tutorial = {
         'ChatGPTのような大規模言語モデルは\n' +
         '何千億ものパラメータを持つ巨大な行列の\n' +
         '連鎖的な掛け算として動作しています。',
-      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      sceneConfig: { showGrid: true, showAxes: true, vectors: [{ id: 'v1', vector: new Vector3(1, 0, 0), color: '#ff5722', label: 'e₁' }, { id: 'v2', vector: new Vector3(0, 1, 0), color: '#4caf50', label: 'e₂' }], cameraPosition: [0, 0, 5] },
+      customScene: 'neural-net-matrix-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -36,6 +38,7 @@ export const neuralNetMatrixTutorial: Tutorial = {
         '行列の各行が一つのニューロンに対応し、\n' +
         '重み付き和を計算しています。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'neural-net-matrix-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -128,6 +131,7 @@ export const neuralNetMatrixTutorial: Tutorial = {
         '5. AIの速度は行列演算の効率に依存\n\n' +
         '線形代数はAIの最も基本的な数学的基盤です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 6] },
+      customScene: 'neural-net-matrix-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

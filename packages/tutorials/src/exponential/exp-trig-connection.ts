@@ -11,6 +11,7 @@ export const expTrigConnectionTutorial: Tutorial = {
       title: '回転と成長の統一',
       content:
         '指数関数は「成長」、三角関数は「回転」。一見無関係な2つが、複素数を通じて統一されます。eⁱθが単位円上を回転する様子と、cosθ・sinθの波が同時に生まれるアニメーションを見てみましょう。',
+      customScene: "exp-trig-connection-animation",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const expTrigConnectionTutorial: Tutorial = {
       title: '回転と波を操ろう',
       content:
         'θを変えながら、複素平面上の円運動と、実軸・虚軸への射影（cos, sin）の関係を確認しましょう。',
+      customScene: "exp-trig-connection-interactive",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +107,7 @@ export const expTrigConnectionTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '指数関数と三角関数のつながり：\n• eⁱθ = cosθ + i·sinθ\n• cosθ = (eⁱθ + e⁻ⁱθ)/2\n• sinθ = (eⁱθ - e⁻ⁱθ)/2i\n• 双曲線関数は実数版\n• 交流回路など工学に広く応用\n\n異なる分野を橋渡しする数学の統一性です。',
+      customScene: "exp-trig-connection-summary",
       sceneConfig: {
         showGrid: true,
         showAxes: true,

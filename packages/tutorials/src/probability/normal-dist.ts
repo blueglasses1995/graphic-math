@@ -11,7 +11,10 @@ export const normalDistTutorial: Tutorial = {
       title: '自然界の王様',
       content:
         '身長、テストの点数、測定誤差...多くのデータは中央が高く左右対称な釣鐘型になります。これが正規分布（ガウス分布）です。確率論で最も重要な分布です。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'normal-dist-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',
@@ -41,7 +44,10 @@ export const normalDistTutorial: Tutorial = {
       title: 'μとσを動かそう',
       content:
         '平均μと標準偏差σを変えて、正規分布の形がどう変わるか確認しましょう。σが小さいほど尖った形、大きいほど広がった形になります。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'normal-dist-interactive',
       interactive: true,
       nextCondition: 'click',
       stepType: 'interactive',
@@ -81,7 +87,10 @@ export const normalDistTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '正規分布 N(μ, σ²) のポイント:\n\n• μが中心、σが広がり\n• 68-95-99.7ルール\n• 標準化で N(0,1) に統一可能\n• 中心極限定理により広く出現\n\n統計学の基盤となる最重要分布です。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'normal-dist-summary',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',

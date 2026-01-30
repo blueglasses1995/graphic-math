@@ -12,6 +12,7 @@ export const complexAdditionTutorial: Tutorial = {
       title: '実部どうし、虚部どうし',
       content:
         '複素数の足し算はとてもシンプルです。\n\n(a + bi) + (c + di) = (a + c) + (b + d)i\n\n実部どうし、虚部どうしを足すだけです。\n\n例: (3 + 2i) + (1 + 4i) = 4 + 6i',
+      customScene: 'complex-addition-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -64,6 +65,7 @@ export const complexAdditionTutorial: Tutorial = {
       title: '足し算を体験',
       content:
         '2つの複素数のベクトルをドラッグして動かし、和がどう変わるか観察してみましょう。\n\n平行四辺形の法則が成り立つことを確認してください。',
+      customScene: 'complex-addition-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -117,6 +119,7 @@ export const complexAdditionTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '複素数の足し算:\n\n・(a+bi) + (c+di) = (a+c) + (b+d)i\n・複素平面ではベクトルの足し算（平行四辺形の法則）\n・引き算も同様に実部・虚部ごとに計算\n・実数の加法と同じ性質（交換・結合法則など）を持つ\n\n次は、もっと面白い「掛け算」を学びましょう。',
+      customScene: 'complex-addition-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

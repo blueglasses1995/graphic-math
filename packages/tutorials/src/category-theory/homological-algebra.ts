@@ -12,6 +12,7 @@ export const homologicalAlgebraTutorial: Tutorial = {
       stepType: 'animation',
       content: 'ホモロジーは「核÷像」で代数的構造の「穴」を測ります。チェイン複体から計算されるホモロジー群の意味をアニメーションで直感的に理解しましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'homological-algebra-animation',
       interactive: false,
       nextCondition: 'click',
     },
@@ -21,6 +22,7 @@ export const homologicalAlgebraTutorial: Tutorial = {
       stepType: 'interactive',
       content: 'チェイン複体 ...→C₂→C₁→C₀→... の境界射を配置し、H_n = ker(∂_n)/im(∂_{n+1}) を計算してみましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'homological-algebra-interactive',
       interactive: true,
       nextCondition: 'interaction',
     },
@@ -76,6 +78,7 @@ export const homologicalAlgebraTutorial: Tutorial = {
       stepType: 'interactive',
       content: 'ホモロジー代数はアーベル圏の強力なツールです。チェイン複体とホモロジーにより代数的構造の「差分情報」を系統的に抽出できます。位相幾何、代数幾何、表現論で不可欠です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'homological-algebra-summary',
       interactive: true,
       nextCondition: 'interaction',
     }

@@ -11,6 +11,7 @@ export const optimizationTutorial: Tutorial = {
       title: '最もお得な箱の形',
       content:
         '段ボールから箱を作るとき、体積を最大にするにはどう折ればいい？こうした「最適な値を見つける問題」が最適化問題です。微分がその答えを教えてくれます。',
+      customScene: 'optimization-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const optimizationTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '箱の高さ h をスライダーで変えて、体積がどう変わるか観察してください。最大体積はどの h で実現されるでしょう？',
+      customScene: 'optimization-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const optimizationTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '最適化 = 微分してゼロとおく + 端点チェック。実社会で最もよく使われる微分の応用です。コスト最小化、利益最大化、設計の最適化すべてに使えます。\n\n次は「ニュートン法」。方程式の解を微分で見つける手法です。',
+      customScene: 'optimization-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

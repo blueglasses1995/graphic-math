@@ -11,6 +11,7 @@ export const zeroNegativeExpTutorial: Tutorial = {
       title: 'a⁰はなぜ1？',
       content:
         '何も掛けないのに結果が1？直感に反するように見えますが、指数法則から必然的に導かれます。2⁴÷2⁴ = 2⁰ = ？ アニメーションで見てみましょう。',
+      customScene: "zero-negative-exp-animation",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const zeroNegativeExpTutorial: Tutorial = {
       title: '指数を0まで下げてみよう',
       content:
         'スライダーで指数を5から0まで、さらにマイナスまで動かしてみましょう。値がどう変化するか、パターンに注目してください。',
+      customScene: "zero-negative-exp-interactive",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +107,7 @@ export const zeroNegativeExpTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '0乗と負の指数：\n• a⁰ = 1（a≠0）\n• a⁻ⁿ = 1/aⁿ（逆数）\n• これらは指数法則の整合性から導かれる\n• 負の指数≠マイナスの値\n\n指数が1減るごとに底で割るパターンで理解できます。',
+      customScene: "zero-negative-exp-summary",
       sceneConfig: {
         showGrid: true,
         showAxes: true,

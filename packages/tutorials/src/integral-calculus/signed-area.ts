@@ -11,6 +11,7 @@ export const signedAreaTutorial: Tutorial = {
       title: 'マイナスの面積？',
       content:
         '面積がマイナスになるとはどういうことでしょうか？\n\nグラフが x 軸の下に潜ると、積分値は負になります。\n\nアニメーションで正と負の領域がどう表示されるか見てみましょう。',
+      customScene: 'signed-area-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const signedAreaTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'sin のグラフを見てください。\n\nx 軸の上（正の部分）と下（負の部分）で色が違います。\n\n区間を動かして、正の面積と負の面積がどう打ち消し合うか確かめてください。',
+      customScene: 'signed-area-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const signedAreaTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '定積分は「符号付き面積」です。x 軸より下は負としてカウントされます。\n\n奇関数の対称区間での積分は 0 になります。\n\n「幾何学的な面積」が必要なときは |f(x)| を積分します。\n\nグラフを操作して、正負の面積がどう打ち消し合うか確かめてみてください。',
+      customScene: 'signed-area-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

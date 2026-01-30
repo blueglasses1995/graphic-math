@@ -12,6 +12,7 @@ export const quantumCategoryTutorial: Tutorial = {
       stepType: 'animation',
       content: 'ヒルベルト空間を対象、線形写像を射とする圏FdHilbは量子力学の舞台です。テンソル積によるモノイダル構造が量子もつれを記述します。この構造をアニメーションで見ましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'quantum-category-animation',
       interactive: false,
       nextCondition: 'click',
     },
@@ -21,6 +22,7 @@ export const quantumCategoryTutorial: Tutorial = {
       stepType: 'interactive',
       content: '量子ゲート（射）をつないで量子回路を構成してみましょう。テンソル積（並列）と合成（直列）の2つの「つなぎ方」を体験できます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'quantum-category-interactive',
       interactive: true,
       nextCondition: 'interaction',
     },
@@ -76,6 +78,7 @@ export const quantumCategoryTutorial: Tutorial = {
       stepType: 'interactive',
       content: 'モノイダル圏の構造が量子力学を自然に記述します。ストリング図による視覚的推論は量子情報理論の強力なツールです。圏論は量子コンピューティングの理論的基盤としても注目されています。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'quantum-category-summary',
       interactive: true,
       nextCondition: 'interaction',
     }

@@ -11,6 +11,7 @@ export const howManyTimesTutorial: Tutorial = {
       title: '2を何回かけたら8？',
       content:
         '2 × 2 × 2 = 8。3回かけると8になります。この「何回かけた？」という問いこそが対数の正体です。アニメーションで2が段階的に積み重なる様子を見てみましょう。',
+      customScene: 'how-many-times-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const howManyTimesTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'スライダーで「かける回数」を変えてみてください。回数を増やすと結果がどんどん大きくなります。逆に「結果から回数を求める」のが対数です。',
+      customScene: 'how-many-times-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const howManyTimesTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '対数とは「何回かけた？」への答え。log_a(b) は「aを何回かけたらbになるか」を意味します。\n\n自由に底と値を変えて、対数の感覚をつかんでみてください。',
+      customScene: 'how-many-times-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

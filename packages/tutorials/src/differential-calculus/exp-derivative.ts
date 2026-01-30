@@ -11,6 +11,7 @@ export const expDerivativeTutorial: Tutorial = {
       title: '微分しても変わらない関数',
       content:
         'eˣ を微分すると eˣ。自分自身が導関数。何回微分しても eˣ。こんな特別な関数がなぜ存在するのか、アニメーションで見てみましょう。',
+      customScene: 'exp-derivative-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const expDerivativeTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'x を動かして eˣ の接線の傾きを確認してください。傾きの値が常に関数値と一致していることに注目です。x=0 で値1・傾き1、x=1 で値e・傾きe。',
+      customScene: 'exp-derivative-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const expDerivativeTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '(eˣ)\' = eˣ。微分しても変わらない唯一の関数（定数倍を除く）。自然対数の底 e は微分と最も相性の良い数です。\n\n次は「商の微分」を学びましょう。分数の形の関数を微分する方法です。',
+      customScene: 'exp-derivative-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

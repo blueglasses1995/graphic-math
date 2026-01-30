@@ -12,6 +12,7 @@ export const yonedaLemmaTutorial: Tutorial = {
       stepType: 'animation',
       content: '対象Aは、他の対象からAへの射の全体 Hom(-,A) によって完全に特徴づけられます。「対象はその関係性の総体である」という深い洞察をアニメーションで見てみましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'yoneda-lemma-animation',
       interactive: false,
       nextCondition: 'click',
     },
@@ -21,6 +22,7 @@ export const yonedaLemmaTutorial: Tutorial = {
       stepType: 'interactive',
       content: '自然変換 Nat(Hom(A,-), F) の要素と F(A) の要素の間の一対一対応を視覚的に確認しましょう。自然変換αを選ぶと α_A(id_A) が決まる様子を体験できます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'yoneda-lemma-interactive',
       interactive: true,
       nextCondition: 'interaction',
     },
@@ -76,6 +78,7 @@ export const yonedaLemmaTutorial: Tutorial = {
       stepType: 'interactive',
       content: '米田の補題は「対象はその射で完全に決まる」という圏論の哲学を数学的に精密化したものです。関手の理解、普遍性の議論、そして現代的な数学の基盤として不可欠な定理です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'yoneda-lemma-summary',
       interactive: true,
       nextCondition: 'interaction',
     }

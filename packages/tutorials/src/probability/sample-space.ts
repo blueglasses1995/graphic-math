@@ -11,7 +11,10 @@ export const sampleSpaceTutorial: Tutorial = {
       title: '全ての可能性を並べる',
       content:
         'サイコロを1回振るとき、出る目の全ての可能性は {1, 2, 3, 4, 5, 6} です。この全体の集合を「標本空間」と呼びます。記号ではΩ（オメガ）と書きます。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'sample-space-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',
@@ -41,7 +44,10 @@ export const sampleSpaceTutorial: Tutorial = {
       title: '事象を選んでみよう',
       content:
         '標本空間の中から条件を満たす要素を選ぶことで、事象を構成できます。条件を変えて、事象の大きさがどう変わるか確認しましょう。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'sample-space-interactive',
       interactive: true,
       nextCondition: 'click',
       stepType: 'interactive',
@@ -81,7 +87,10 @@ export const sampleSpaceTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '標本空間Ωは全ての可能な結果の集合。事象はΩの部分集合。\n\n• 根元事象: 1つの結果からなる事象\n• 排反事象: 同時に起こらない事象\n• 全事象と空事象は特別な事象\n\n確率は事象に対して定義される関数です。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'sample-space-summary',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',

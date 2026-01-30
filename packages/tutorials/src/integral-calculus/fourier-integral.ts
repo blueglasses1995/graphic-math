@@ -11,6 +11,7 @@ export const fourierIntegralTutorial: Tutorial = {
       title: '音を分解する',
       content:
         '楽器の音は複数の sin 波の重ね合わせです。\n\n複雑な波形を「どの周波数がどれだけ含まれているか」に分解する ──\n\nこれがフーリエ解析であり、その核心は積分です。\n\nアニメーションで波の分解を見てみましょう。',
+      customScene: 'fourier-integral-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const fourierIntegralTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '各周波数成分の振幅を変えてみてください。\n\n成分を足し合わせると、元の波形に近づいていきます。\n\n項数を増やすとどんどん精密になります。',
+      customScene: 'fourier-integral-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const fourierIntegralTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'フーリエ解析：任意の関数を sin, cos の和に分解します。\n\n係数は積分で求めます（cos, sin の直交性を利用）。\n\nフーリエ変換は信号処理の基盤です。\n\n周波数成分を操作して、波の合成を体験してみてください。',
+      customScene: 'fourier-integral-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

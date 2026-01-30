@@ -12,6 +12,7 @@ export const abelianCategoryTutorial: Tutorial = {
       stepType: 'animation',
       content: 'アーベル圏では射の「足し算」ができ、核や余核が常に存在します。加群のように振る舞う圏の世界をアニメーションで見てみましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'abelian-category-animation',
       interactive: false,
       nextCondition: 'click',
     },
@@ -21,6 +22,7 @@ export const abelianCategoryTutorial: Tutorial = {
       stepType: 'interactive',
       content: '射 f: A→B の核（ker f）と余核（coker f）を視覚的に構成しましょう。ker f → A → B → coker f の完全列を確認できます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'abelian-category-interactive',
       interactive: true,
       nextCondition: 'interaction',
     },
@@ -76,6 +78,7 @@ export const abelianCategoryTutorial: Tutorial = {
       stepType: 'interactive',
       content: 'アーベル圏はホモロジー代数の自然な舞台です。核・余核・完全列という概念により、代数的構造の「差分」を測る理論が展開できます。層のコホモロジーやスペクトル系列の基礎です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'abelian-category-summary',
       interactive: true,
       nextCondition: 'interaction',
     }

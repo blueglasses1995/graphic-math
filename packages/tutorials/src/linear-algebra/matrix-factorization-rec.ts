@@ -1,3 +1,4 @@
+import { Vector3 } from '@learnmath/core';
 import { Tutorial } from '../types';
 
 export const matrixFactorizationRecTutorial: Tutorial = {
@@ -18,7 +19,8 @@ export const matrixFactorizationRecTutorial: Tutorial = {
         'V の各行はアイテムの「特徴ベクトル」\n\n' +
         '空欄（未評価）の予測値 = u_i · v_j\n' +
         'これが「あなたへのおすすめ」になるのです。',
-      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      sceneConfig: { showGrid: true, showAxes: true, vectors: [{ id: 'v1', vector: new Vector3(1, 0, 0), color: '#ff5722', label: 'e₁' }, { id: 'v2', vector: new Vector3(0, 1, 0), color: '#4caf50', label: 'e₂' }], cameraPosition: [0, 0, 5] },
+      customScene: 'matrix-factorization-rec-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -36,6 +38,7 @@ export const matrixFactorizationRecTutorial: Tutorial = {
         '例えば2次元の意味が「アクション度」と「ロマンス度」なら\n' +
         'アクション好きユーザーとアクション映画の内積が大きくなります。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'matrix-factorization-rec-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -127,6 +130,7 @@ export const matrixFactorizationRecTutorial: Tutorial = {
         '5. NMFは非負制約で解釈性を向上\n\n' +
         '行列分解は推薦システムの数学的基盤です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 6] },
+      customScene: 'matrix-factorization-rec-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

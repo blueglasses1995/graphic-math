@@ -11,7 +11,10 @@ export const complementEventTutorial: Tutorial = {
       title: '起こらない方から考える',
       content:
         'サイコロを振って「1以外が出る」確率は？1が出る確率が1/6なので、1以外は 1 - 1/6 = 5/6。「起こらない」方から求める方が簡単なことがあります。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'complement-event-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',
@@ -41,7 +44,10 @@ export const complementEventTutorial: Tutorial = {
       title: '余事象を体験',
       content:
         'コインの枚数を変えて「少なくとも1回表が出る」確率を確認しましょう。枚数が増えるほど、余事象で計算する方が楽になります。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'complement-event-interactive',
       interactive: true,
       nextCondition: 'click',
       stepType: 'interactive',
@@ -81,7 +87,10 @@ export const complementEventTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '余事象は確率計算の強力なテクニック。\n\n• P(Aᶜ) = 1 - P(A)\n• 「少なくとも」→ 余事象を使え\n• 直接計算が面倒 → 余事象が簡単かチェック\n\n確率の計算では「逆から考える」発想が大切です。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'complement-event-summary',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',

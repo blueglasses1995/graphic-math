@@ -11,6 +11,7 @@ export const lnIntegralTutorial: Tutorial = {
       title: '1/x の面積が ln',
       content:
         'y = 1/x のグラフの下の面積（1からxまで）がちょうど ln(x)。1/x を積分すると自然対数が現れます。',
+      customScene: 'ln-integral-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const lnIntegralTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '上限の値を変えて、1/x の面積と ln(x) の値が一致することを確認してください。',
+      customScene: 'ln-integral-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const lnIntegralTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '∫(1/x)dx = ln|x| + C。1/x の面積が自然対数。x^n の積分公式の n = -1 の穴を埋める公式です。\n\n面積の変化を観察してみてください。',
+      customScene: 'ln-integral-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

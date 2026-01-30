@@ -11,6 +11,7 @@ export const velocityAccelerationTutorial: Tutorial = {
       title: '位置を微分すると速度になる',
       content:
         'ボールの位置 s(t) を時間 t で微分すると速度 v(t) = s\'(t)。さらに微分すると加速度 a(t) = v\'(t) = s\'\'(t)。微分を繰り返すと運動の情報が次々と現れます。',
+      customScene: 'velocity-acceleration-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const velocityAccelerationTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '時刻 t を動かして、位置・速度・加速度の3つのグラフが同時にどう変わるか観察してください。',
+      customScene: 'velocity-acceleration-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const velocityAccelerationTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '位置→速度→加速度は微分の連鎖。s\'=v、v\'=a。物理学における微分の最も基本的な応用です。\n\n速度・加速度の感覚を使って、次は「最適化問題」に挑戦しましょう。',
+      customScene: 'velocity-acceleration-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

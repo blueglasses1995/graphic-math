@@ -11,7 +11,10 @@ export const monteCarloTutorial: Tutorial = {
       title: '乱数で円周率を求める',
       content:
         '正方形の中にランダムに点を打ち、円の中に入った割合から円周率πを推定できます。こんな大胆な方法がモンテカルロ法です。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'monte-carlo-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',
@@ -41,7 +44,10 @@ export const monteCarloTutorial: Tutorial = {
       title: 'πを推定しよう',
       content:
         '点の数を増やして、πの推定値がどう変化するか確認しましょう。点が増えるほど3.14159...に近づいていきます。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'monte-carlo-interactive',
       interactive: true,
       nextCondition: 'click',
       stepType: 'interactive',
@@ -81,7 +87,10 @@ export const monteCarloTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'モンテカルロ法:\n\n• 乱数で数値計算を行う手法\n• 誤差は 1/√n で減少\n• 高次元問題に強い（次元の呪いに強い）\n• 金融・物理・AIまで幅広く応用\n\n「ランダムが秩序を生む」不思議なアプローチです。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'monte-carlo-summary',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',

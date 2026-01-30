@@ -12,6 +12,7 @@ export const hashFunctionTutorial: Tutorial = {
       content:
         'どんな長さのデータも固定長の「指紋」に変換する。\nそれがハッシュ関数です。\n\nファイルが改竄されていないか確認したり、\nパスワードを安全に保存したり。\n\nその数学的仕組みを見ていきましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'hash-function-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -22,6 +23,7 @@ export const hashFunctionTutorial: Tutorial = {
       content:
         '簡単なハッシュ関数を体験しましょう。\n\nH(x) = x² mod 17 として:\nH(3) = 9, H(5) = 8, H(7) = 15\n\n1文字変えるだけで全く違うハッシュ値に。\nこれが「雪崩効果（アバランシェ効果）」です。\n\n入力を変えてハッシュ値の変化を観察しましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'hash-function-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -82,6 +84,7 @@ export const hashFunctionTutorial: Tutorial = {
       content:
         'ハッシュ関数:\n\n• 任意長データを固定長に圧縮\n• 原像耐性・衝突耐性が重要\n• 誕生日パラドックスで衝突計算量は 2^{n/2}\n• SHA-256 等が広く使用\n• 代数的構造が設計と分析の基盤\n\nデジタル社会の信頼を支える技術です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'hash-function-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

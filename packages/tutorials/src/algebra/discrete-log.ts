@@ -12,6 +12,7 @@ export const discreteLogTutorial: Tutorial = {
       content:
         '3⁵ mod 7 = 5 は簡単に計算できます。\n\nでは逆に「3^x ≡ 5 (mod 7) となる x は？」\nこれは小さい数なら試せますが、巨大な数では事実上不可能です。\n\nこの「逆が難しい」性質が暗号の安全性を支えています。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'discrete-log-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -22,6 +23,7 @@ export const discreteLogTutorial: Tutorial = {
       content:
         'Z₁₃* で g = 2 のべき乗を計算しましょう:\n\n2¹=2, 2²=4, 2³=8, 2⁴=3, 2⁵=6, 2⁶=12, ...\n\nべき乗は簡単。でも「2^x ≡ 9 (mod 13)」の x を見つけるのは？\n\n総当たりで試してみましょう。数が大きくなると途方もなくなります。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'discrete-log-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -82,6 +84,7 @@ export const discreteLogTutorial: Tutorial = {
       content:
         '離散対数問題:\n\n• g^x = h となる x を求める問題\n• 順方向（べき乗）は高速、逆方向は困難\n• 現代暗号の安全性の基盤\n• 楕円曲線上のDLPがより効率的\n• 量子コンピュータで破られる可能性\n\n暗号理論の出発点となる重要な問題です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'discrete-log-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

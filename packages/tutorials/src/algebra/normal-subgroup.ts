@@ -12,6 +12,7 @@ export const normalSubgroupTutorial: Tutorial = {
       content:
         '整数を3で割ると、余りは0, 1, 2のいずれかです。\n\nこの「余りで分類する」操作を一般の群で行うには、特別な部分群が必要です。\n\nそれが「正規部分群」── 群を綺麗に分割できる部分群です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'normal-subgroup-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -22,6 +23,7 @@ export const normalSubgroupTutorial: Tutorial = {
       content:
         '部分群Hに対して、左剰余類 gH と右剰余類 Hg を作ってみましょう。\n\n正規部分群では、すべてのgについて gH = Hg が成り立ちます。\n\nスライダーで群の元を選び、左右の剰余類が一致するか確認しましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'normal-subgroup-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -82,6 +84,7 @@ export const normalSubgroupTutorial: Tutorial = {
       content:
         '正規部分群 N ◁ G は:\n\n• gNg⁻¹ = N を満たす部分群\n• 左右の剰余類が一致する\n• 準同型の核として自然に現れる\n• 商群 G/N を構成するために不可欠\n\n次は商群の構成を学びましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'normal-subgroup-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

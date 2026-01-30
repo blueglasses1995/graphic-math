@@ -1,3 +1,4 @@
+import { Vector3 } from '@learnmath/core';
 import { Tutorial } from '../types';
 
 export const iterativeSolverTutorial: Tutorial = {
@@ -17,7 +18,8 @@ export const iterativeSolverTutorial: Tutorial = {
         '反復法でO(kn)（k:反復回数）で近似解が得られます。\n\n' +
         '物理シミュレーション、有限要素法、画像処理など\n' +
         '大規模計算で反復法は不可欠です。',
-      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      sceneConfig: { showGrid: true, showAxes: true, vectors: [{ id: 'v1', vector: new Vector3(1, 0, 0), color: '#ff5722', label: 'e₁' }, { id: 'v2', vector: new Vector3(0, 1, 0), color: '#4caf50', label: 'e₂' }], cameraPosition: [0, 0, 5] },
+      customScene: 'iterative-solver-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -35,6 +37,7 @@ export const iterativeSolverTutorial: Tutorial = {
         'x₀=(0,0) → x₁=(2.5,2.33) → x₂=(1.33,1.50) → ...\n' +
         '→ 解 (1.6, 1.8) に収束',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'iterative-solver-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -125,6 +128,7 @@ export const iterativeSolverTutorial: Tutorial = {
         '5. 前処理が収束速度を大幅に改善\n\n' +
         '反復法は大規模科学計算の基盤技術です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 6] },
+      customScene: 'iterative-solver-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

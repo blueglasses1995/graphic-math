@@ -16,6 +16,7 @@ export const dotProductTutorial: Tutorial = {
         '1つの数値で教えてくれます。\n\n' +
         '正なら同じ方向、0なら直角、負なら反対方向。\n' +
         'シンプルなのに、驚くほど多くの場面で活躍する演算です。',
+      customScene: 'dot-product-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -49,6 +50,7 @@ export const dotProductTutorial: Tutorial = {
         '正の値なので、2つのベクトルは「おおむね同じ方向」です。\n\n' +
         '3次元でも同じ：\n' +
         'a · b = a₁b₁ + a₂b₂ + a₃b₃',
+      customScene: 'dot-product-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -204,6 +206,7 @@ export const dotProductTutorial: Tutorial = {
         '5. 射影の計算に使える\n' +
         '6. 1×n行列の線形変換と見なせる\n\n' +
         '次はクロス積を学びます。3D空間特有の美しい演算です。',
+      customScene: 'dot-product-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

@@ -1,3 +1,4 @@
+import { Vector3 } from '@learnmath/core';
 import { Tutorial } from '../types';
 
 export const normsDistancesTutorial: Tutorial = {
@@ -17,7 +18,8 @@ export const normsDistancesTutorial: Tutorial = {
         '機械学習では、どのノルムを使うかで\n' +
         'モデルの性質が大きく変わります。\n' +
         'それぞれの特徴を見ていきましょう。',
-      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      sceneConfig: { showGrid: true, showAxes: true, vectors: [{ id: 'v1', vector: new Vector3(1, 0, 0), color: '#ff5722', label: 'e₁' }, { id: 'v2', vector: new Vector3(0, 1, 0), color: '#4caf50', label: 'e₂' }], cameraPosition: [0, 0, 5] },
+      customScene: 'norms-distances-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -36,6 +38,7 @@ export const normsDistancesTutorial: Tutorial = {
         'L∞：正方形\n\n' +
         'ノルムによって「等距離の形」が変わるのです。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'norms-distances-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -127,6 +130,7 @@ export const normsDistancesTutorial: Tutorial = {
         '5. 行列にもフロベニウスノルム等が定義される\n\n' +
         'どのノルムを使うかが問題の性質を決めます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 6] },
+      customScene: 'norms-distances-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

@@ -11,6 +11,7 @@ export const quantumIntroTutorial: Tutorial = {
       title: 'なぜ量子力学に複素数？',
       content:
         '量子力学では、粒子の状態を「波動関数」ψ(x, t) で記述します。\n\nこの波動関数は複素数値です。実数ではダメなのです。\n\nシュレーディンガー方程式:\niℏ ∂ψ/∂t = Ĥψ\n\n左辺に i が現れます。量子力学の基本方程式に虚数単位が不可欠なのです。',
+      customScene: 'quantum-intro-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -107,6 +108,7 @@ export const quantumIntroTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '量子力学と複素数:\n\n・波動関数は本質的に複素数値\n・シュレーディンガー方程式に i が登場\n・|ψ|² が確率密度（実数の観測量）\n・位相が干渉パターンを決定\n・量子ビット = ℂ² の単位ベクトル\n\n複素数は量子力学の言語そのものです。',
+      customScene: 'quantum-intro-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

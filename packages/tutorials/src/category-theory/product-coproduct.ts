@@ -12,6 +12,7 @@ export const productCoproductTutorial: Tutorial = {
       stepType: 'animation',
       content: '2つの対象AとBから「積」A×Bと「余積」A+Bを構成できます。射影と入射の関係をアニメーションで見てみましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'product-coproduct-animation',
       interactive: false,
       nextCondition: 'click',
     },
@@ -21,6 +22,7 @@ export const productCoproductTutorial: Tutorial = {
       stepType: 'interactive',
       content: '対象Xから A と B への射 f, g が与えられたとき、X から A×B への一意な射⟨f,g⟩がどう定まるかを体験しましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'product-coproduct-interactive',
       interactive: true,
       nextCondition: 'interaction',
     },
@@ -76,6 +78,7 @@ export const productCoproductTutorial: Tutorial = {
       stepType: 'interactive',
       content: '積と余積は双対の概念です。積は射影により因子を取り出し、余積は入射により因子を埋め込みます。普遍性による特徴づけは、圏論の最も強力なツールの一つです。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'product-coproduct-summary',
       interactive: true,
       nextCondition: 'interaction',
     }

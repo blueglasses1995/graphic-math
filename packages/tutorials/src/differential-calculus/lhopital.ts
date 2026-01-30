@@ -11,6 +11,7 @@ export const lhopitalTutorial: Tutorial = {
       title: '0/0 を解決する',
       content:
         'lim(x→0) sin(x)/x は 0/0 の不定形。でも答えは 1 です。こういう不定形の極限を、分子・分母をそれぞれ微分するだけで求められる法則があります。',
+      customScene: 'lhopital-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const lhopitalTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'x を 0 に近づけて、f(x)/g(x) と f\'(x)/g\'(x) の値を比べてください。不定形に近づくほど、両者が一致することが見えます。',
+      customScene: 'lhopital-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const lhopitalTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'ロピタルの法則: 0/0 や ∞/∞ の極限は、分子・分母を各々微分して再度極限を取る。必要なら繰り返し適用できます。\n\n次は「微分方程式の入口」を覗いてみましょう。',
+      customScene: 'lhopital-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

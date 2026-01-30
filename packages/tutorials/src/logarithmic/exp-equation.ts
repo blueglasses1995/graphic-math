@@ -11,6 +11,7 @@ export const expEquationTutorial: Tutorial = {
       title: '指数の中の未知数',
       content:
         '2^x = 64 なら x = 6 と暗算できます。でも 3^x = 50 は？こんなとき対数が威力を発揮します。両辺に log をとれば x = log₃(50) ≈ 3.56。',
+      customScene: 'exp-equation-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const expEquationTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '底と目標値を変えて、対数で指数方程式を解く過程を体験してください。',
+      customScene: 'exp-equation-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const expEquationTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '指数方程式は両辺に対数をとって解きます。a^x = b → x = log_a(b) = ln(b)/ln(a)。\n\n自由に値を変えて指数方程式を解いてみてください。',
+      customScene: 'exp-equation-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

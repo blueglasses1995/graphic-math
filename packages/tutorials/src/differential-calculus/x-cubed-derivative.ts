@@ -11,6 +11,7 @@ export const xCubedDerivativeTutorial: Tutorial = {
       title: 'S字カーブの傾き',
       content:
         'y = x³ はS字型のグラフ。左でも右でも急に立ち上がりますが、原点付近では平らです。この傾きの変化をアニメーションで確認しましょう。',
+      customScene: 'x-cubed-derivative-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const xCubedDerivativeTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'x の位置を動かして接線の傾きを観察してください。x=1 で傾き 3、x=2 で傾き 12。傾きの変化が x² に比べて激しいことに注目です。',
+      customScene: 'x-cubed-derivative-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const xCubedDerivativeTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '(x³)\' = 3x²。一般に (xⁿ)\' = nxⁿ⁻¹（パワールール）。微分の最も基本的な公式です。\n\n次は、定数や直線の微分を確認して、基礎を固めましょう。',
+      customScene: 'x-cubed-derivative-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

@@ -11,6 +11,7 @@ export const improperIntegralTutorial: Tutorial = {
       title: '無限の面積？',
       content:
         '∫₁∞ 1/x² dx ── 区間が無限に広いのに面積は有限？\n\n∫₁∞ 1/x dx ── こちらは面積が無限大になる？\n\n無限区間や特異点を含む積分を「広義積分」と呼びます。\n\n有限に収まる場合と発散する場合の違いを見てみましょう。',
+      customScene: 'improper-integral-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const improperIntegralTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '区間の右端を大きくしていってください。\n\n1/x² の面積は上限があるように見えますが、1/x の面積はどんどん増えていきます。\n\nこの違いはどこから来るのでしょうか？',
+      customScene: 'improper-integral-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const improperIntegralTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '広義積分は極限を使って定義します。\n\n∫₁∞ 1/xᵖ dx は p > 1 で収束、p ≤ 1 で発散。\n\n関数が 0 に近づく速さが鍵です。\n\n区間を広げて、収束と発散の違いを体感してみてください。',
+      customScene: 'improper-integral-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

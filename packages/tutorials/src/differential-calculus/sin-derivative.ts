@@ -11,6 +11,7 @@ export const sinDerivativeTutorial: Tutorial = {
       title: 'sin の波の傾き',
       content:
         'sin(x) の波を思い浮かべてください。山のてっぺんでは傾きゼロ、右下がりの途中で傾きは負。この傾きを追いかけると…見覚えのある波が現れます。',
+      customScene: 'sin-derivative-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const sinDerivativeTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'x を動かして sin(x) の接線の傾きを観察してください。傾きの値をプロットすると、cos のグラフが浮かび上がります。',
+      customScene: 'sin-derivative-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const sinDerivativeTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '(sin x)\' = cos x。sin の傾きは cos。微分すると波が π/2 だけ位相がずれます。\n\n次は cos の微分を見ましょう。sin → cos → ? と続くパターンがあります。',
+      customScene: 'sin-derivative-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

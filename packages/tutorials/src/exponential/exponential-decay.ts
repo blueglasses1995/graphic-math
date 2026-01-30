@@ -11,6 +11,7 @@ export const exponentialDecayTutorial: Tutorial = {
       title: '消えゆくもの',
       content:
         'コーヒーが冷める。薬が体から消える。放射性物質が崩壊する。これらに共通するのは「残っている量に比例して減る」こと。指数的減衰のアニメーションを見てみましょう。',
+      customScene: "exponential-decay-animation",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const exponentialDecayTutorial: Tutorial = {
       title: '減衰率を変えてみよう',
       content:
         '減衰率を変えて、N(t) = N₀·e⁻ᵏᵗ のグラフがどう変わるか観察しましょう。kが大きいほど速く減衰します。',
+      customScene: "exponential-decay-interactive",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +107,7 @@ export const exponentialDecayTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '指数的減衰：\n• N(t) = N₀·e⁻ᵏᵗ\n• 残量に比例して減少する\n• 理論上は0にならない\n• 成長モデルの鏡像\n• e⁻¹ ≈ 0.37（約37%が残る）\n\n次は減衰の重要な概念「半減期」を学びます。',
+      customScene: "exponential-decay-summary",
       sceneConfig: {
         showGrid: true,
         showAxes: true,

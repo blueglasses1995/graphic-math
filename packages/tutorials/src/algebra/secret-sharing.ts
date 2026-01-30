@@ -12,6 +12,7 @@ export const secretSharingTutorial: Tutorial = {
       content:
         '核ミサイルの発射には複数の鍵が必要です。\n1人では発射できず、全員揃わなくても一定数以上なら発射可能。\n\nこれを数学的に実現するのが「秘密分散」です。\n\n(k, n) 閾値法: n人に分散し、k人以上で復元可能。\nk-1人以下では情報が一切漏れない。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'secret-sharing-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -22,6 +23,7 @@ export const secretSharingTutorial: Tutorial = {
       content:
         '秘密 s = 42 を (3, 5) 閾値法で分散しましょう。\n\nランダムな2次多項式: f(x) = 42 + 3x + 7x² (mod p)\n\nシェア: f(1), f(2), f(3), f(4), f(5)\n\n任意の3つのシェアからラグランジュ補間で s = f(0) を復元。\n2つ以下では情報ゼロ。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'secret-sharing-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -82,6 +84,7 @@ export const secretSharingTutorial: Tutorial = {
       content:
         '秘密分散:\n\n• (k, n) 閾値法: k人以上で復元、k-1人以下で情報ゼロ\n• シャミアの方法: 多項式補間を利用\n• 有限体上のラグランジュ補間が数学的基盤\n• 情報理論的に安全\n• MPC等の先端技術の基礎\n\n代数学がセキュリティを支える好例です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'secret-sharing-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

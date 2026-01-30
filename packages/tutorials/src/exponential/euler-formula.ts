@@ -11,6 +11,7 @@ export const eulerFormulaTutorial: Tutorial = {
       title: '数学で最も美しい式',
       content:
         'eⁱπ + 1 = 0。この5つの数（e, i, π, 1, 0）は数学で最も重要な定数です。それらが1つの等式で結ばれる。「オイラーの等式」と呼ばれるこの奇跡をアニメーションで体感しましょう。',
+      customScene: "euler-formula-animation",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const eulerFormulaTutorial: Tutorial = {
       title: '複素平面でeⁱθを動かそう',
       content:
         'θを変えると eⁱθ が複素平面上の単位円を動きます。θ=0で1、θ=π/2でi、θ=πで-1、θ=3π/2で-i。角度とeの指数が円運動を作る不思議を体験してください。',
+      customScene: "euler-formula-interactive",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +107,7 @@ export const eulerFormulaTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'ネイピア数の仲間たち：\n• オイラーの公式：eⁱθ = cosθ + i·sinθ\n• オイラーの等式：eⁱπ + 1 = 0\n• e, π, i, 0, 1 の5大定数が一つに\n• 指数関数と三角関数が深く結びつく\n\n数学の美しさが凝縮された公式です。',
+      customScene: "euler-formula-summary",
       sceneConfig: {
         showGrid: true,
         showAxes: true,

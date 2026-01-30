@@ -11,6 +11,7 @@ export const concavityTutorial: Tutorial = {
       title: '曲がり方の向き',
       content:
         'グラフには「下に凸（お椀型）」と「上に凸（山型）」の2種類の曲がり方があります。その切り替わり点が「変曲点」。二次導関数 f\'\'(x) がこれを教えてくれます。',
+      customScene: 'concavity-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const concavityTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'x を動かして、接線の傾きが増えている区間と減っている区間を観察してください。傾きが増加中＝下に凸、傾きが減少中＝上に凸です。',
+      customScene: 'concavity-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const concavityTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'f\'\'> 0 → 下に凸、f\'\' < 0 → 上に凸。f\'\'=0 で凹凸が切り替わる点が変曲点。増減表に凹凸情報を加えれば、グラフの概形を完全に描けます。\n\n次は「近似の力」。微分を使った一次近似を学びましょう。',
+      customScene: 'concavity-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

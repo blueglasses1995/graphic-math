@@ -12,6 +12,7 @@ export const setCategoryTutorial: Tutorial = {
       stepType: 'animation',
       content: '集合を対象、写像を射とする圏Setは、圏論の原型です。始対象（空集合）、終対象（一点集合）、積（直積）、余積（非交和）がすべて揃う豊かな圏をアニメーションで探検しましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'set-category-animation',
       interactive: false,
       nextCondition: 'click',
     },
@@ -21,6 +22,7 @@ export const setCategoryTutorial: Tutorial = {
       stepType: 'interactive',
       content: '集合の直積、非交和、べき集合を視覚的に構成してみましょう。積の射影や余積の入射がどう機能するかを確認できます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'set-category-interactive',
       interactive: true,
       nextCondition: 'interaction',
     },
@@ -76,6 +78,7 @@ export const setCategoryTutorial: Tutorial = {
       stepType: 'interactive',
       content: '集合の圏Setは圏論の出発点であり、多くの概念の「具体例」を提供します。Setの性質を一般化することで、トポスやアーベル圏など豊かな圏論的構造が生まれます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'set-category-summary',
       interactive: true,
       nextCondition: 'interaction',
     }

@@ -12,6 +12,7 @@ export const complexMultiplicationTutorial: Tutorial = {
       title: '掛け算の計算',
       content:
         '複素数の掛け算は、分配法則で展開します。\n\n(a + bi)(c + di) = ac + adi + bci + bdi²\n= ac + adi + bci + bd(-1)\n= (ac - bd) + (ad + bc)i\n\n例: (2 + 3i)(1 + i) = (2-3) + (2+3)i = -1 + 5i',
+      customScene: 'complex-multiplication-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -64,6 +65,7 @@ export const complexMultiplicationTutorial: Tutorial = {
       title: '掛け算を体験',
       content:
         '複素数を掛けたとき、ベクトルがどう回転・拡大するか観察してみましょう。\n\n点をドラッグして、掛け算の幾何学的効果を確認してください。',
+      customScene: 'complex-multiplication-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -118,6 +120,7 @@ export const complexMultiplicationTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '複素数の掛け算:\n\n・(a+bi)(c+di) = (ac-bd) + (ad+bc)i\n・幾何学的意味: 回転 + 拡大\n・iを掛ける = 90°回転\n・絶対値は積、偏角は和になる\n\n次は共役複素数を学びましょう。',
+      customScene: 'complex-multiplication-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

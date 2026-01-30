@@ -12,6 +12,7 @@ export const quotientGroupTutorial: Tutorial = {
       content:
         '12時間時計の「3の倍数」をひとまとめにすると、\n{0,3,6,9}, {1,4,7,10}, {2,5,8,11} の3つのグループができます。\n\nこの3つのグループ自体が新しい群を作ります。\nこれが「商群」の直感的なイメージです。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'quotient-group-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -22,6 +23,7 @@ export const quotientGroupTutorial: Tutorial = {
       content:
         '商群 Z₆/{0,3} の元は剰余類 {0,3}, {1,4}, {2,5} です。\n\n剰余類同士の「足し算」を試してみましょう:\n{1,4} + {2,5} = {0,3}\n\nどの代表元を選んでも結果は同じになることを確認してください。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'quotient-group-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -82,6 +84,7 @@ export const quotientGroupTutorial: Tutorial = {
       content:
         '商群 G/N は:\n\n• 正規部分群Nで「割った」新しい群\n• 元は剰余類 gN の集合\n• 第一同型定理: G/ker(φ) ≅ Im(φ)\n• 群の構造を簡約化する強力な道具\n\n商群は群論のあらゆる場面で活躍します。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'quotient-group-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

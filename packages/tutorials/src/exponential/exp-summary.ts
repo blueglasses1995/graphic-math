@@ -11,6 +11,7 @@ export const expSummaryTutorial: Tutorial = {
       title: '指数関数の全体像',
       content:
         'ここまで学んだ指数関数の世界を一望しましょう。基本法則から応用まで、すべてが「一定割合で変化する」という1つのアイデアから生まれています。全体像をアニメーションで振り返りましょう。',
+      customScene: "exp-summary-animation",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const expSummaryTutorial: Tutorial = {
       title: '知識マップを探索しよう',
       content:
         '各トピックのつながりを確認しましょう。指数法則→グラフ→ネイピア数→成長と減衰→応用。どのトピックも互いに関連しています。',
+      customScene: "exp-summary-interactive",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +107,7 @@ export const expSummaryTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '指数関数の全体まとめ：\n• 核心：一定割合での変化\n• 基本：aⁿ と指数法則\n• 特別な底：e ≈ 2.718（微分不変）\n• 成長と減衰のモデル\n• オイラーの公式で三角関数と統一\n• 逆関数は対数関数\n\n実践チュートリアルで応用力を高めましょう！',
+      customScene: "exp-summary-summary",
       sceneConfig: {
         showGrid: true,
         showAxes: true,

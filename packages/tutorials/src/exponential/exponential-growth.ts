@@ -11,6 +11,7 @@ export const exponentialGrowthTutorial: Tutorial = {
       title: '爆発的に増える世界',
       content:
         '池の蓮の葉が毎日2倍に増えます。30日目に池全体を覆うとすると、半分を覆うのは何日目？答えは29日目。最後の1日で一気に倍増する。この「気づいたときには手遅れ」の感覚をアニメーションで体験しましょう。',
+      customScene: "exponential-growth-animation",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const exponentialGrowthTutorial: Tutorial = {
       title: '成長率を変えてみよう',
       content:
         '成長率rと初期値N₀を変えて、N(t) = N₀·eʳᵗ のグラフがどう変わるか観察しましょう。rが少し変わるだけで長期的な結果は大きく異なります。',
+      customScene: "exponential-growth-interactive",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +107,7 @@ export const exponentialGrowthTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '指数的成長：\n• N(t) = N₀·eʳᵗ（一定割合での成長）\n• 量が多いほど増加量も多い\n• 線形成長をいずれ追い抜く\n• 現実には永遠に続かない\n• 72の法則で倍増時間を概算できる\n\n次は逆の現象、指数的減衰を見ていきます。',
+      customScene: "exponential-growth-summary",
       sceneConfig: {
         showGrid: true,
         showAxes: true,

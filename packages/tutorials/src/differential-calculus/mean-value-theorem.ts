@@ -11,6 +11,7 @@ export const meanValueTheoremTutorial: Tutorial = {
       title: '必ずどこかで平均と一致する',
       content:
         '東京から大阪まで平均時速100kmで走ったら、途中のどこかで「ちょうど時速100km」の瞬間が必ずあります。これが平均値の定理の直感的な意味です。',
+      customScene: 'mean-value-theorem-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const meanValueTheoremTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '区間 [a,b] の端点を動かして、割線と平行な接線がどこに現れるか探してみてください。必ず少なくとも1つ見つかります。',
+      customScene: 'mean-value-theorem-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const meanValueTheoremTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '平均値の定理：滑らかな曲線では、平均変化率と等しい瞬間変化率を持つ点が必ず存在する。微分学の多くの定理の土台になる重要定理です。\n\n次は基礎編のまとめです。',
+      customScene: 'mean-value-theorem-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

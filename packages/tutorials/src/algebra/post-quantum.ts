@@ -12,6 +12,7 @@ export const postQuantumTutorial: Tutorial = {
       content:
         '量子コンピュータが実用化されると、\nRSA、楕円曲線暗号、DH鍵交換が全て破られます。\n\n今日暗号化されたデータも、将来復号されるかもしれない\n（「収穫して後で復号」攻撃）。\n\nポスト量子暗号は、量子コンピュータでも安全な暗号方式です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'post-quantum-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -22,6 +23,7 @@ export const postQuantumTutorial: Tutorial = {
       content:
         'ポスト量子暗号の主流は格子暗号です。\n\n2次元格子で最短ベクトルを見つけるのは簡単ですが、\n数百次元になると量子コンピュータでも困難です。\n\n格子の基底を変えて、最短ベクトルの見つけにくさを体感しましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'post-quantum-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -82,6 +84,7 @@ export const postQuantumTutorial: Tutorial = {
       content:
         'ポスト量子暗号:\n\n• 量子コンピュータにも耐える暗号方式\n• 格子・ハッシュ・符号ベースが主流\n• NIST標準化が2024年に完了\n• 環論・格子理論・符号理論が数学的基盤\n• 移行はすでに始まっている\n\n代数学の新しい応用が暗号の未来を切り開きます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'post-quantum-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

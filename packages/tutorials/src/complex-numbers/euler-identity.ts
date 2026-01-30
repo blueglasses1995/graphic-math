@@ -11,6 +11,7 @@ export const eulerIdentityTutorial: Tutorial = {
       title: '5つの定数',
       content:
         '数学の5大定数:\n\ne（自然対数の底）≈ 2.718\ni（虚数単位）\nπ（円周率）≈ 3.14159\n1（乗法の単位元）\n0（加法の単位元）\n\nこの5つがたった1つの等式に集約されます。',
+      customScene: 'euler-identity-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -107,6 +108,7 @@ export const eulerIdentityTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'オイラーの等式:\n\n・e^(iπ) + 1 = 0\n・5大定数（e, i, π, 1, 0）を結ぶ\n・幾何学的には半周の回転\n・三角関数を指数関数で表せる\n\n次は複素指数関数をもう少し深く学びましょう。',
+      customScene: 'euler-identity-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

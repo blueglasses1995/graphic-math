@@ -11,6 +11,7 @@ export const ftcTutorial: Tutorial = {
       title: '微分と積分はつながっている',
       content:
         '微分は「傾き」を求める操作。積分は「面積」を求める操作。\n\nまったく違うように見えますが、実は逆の関係にあります。\n\nこの驚くべきつながりが「微積分学の基本定理 (FTC)」です。\n\nアニメーションで2つの操作が打ち消し合う様子を見てみましょう。',
+      customScene: 'ftc-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const ftcTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'f(x) のグラフと、その面積関数 F(x) = ∫₀ˣ f(t) dt のグラフが表示されています。\n\nx を動かすと、f(x) の面積が F(x) の値として反映されます。\n\nF(x) の傾きに注目してみてください。何に等しいですか？',
+      customScene: 'ftc-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const ftcTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '微積分学の基本定理：微分と積分は互いに逆の操作です。\n\n第1部：(d/dx) ∫ₐˣ f(t) dt = f(x)\n第2部：∫ₐᵇ f(x) dx = G(b) - G(a)　（G\' = f）\n\nこの定理のおかげで、面積を求めるのに原始関数を探すだけでよくなります。\n\nグラフを操作して、微分と積分の関係を体感してみてください。',
+      customScene: 'ftc-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

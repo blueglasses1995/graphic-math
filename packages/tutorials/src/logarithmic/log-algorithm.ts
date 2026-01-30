@@ -11,6 +11,7 @@ export const logAlgorithmTutorial: Tutorial = {
       title: '100万件を20回で見つける',
       content:
         '100万件のソート済みデータから1つの値を探す。二分探索なら最大 log₂(1000000) ≈ 20回の比較で見つかります。100万が20に圧縮される対数の力です。',
+      customScene: 'log-algorithm-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const logAlgorithmTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '二分探索を体験してください。毎回候補が半分になる様子を観察しましょう。何回で見つかるか予測してみてください。',
+      customScene: 'log-algorithm-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const logAlgorithmTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '「毎回半分に分ける」操作の回数が log₂(n)。二分探索、マージソート、木構造など、効率的なアルゴリズムの核心に対数があります。\n\nデータ数を変えて比較回数の変化を確認してください。',
+      customScene: 'log-algorithm-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

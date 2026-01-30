@@ -12,6 +12,7 @@ export const complexPlaneTutorial: Tutorial = {
       title: '数を平面に置く',
       content:
         '実数は数直線（1次元）上の点でした。\n\n複素数は a + bi の2つの成分を持つので、2次元の平面上の点として表せます。\n\nこの平面を「複素平面」または「ガウス平面」と呼びます。\n\n横軸が実部、縦軸が虚部です。',
+      customScene: 'complex-plane-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -69,6 +70,7 @@ export const complexPlaneTutorial: Tutorial = {
       title: '複素平面を触ってみよう',
       content:
         '平面上の点をドラッグして、実部と虚部がどう変わるか観察してみてください。\n\n横に動かすと実部が変わり、縦に動かすと虚部が変わります。',
+      customScene: 'complex-plane-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -131,6 +133,7 @@ export const complexPlaneTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '複素平面のポイント:\n\n・横軸 = 実軸、縦軸 = 虚軸\n・z = a + bi は点 (a, b) に対応\n・実数は実軸上の点、純虚数は虚軸上の点\n・複素数はベクトルのように足せるが、さらに掛け算もできる\n\n次は複素数の足し算を学びましょう。',
+      customScene: 'complex-plane-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

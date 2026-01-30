@@ -11,7 +11,10 @@ export const gamblersFallacyTutorial: Tutorial = {
       title: '10回連続裏、次は表？',
       content:
         'コインを投げて10回連続で裏が出ました。「そろそろ表が出るはず」と思いませんか？しかしコインに記憶はありません。次も表の確率は変わらず1/2です。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'gamblers-fallacy-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',
@@ -41,7 +44,10 @@ export const gamblersFallacyTutorial: Tutorial = {
       title: 'コイン投げシミュレーション',
       content:
         '連続で裏が出た後、次の結果を大量にシミュレーションしてみましょう。表が出やすくなっていないことを確認できます。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'gamblers-fallacy-interactive',
       interactive: true,
       nextCondition: 'click',
       stepType: 'interactive',
@@ -81,7 +87,10 @@ export const gamblersFallacyTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'ギャンブラーの誤謬:\n\n• 独立な試行では過去の結果は無関係\n• 大数の法則は「修正」ではなく「希釈」\n• 人間の脳はパターンを求めてしまう\n• 確率的思考で直感を超えることが大切\n\n「コインに記憶はない」を肝に銘じましょう。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'gamblers-fallacy-summary',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',

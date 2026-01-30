@@ -11,6 +11,7 @@ export const arcLengthTutorial: Tutorial = {
       title: '曲線の長さを測る',
       content:
         '直線の長さは簡単に測れます。でも曲線の長さは？\n\n曲線を短い線分で近似して、それらを足し合わせます。\n\n線分を無限に細かくした極限が「弧長」です。\n\nこれもまた積分で表現できます。',
+      customScene: 'arc-length-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const arcLengthTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '曲線を折れ線で近似しています。\n\n分割数を増やすと、折れ線が曲線に近づいていきます。\n\n折れ線の長さの合計が弧長に収束していきます。',
+      customScene: 'arc-length-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const arcLengthTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '弧長 L = ∫ₐᵇ √(1 + [f\'(x)]²) dx\n\n微小なピタゴラスの定理を積み上げるイメージです。\n\n分割数を変えて、折れ線近似が弧長に収束する様子を確かめてみてください。',
+      customScene: 'arc-length-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

@@ -1,3 +1,4 @@
+import { Vector3 } from '@learnmath/core';
 import { Tutorial } from '../types';
 
 export const word2vecIntroTutorial: Tutorial = {
@@ -17,7 +18,8 @@ export const word2vecIntroTutorial: Tutorial = {
         '意味の近い単語が近くに配置されるようにします。\n\n' +
         'これは自然言語処理の革命的手法であり、\n' +
         '線形代数が言語理解の基盤を提供しています。',
-      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      sceneConfig: { showGrid: true, showAxes: true, vectors: [{ id: 'v1', vector: new Vector3(1, 0, 0), color: '#ff5722', label: 'e₁' }, { id: 'v2', vector: new Vector3(0, 1, 0), color: '#4caf50', label: 'e₂' }], cameraPosition: [0, 0, 5] },
+      customScene: 'word2vec-intro-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -36,6 +38,7 @@ export const word2vecIntroTutorial: Tutorial = {
         '遠い単語（cosine similarity ≈ 0）：\n' +
         '「犬」と「数学」→ 0.05',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'word2vec-intro-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -125,6 +128,7 @@ export const word2vecIntroTutorial: Tutorial = {
         '5. GloVeは共起行列の分解として理解できる\n\n' +
         '自然言語の意味をベクトル空間で表現する革命的手法です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 6] },
+      customScene: 'word2vec-intro-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

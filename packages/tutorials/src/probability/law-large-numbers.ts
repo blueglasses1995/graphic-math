@@ -11,7 +11,10 @@ export const lawLargeNumbersTutorial: Tutorial = {
       title: '繰り返せば確実になる',
       content:
         'コインを10回投げて表7回出ても驚きませんが、10000回投げて7000回表なら何かおかしい。回数が増えるほど結果の割合は真の確率に近づきます。これが大数の法則です。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'law-large-numbers-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',
@@ -41,7 +44,10 @@ export const lawLargeNumbersTutorial: Tutorial = {
       title: 'コイン投げシミュレーション',
       content:
         'コインを何回も投げて、表の割合がどう変化するか見ましょう。最初は大きく振れますが、次第に0.5に収束していきます。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'law-large-numbers-interactive',
       interactive: true,
       nextCondition: 'click',
       stepType: 'interactive',
@@ -81,7 +87,10 @@ export const lawLargeNumbersTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '大数の法則:\n\n• n→∞ で標本平均 → 期待値\n• 保険・カジノ・統計の理論的基盤\n• 個々の結果は予測不能（ギャンブラーの誤謬に注意）\n• 「長い目で見れば」が数学的に保証される\n\n確率と現実を結ぶ最も基本的な定理です。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'law-large-numbers-summary',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',

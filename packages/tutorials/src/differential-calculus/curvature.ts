@@ -11,6 +11,7 @@ export const curvatureTutorial: Tutorial = {
       title: '曲がり具合を測る',
       content:
         '直線は曲がっていない（曲率0）。小さな円ほど急に曲がっている（曲率が大きい）。曲線の各点で「どれだけ曲がっているか」を数値にしたものが曲率です。',
+      customScene: 'curvature-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const curvatureTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '曲線上の点を動かして、その点にフィットする円（曲率円）の大きさを観察してください。曲がりが急な場所ほど円が小さくなります。',
+      customScene: 'curvature-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const curvatureTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '曲率 κ = |f\'\'|/(1+f\'²)^(3/2)。曲線の曲がり具合を数値化する。曲率半径 R = 1/κ。微分を2回使って「形の情報」を引き出す応用です。\n\n次は「偏微分」。複数変数の関数を微分します。',
+      customScene: 'curvature-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

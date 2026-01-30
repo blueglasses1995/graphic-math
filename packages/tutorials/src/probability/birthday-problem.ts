@@ -11,7 +11,10 @@ export const birthdayProblemTutorial: Tutorial = {
       title: '23人で50%超え',
       content:
         '23人のクラスで、同じ誕生日の人が少なくとも1組いる確率は？直感的には低そうですが、実は50%を超えます。これが有名な誕生日問題です。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'birthday-problem-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',
@@ -41,7 +44,10 @@ export const birthdayProblemTutorial: Tutorial = {
       title: '人数を変えてみよう',
       content:
         '人数を変えて、同じ誕生日がある確率がどう変化するか確認しましょう。グラフの急激な立ち上がりに注目してください。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'birthday-problem-interactive',
       interactive: true,
       nextCondition: 'click',
       stepType: 'interactive',
@@ -81,7 +87,10 @@ export const birthdayProblemTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '誕生日問題の教訓:\n\n• 23人で同じ誕生日の確率は約50%\n• ペアの数 = nC2 が急増するのが原因\n• 余事象で計算するのがコツ\n• ハッシュ衝突など情報セキュリティに応用\n\n「組合せ爆発」の直感的でない威力を示す好例です。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'birthday-problem-summary',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',

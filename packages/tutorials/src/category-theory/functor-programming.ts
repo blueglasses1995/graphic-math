@@ -12,6 +12,7 @@ export const functorProgrammingTutorial: Tutorial = {
       stepType: 'animation',
       content: 'Array.map, Optional.map, Promise.then——これらは皆「関手」です。コンテナの中身に関数を適用するパターンを関手として統一するアニメーションを見ましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'functor-programming-animation',
       interactive: false,
       nextCondition: 'click',
     },
@@ -21,6 +22,7 @@ export const functorProgrammingTutorial: Tutorial = {
       stepType: 'interactive',
       content: '様々なFunctor（List, Maybe, Tree）に対してfmapを適用し、中身に関数が適用される様子を視覚的に体験しましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'functor-programming-interactive',
       interactive: true,
       nextCondition: 'interaction',
     },
@@ -76,6 +78,7 @@ export const functorProgrammingTutorial: Tutorial = {
       stepType: 'interactive',
       content: '関手はプログラミングの「構造を保つ変換」パターンを抽象化します。map/fmapの統一的理解により、新しいデータ構造に対しても自然にFunctorインスタンスを実装できます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'functor-programming-summary',
       interactive: true,
       nextCondition: 'interaction',
     }

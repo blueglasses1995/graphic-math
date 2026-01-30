@@ -12,6 +12,7 @@ export const algebraCryptoOverviewTutorial: Tutorial = {
       content:
         'ガロアが方程式の対称性を群で捉えてから約200年。\n\n群・環・体の理論は、予想もしなかった場所で花開きました。\n\nインターネット通信、暗号通貨、プライバシー保護、量子安全性。\n\n代数学と暗号の関係の全体像を俯瞰しましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'algebra-crypto-overview-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -22,6 +23,7 @@ export const algebraCryptoOverviewTutorial: Tutorial = {
       content:
         '代数構造から暗号への対応を探索しましょう:\n\n群 → DH鍵交換、ElGamal暗号、デジタル署名\n環 → 格子暗号、AES、多項式暗号\n体 → RSA(Z/nZ)、楕円曲線暗号、秘密分散\n\n各構造がどの暗号を支えているか確認してみましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'algebra-crypto-overview-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -82,6 +84,7 @@ export const algebraCryptoOverviewTutorial: Tutorial = {
       content:
         '代数学と暗号理論の全体像:\n\n• 群論: 離散対数問題 → DH, ECC\n• 環論: 多項式環 → 格子暗号, AES\n• 体論: 有限体 → RSA, 秘密分散\n• ガロア理論 → 方程式の可解性\n• ポスト量子暗号 → 未来の安全性\n\n純粋数学と応用の美しい融合。\n代数学の旅はまだまだ続きます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'algebra-crypto-overview-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

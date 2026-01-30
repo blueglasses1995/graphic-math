@@ -12,6 +12,7 @@ export const directProductTutorial: Tutorial = {
       content:
         '時計の短針と長針を考えてみましょう。\n\n短針は12通り、長針は60通りの位置を取ります。\n両方を組み合わせると 12 × 60 = 720 通り。\n\nこのように2つの群を「組み合わせる」操作が直積です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'direct-product-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -22,6 +23,7 @@ export const directProductTutorial: Tutorial = {
       content:
         'Z₂ × Z₃ の元は (0,0), (0,1), (0,2), (1,0), (1,1), (1,2) の6個です。\n\n演算は成分ごと: (a,b) + (c,d) = (a+c mod 2, b+d mod 2)。\n\n要素を選んで足し算の結果を確かめてみましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'direct-product-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -82,6 +84,7 @@ export const directProductTutorial: Tutorial = {
       content:
         '直積 G₁ × G₂ は:\n\n• 成分ごとの演算で新しい群を構成\n• |G₁ × G₂| = |G₁| · |G₂|\n• 中国剰余定理と深く関連\n• 有限アーベル群は巡回群の直積に分解可能\n\n群の構造を理解する上で不可欠な構成法です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'direct-product-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

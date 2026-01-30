@@ -15,6 +15,7 @@ export const shearTransformTutorial: Tutorial = {
         'これが「せん断（シアー）変形」です。\n\n' +
         '面積は変わらない（det = 1）のに、形は大きく変わる。\n' +
         '回転でも拡大でもない、第3の基本変換です。',
+      customScene: 'shear-transform-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -50,6 +51,7 @@ export const shearTransformTutorial: Tutorial = {
         'det(S) = 1×1 - k×0 = 1\n\n' +
         '面積は保存されるが、正方形が平行四辺形に変形します。' +
         'kの値が大きいほど、傾きが大きくなります。',
+      customScene: 'shear-transform-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -210,6 +212,7 @@ export const shearTransformTutorial: Tutorial = {
         '5. イタリック体や斜投影で実用される\n' +
         '6. 対角化不可能（ジョルダン標準形）\n\n' +
         '次は画像変換を学びます。',
+      customScene: 'shear-transform-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

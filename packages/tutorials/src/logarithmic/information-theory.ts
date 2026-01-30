@@ -11,6 +11,7 @@ export const informationTheoryTutorial: Tutorial = {
       title: '情報量 = 驚きの大きさ',
       content:
         '確率 1/2 の事象が起きた → 情報量 log₂(2) = 1ビット。確率 1/1000 の事象 → log₂(1000) ≈ 10ビット。珍しいことほど情報量が大きい。',
+      customScene: 'information-theory-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const informationTheoryTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '確率を変えて情報量がどう変わるか観察してください。確率が低いほど情報量は大きくなります。',
+      customScene: 'information-theory-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const informationTheoryTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '情報量 = -log₂(確率)。対数により、独立な事象の情報量が足し算になり、データ圧縮の限界や通信路容量が定量化できます。\n\n確率分布を変えてエントロピーの変化を確認してください。',
+      customScene: 'information-theory-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

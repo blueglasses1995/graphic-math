@@ -11,6 +11,7 @@ export const extremaTutorial: Tutorial = {
       title: '山と谷を見つける',
       content:
         'グラフの山のてっぺん（極大）と谷の底（極小）では、接線が水平になります。つまり f\'(x) = 0。導関数がゼロになる点を探せば、山と谷が見つかるのです。',
+      customScene: 'extrema-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const extremaTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'x を動かして f\'(x) の符号を確認してください。f\'>0 で増加（右上がり）、f\'<0 で減少（右下がり）、f\'=0 で極値の候補です。',
+      customScene: 'extrema-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const extremaTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'f\'(x)=0 の点が極値の候補。f\' の符号変化で極大・極小を判定します。増減表はグラフ描画の最強ツールです。\n\n次は「凹凸と変曲点」を学んで、グラフの形をさらに詳しく分析しましょう。',
+      customScene: 'extrema-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

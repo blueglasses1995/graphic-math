@@ -11,6 +11,7 @@ export const quotientRuleTutorial: Tutorial = {
       title: '割り算の微分',
       content:
         'f(x)/g(x) を微分するには？積の微分と似ていますが、少し複雑です。分母の二乗が登場するのがポイント。アニメーションで見てみましょう。',
+      customScene: 'quotient-rule-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const quotientRuleTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'f(x) と g(x) を変えて、商 f/g のグラフと導関数を観察してください。分母がゼロに近づくとどうなるかにも注目です。',
+      customScene: 'quotient-rule-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const quotientRuleTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '(f/g)\' = (f\'g − fg\')/g²。商の微分は積の微分の兄弟です。覚えにくければ、f·g⁻¹ に変換して積の微分と連鎖律で対処できます。\n\n次は微分の応用、「増減と極値」に進みましょう。',
+      customScene: 'quotient-rule-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

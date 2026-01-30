@@ -11,6 +11,7 @@ export const logLogTutorial: Tutorial = {
       title: 'べき乗が直線になる',
       content:
         'y = x² を両対数グラフ（x軸もy軸も対数スケール）にプロットすると傾き2の直線に。y = x³ なら傾き3。べき乗の指数が直線の傾きになります。',
+      customScene: 'log-log-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const logLogTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'べき乗の指数を変えて、両対数グラフ上での傾きがどう変わるか観察してください。',
+      customScene: 'log-log-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const logLogTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '両対数グラフでは y = x^n が傾き n の直線になります。べき乗の指数を傾きから読み取れる強力なツールです。\n\n指数を変えて傾きの変化を確認してみてください。',
+      customScene: 'log-log-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

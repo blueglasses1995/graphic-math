@@ -11,6 +11,7 @@ export const xSquaredNegativeTutorial: Tutorial = {
       title: '解けない方程式',
       content:
         'x² = 1 の解は x = 1 と x = -1 です。\n\nでは x² = -1 の解は？\n\n正の数を2乗しても正、負の数を2乗しても正。実数の範囲では、2乗して負になる数は存在しません。\n\nこの「不可能」を突破するために、数学者たちは新しい数を発明しました。',
+      customScene: 'x-squared-negative-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +106,7 @@ export const xSquaredNegativeTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'x² = -1 は実数では解けません。\n\nしかし i² = -1 となる数 i を導入すると、解が x = ±i と書けます。\n\nこの i を「虚数単位」と呼びます。\n\n次のチュートリアルでは、この i の性質をもっと詳しく見ていきましょう。',
+      customScene: 'x-squared-negative-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

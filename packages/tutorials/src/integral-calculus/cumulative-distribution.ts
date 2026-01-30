@@ -11,6 +11,7 @@ export const cumulativeDistributionTutorial: Tutorial = {
       title: '確率を「面積」で見る',
       content:
         '確率密度関数 (PDF) のグラフの下の面積が「確率」を表します。\n\n左端から x まで面積を積み上げたものが累積分布関数 (CDF) です。\n\nCDF は「x 以下になる確率」を表します。\n\nアニメーションで PDF から CDF が生まれる様子を見てみましょう。',
+      customScene: 'cumulative-distribution-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const cumulativeDistributionTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'x の位置を動かしてみてください。\n\nPDF の色付き領域（面積）と CDF の値が連動していることが分かります。\n\nCDF は常に 0 から 1 に向かって増加します。',
+      customScene: 'cumulative-distribution-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const cumulativeDistributionTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'CDF = PDF の積分：F(x) = ∫₋∞ˣ f(t) dt\nPDF = CDF の微分：f(x) = F\'(x)\n\n確率は「面積」、累積確率は「積み上げた面積」です。\n\nスライダーを動かして PDF と CDF の関係を確かめてみてください。',
+      customScene: 'cumulative-distribution-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

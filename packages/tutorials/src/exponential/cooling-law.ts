@@ -11,6 +11,7 @@ export const coolingLawTutorial: Tutorial = {
       title: 'コーヒーはなぜゆっくり冷める？',
       content:
         '熱いコーヒー（90℃）は最初は速く冷め、室温（20℃）に近づくとゆっくりになります。温度差が大きいほど速く冷める。この法則も指数関数で記述できます。冷却のアニメーションを見てみましょう。',
+      customScene: "cooling-law-animation",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const coolingLawTutorial: Tutorial = {
       title: '冷却をシミュレーション',
       content:
         '初期温度、室温、冷却定数を変えて、温度変化のグラフを観察しましょう。室温が変わると漸近線が変わることに注目してください。',
+      customScene: "cooling-law-interactive",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +107,7 @@ export const coolingLawTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '冷却の法則：\n• T(t) = Tₑ + (T₀-Tₑ)·e⁻ᵏᵗ\n• 温度差が指数的に減衰\n• 環境温度に漸近的に近づく\n• 温度差の「半減期」で考えられる\n• 法医学など実用的な応用あり\n\n指数的減衰の身近で重要な応用例です。',
+      customScene: "cooling-law-summary",
       sceneConfig: {
         showGrid: true,
         showAxes: true,

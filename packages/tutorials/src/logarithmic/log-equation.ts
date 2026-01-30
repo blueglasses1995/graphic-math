@@ -11,6 +11,7 @@ export const logEquationTutorial: Tutorial = {
       title: '対数を外す',
       content:
         'log₂(x) = 5 を解くには、両辺を2の指数にします。2^(log₂(x)) = 2⁵ → x = 32。対数を外すには指数関数を使います。',
+      customScene: 'log-equation-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const logEquationTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '対数方程式の右辺の値を変えて、解がどう変わるか観察してください。グラフとの交点が解です。',
+      customScene: 'log-equation-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const logEquationTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '対数方程式は「指数に戻す」ことで解けます。対数法則で整理 → 指数形に変換 → 真数条件の確認。\n\n自由に問題を変えて練習してみてください。',
+      customScene: 'log-equation-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

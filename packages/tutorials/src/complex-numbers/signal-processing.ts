@@ -11,6 +11,7 @@ export const signalProcessingTutorial: Tutorial = {
       title: '信号を分解する',
       content:
         '音楽、画像、通信── あらゆる信号はフーリエ変換で周波数成分に分解できます。\n\nフーリエ変換の核心は複素指数関数 e^(iωt) です。\n\nF(ω) = ∫ f(t) e^(-iωt) dt\n\n複素数なしにはデジタル信号処理は成り立ちません。',
+      customScene: 'signal-processing-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -53,6 +54,7 @@ export const signalProcessingTutorial: Tutorial = {
       title: '周波数成分を体験',
       content:
         '異なる周波数の正弦波を重ね合わせて、合成波がどう変化するか観察してみましょう。\n\nフーリエ変換はこの逆: 合成波から各周波数成分を取り出す操作です。',
+      customScene: 'signal-processing-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -113,6 +115,7 @@ export const signalProcessingTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '信号処理と複素数:\n\n・フーリエ変換: 信号を周波数成分に分解\n・核心は e^(iωt)（オイラーの公式）\n・複素指数表現で計算がシンプルに\n・FFT: O(N log N) の高速アルゴリズム\n・MP3, JPEG, MRI など無数の応用\n\n複素数は現代のデジタル技術を支える柱です。',
+      customScene: 'signal-processing-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

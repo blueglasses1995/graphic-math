@@ -11,7 +11,10 @@ export const independenceTutorial: Tutorial = {
       title: '影響し合わない出来事',
       content:
         'コインを2回投げるとき、1回目の結果は2回目に影響しません。このような関係を「独立」と呼びます。独立な事象の確率計算はとてもシンプルです。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'independence-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',
@@ -41,7 +44,10 @@ export const independenceTutorial: Tutorial = {
       title: '独立かどうか確認しよう',
       content:
         '2つの事象について P(A∩B) と P(A)×P(B) を比較しましょう。等しければ独立、そうでなければ従属です。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'independence-interactive',
       interactive: true,
       nextCondition: 'click',
       stepType: 'interactive',
@@ -81,7 +87,10 @@ export const independenceTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '独立事象のポイント:\n\n• P(A∩B) = P(A)P(B) が独立の定義\n• 一方の結果が他方に影響しない\n• 独立 ≠ 排反（よくある誤解）\n• 復元抽出は独立、非復元抽出は従属\n\n独立性の判定はベイズの定理にも繋がります。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'independence-summary',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',

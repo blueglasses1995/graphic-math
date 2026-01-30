@@ -11,6 +11,7 @@ export const gradientVectorTutorial: Tutorial = {
       title: '最も急な上り坂の方向',
       content:
         '山の上で「最も急な上り坂の方向」を知りたいとき、勾配ベクトル（グラディエント）が答えを教えてくれます。各方向の偏微分をまとめた1本のベクトルです。',
+      customScene: 'gradient-vector-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const gradientVectorTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '曲面上の点を動かして、勾配ベクトルの向きと大きさを観察してください。等高線に対して垂直に、最も急な方向を指しています。',
+      customScene: 'gradient-vector-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const gradientVectorTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '勾配ベクトル ∇f = (∂f/∂x, ∂f/∂y) は「最も急な上り方向」を指す。大きさは傾斜の急さ。勾配降下法など現代の応用数学の基礎です。\n\nこれで微分の実践編は完了です。変化を捉える力を、ぜひ次のステップに活かしてください。',
+      customScene: 'gradient-vector-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

@@ -11,6 +11,7 @@ export const expIntegralTutorial: Tutorial = {
       title: '自分自身に戻る関数',
       content:
         'eˣ を微分すると eˣ。では eˣ を積分すると？\n\nやはり eˣ です（+ C を忘れずに）。\n\n微分しても積分しても自分自身に戻る ── eˣ は数学で最も特別な関数です。\n\nアニメーションで eˣ とその面積関数を見てみましょう。',
+      customScene: 'exp-integral-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const expIntegralTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'eˣ のグラフの下の面積を動かして観察してみましょう。\n\nx が大きくなると面積が急激に増えます。\n\n面積関数の形は...やはり eˣ の形をしていますね！',
+      customScene: 'exp-integral-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const expIntegralTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '∫ eˣ dx = eˣ + C ── 微分しても積分しても自分自身。\n∫ eᵃˣ dx = eᵃˣ/a + C ── 係数で割るのを忘れずに。\n\neˣ が特別なのは、ln e = 1 だからです。\n\nグラフを操作して、eˣ の面積が eˣ 自身で表されることを確かめてみてください。',
+      customScene: 'exp-integral-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

@@ -11,6 +11,7 @@ export const integrationByPartsTutorial: Tutorial = {
       title: '積の積分をどうするか',
       content:
         '∫ x·eˣ dx のような「積の積分」は置換では解けません。\n\nここで使うのが部分積分です。\n\n積の微分法則 (uv)\' = u\'v + uv\' を逆手に取ります。\n\nこの公式がどう積分に役立つか見てみましょう。',
+      customScene: 'integration-by-parts-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const integrationByPartsTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'u と dv の選び方を変えると、結果がどう変わるか試してみましょう。\n\n「良い選び方」と「悪い選び方」があることが体感できるはずです。',
+      customScene: 'integration-by-parts-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const integrationByPartsTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '部分積分：∫ u dv = uv - ∫ v du\n\n積の微分法則の逆操作です。\n\nLIATE の優先順位で u と dv を選びましょう。\n\n複数回必要な場合もあります。\n\n自由にグラフを操作して、部分積分の効果を確かめてみてください。',
+      customScene: 'integration-by-parts-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

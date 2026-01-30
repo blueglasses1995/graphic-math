@@ -16,6 +16,7 @@ export const leastSquaresTutorial: Tutorial = {
         'でも「最も近い」直線は見つけられます。\n\n' +
         'その方法が最小二乗法。「誤差の二乗和を最小にする」という意味です。\n' +
         'そしてその数学的な正体は、射影（プロジェクション）なのです。',
+      customScene: 'least-squares-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -55,6 +56,7 @@ export const leastSquaresTutorial: Tutorial = {
         'x̂ = (AᵀA)⁻¹Aᵀb\n\n' +
         'これは bを列空間に「射影」しています。\n' +
         '射影した先のベクトルなら、方程式が解けるのです。',
+      customScene: 'least-squares-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -215,6 +217,7 @@ export const leastSquaresTutorial: Tutorial = {
         '4. 残差は列空間に直交\n' +
         '5. 応用：線形回帰、データフィッティング\n\n' +
         '次は固有値分解を学びます。',
+      customScene: 'least-squares-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

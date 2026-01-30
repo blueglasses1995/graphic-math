@@ -16,6 +16,7 @@ export const eigenDecompositionTutorial: Tutorial = {
         'D は対角行列（対角成分以外が0）。\n\n' +
         '対角行列は計算が簡単です。累乗も、各成分をn乗するだけ。\n' +
         'これが固有値分解の最大の威力です。',
+      customScene: 'eigen-decomposition-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -52,6 +53,7 @@ export const eigenDecompositionTutorial: Tutorial = {
         'λ=2: (A-2I)v=0 → v₂ = (1, -1)\n\n' +
         'Step 3: 分解\n' +
         'P = [[1,1],[1,-1]], D = [[4,0],[0,2]]',
+      customScene: 'eigen-decomposition-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -188,6 +190,7 @@ export const eigenDecompositionTutorial: Tutorial = {
         '4. 対称行列は必ず実固有値 + 直交固有ベクトル\n' +
         '5. 対角化できない行列はジョルダン標準形\n\n' +
         '次は主成分分析（PCA）を学びます。',
+      customScene: 'eigen-decomposition-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

@@ -11,6 +11,7 @@ export const linearityTutorial: Tutorial = {
       title: '積分はバラせる',
       content:
         '∫ [2f(x) + 3g(x)] dx を計算したいとき、一度に計算する必要があるでしょうか？\n\n実は積分は「バラして」計算できます。\n\n2∫ f(x) dx + 3∫ g(x) dx に分解できるのです。\n\nこの性質を「線形性」と呼びます。',
+      customScene: 'linearity-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const linearityTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'f(x) と g(x) のグラフ、そして af(x) + bg(x) のグラフが表示されています。\n\n係数 a, b をスライダーで変えてみてください。\n\n合成関数の面積が、個別の面積の a倍 + b倍 になっていることを確かめましょう。',
+      customScene: 'linearity-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const linearityTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '積分の線形性：\n∫ c·f(x) dx = c · ∫ f(x) dx\n∫ [f(x) ± g(x)] dx = ∫ f(x) dx ± ∫ g(x) dx\n\n多項式は項ごとにバラして積分できます。\n\nただし積や商の積分には使えません。\n\n係数を変えて、線形性を体感してみてください。',
+      customScene: 'linearity-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

@@ -11,6 +11,7 @@ export const powerIntegralTutorial: Tutorial = {
       title: 'べき関数を積分する',
       content:
         'x, x², x³, ... これらの関数を積分するとどうなるでしょう？\n\n微分では「指数を前に出して、指数を1つ減らす」でしたね。\n\n積分はその逆。パターンを見つけてみましょう。',
+      customScene: 'power-integral-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const powerIntegralTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'n の値をスライダーで変えてみてください。\n\nxⁿ のグラフと、その原始関数 xⁿ⁺¹/(n+1) のグラフが表示されます。\n\n原始関数の傾きが、もとの関数に一致することを確かめてみましょう。',
+      customScene: 'power-integral-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const powerIntegralTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '∫ xⁿ dx = xⁿ⁺¹/(n+1) + C（n ≠ -1）\n\n「指数を1増やして、新しい指数で割る」── 微分の逆操作です。\n\nn = -1 のときだけ ln|x| + C になります。\n\nスライダーで n を変えて、さまざまなべき関数の積分を確かめてみてください。',
+      customScene: 'power-integral-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

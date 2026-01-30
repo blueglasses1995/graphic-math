@@ -11,6 +11,7 @@ export const exponentIntroTutorial: Tutorial = {
       title: '同じ数を何回も掛ける',
       content:
         '3×3×3×3×3 を毎回書くのは大変です。「3を5回掛ける」をもっと簡単に書けないでしょうか？アニメーションで掛け算が積み上がる様子を見てみましょう。',
+      customScene: "exponent-intro-animation",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const exponentIntroTutorial: Tutorial = {
       title: '底と指数を変えてみよう',
       content:
         'スライダーで底（かける数）と指数（回数）を変えて、結果がどう変わるか試してみましょう。底が大きいほど、指数が大きいほど、結果は急速に大きくなります。',
+      customScene: "exponent-intro-interactive",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +107,7 @@ export const exponentIntroTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '指数の基本：\n• aⁿ は「aをn回掛ける」\n• aが底、nが指数\n• 指数が1増えるだけで結果はa倍になる\n• 10の累乗は桁数と直結\n\n次は底の違いによるグラフの変化を見ていきましょう。',
+      customScene: "exponent-intro-summary",
       sceneConfig: {
         showGrid: true,
         showAxes: true,

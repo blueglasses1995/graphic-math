@@ -11,6 +11,7 @@ export const substitutionTutorial: Tutorial = {
       title: '合成関数の積分',
       content:
         '∫ 2x·cos(x²) dx を直接計算するのは難しそうですね。\n\nでも u = x² と置くと du = 2x dx なので...\n\n∫ cos(u) du = sin u + C = sin(x²) + C\n\nこの「変数を置き換える」技法が置換積分です。',
+      customScene: 'substitution-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const substitutionTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '置換前と置換後のグラフが並んでいます。\n\nu = g(x) の置換によって、面積がどう変形するか観察してみましょう。\n\nグラフの形は変わっても、面積は保存されます。',
+      customScene: 'substitution-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const substitutionTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '置換積分は「合成関数の微分（連鎖律）」の逆操作です。\n\nu = g(x) と置いて ∫ f(g(x))g\'(x) dx = ∫ f(u) du に変換します。\n\n定積分では区間も変換するのを忘れずに。\n\n自由にグラフを操作して、置換による変形を体感してみてください。',
+      customScene: 'substitution-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

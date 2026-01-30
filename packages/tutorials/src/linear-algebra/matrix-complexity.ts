@@ -1,3 +1,4 @@
+import { Vector3 } from '@learnmath/core';
 import { Tutorial } from '../types';
 
 export const matrixComplexityTutorial: Tutorial = {
@@ -16,7 +17,8 @@ export const matrixComplexityTutorial: Tutorial = {
         '行列演算の効率化が性能のカギを握ります。\n\n' +
         'より少ない演算で同じ結果を得るアルゴリズムや、\n' +
         '行列の構造を活かした高速化手法を学びましょう。',
-      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      sceneConfig: { showGrid: true, showAxes: true, vectors: [{ id: 'v1', vector: new Vector3(1, 0, 0), color: '#ff5722', label: 'e₁' }, { id: 'v2', vector: new Vector3(0, 1, 0), color: '#4caf50', label: 'e₂' }], cameraPosition: [0, 0, 5] },
+      customScene: 'matrix-complexity-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -36,6 +38,7 @@ export const matrixComplexityTutorial: Tutorial = {
         'n が2倍になると行列積は8倍の時間がかかります。\n' +
         'この壁をどう乗り越えるかが課題です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'matrix-complexity-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -125,6 +128,7 @@ export const matrixComplexityTutorial: Tutorial = {
         '5. 理論と実装の両面からの効率化が必要\n\n' +
         '計算量を意識することがCSでの線形代数応用の第一歩です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 6] },
+      customScene: 'matrix-complexity-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

@@ -11,6 +11,7 @@ export const mandelbrotTutorial: Tutorial = {
       title: '無限の複雑さ',
       content:
         'マンデルブロ集合は、複素数の反復操作から生まれるフラクタルです。\n\nルールは驚くほど単純:\n\nz₀ = 0\nzₙ₊₁ = zₙ² + c\n\nこの操作を繰り返したとき、|zₙ| が発散しない c の集合がマンデルブロ集合です。',
+      customScene: 'mandelbrot-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -53,6 +54,7 @@ export const mandelbrotTutorial: Tutorial = {
       title: '反復を体験',
       content:
         '複素平面上の点 c を選んで、z → z² + c の反復がどう振る舞うか観察してみましょう。\n\n集合の内部（黒い領域）、境界（カラフルな領域）、外部を探索してください。',
+      customScene: 'mandelbrot-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const mandelbrotTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'マンデルブロ集合:\n\n・z → z² + c の反復で定義\n・|zₙ| が発散しない c の集合\n・境界は無限に複雑なフラクタル\n・自己相似性を持つ\n・シンプルなルールから無限の複雑さが生まれる\n\n複素数の反復がいかに豊かな構造を生み出すか、これがその証拠です。',
+      customScene: 'mandelbrot-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

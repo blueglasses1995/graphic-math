@@ -11,6 +11,7 @@ export const workEnergyTutorial: Tutorial = {
       title: '力 × 距離 = 仕事',
       content:
         '一定の力 F で距離 d だけ動かすと、仕事 W = Fd です。\n\nでは力が位置によって変わるときは？\n\nW = ∫ₐᵇ F(x) dx ── 微小な仕事を積分で足し合わせます。\n\nバネを引っ張る例で見てみましょう。',
+      customScene: 'work-energy-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const workEnergyTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'バネを引っ張ってみてください。\n\n伸ばすほど力が大きくなります（フックの法則）。\n\n力のグラフの下の面積が「仕事」です。',
+      customScene: 'work-energy-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const workEnergyTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '仕事 W = ∫ₐᵇ F(x) dx ── 力を距離で積分します。\n\nバネのエネルギー kd²/2、位置エネルギー mgh は積分の結果です。\n\nバネを操作して、仕事とエネルギーの関係を体感してみてください。',
+      customScene: 'work-energy-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

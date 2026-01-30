@@ -11,7 +11,10 @@ export const binomialDistTutorial: Tutorial = {
       title: 'コインを10回投げて表は何回？',
       content:
         'コインを10回投げたとき、ちょうど3回表が出る確率は？このような「成功/失敗をn回繰り返す」問題に答えるのが二項分布です。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'binomial-dist-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',
@@ -41,7 +44,10 @@ export const binomialDistTutorial: Tutorial = {
       title: 'nとpを変えてみよう',
       content:
         '試行回数nと成功確率pを変えて、二項分布の形がどう変わるか観察しましょう。pが0.5のとき最も左右対称です。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'binomial-dist-interactive',
       interactive: true,
       nextCondition: 'click',
       stepType: 'interactive',
@@ -81,7 +87,10 @@ export const binomialDistTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '二項分布 B(n,p) のポイント:\n\n• P(X=k) = nCk pᵏ(1-p)ⁿ⁻ᵏ\n• E[X] = np, Var(X) = np(1-p)\n• n回の独立な成功/失敗試行\n• nが大きいと正規分布に近づく\n\n最も基本的で重要な確率分布です。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'binomial-dist-summary',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',

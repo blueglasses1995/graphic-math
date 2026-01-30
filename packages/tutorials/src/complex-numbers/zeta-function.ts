@@ -11,6 +11,7 @@ export const zetaFunctionTutorial: Tutorial = {
       title: '素数と複素数の意外な関係',
       content:
         '素数の分布── 数学最大の謎の一つ── は、実は複素数と深く関わっています。\n\nリーマンのゼータ関数:\nζ(s) = 1 + 1/2ˢ + 1/3ˢ + 1/4ˢ + ...\n\nここで s は複素数です。\n\nこの関数の「零点」（ζ(s)=0 となる s）が、素数の分布の秘密を握っています。',
+      customScene: 'zeta-function-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -111,6 +112,7 @@ export const zetaFunctionTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'ζ関数と素数:\n\n・ζ(s) = Σ 1/nˢ = Π 1/(1-p⁻ˢ)\n・s は複素数（解析接続で全複素平面に拡張）\n・零点の位置が素数の分布を支配\n・リーマン予想: 非自明な零点は Re(s)=1/2 上\n・160年以上未解決の数学最大の難問\n\n複素数なしには素数の神秘に迫ることすらできません。',
+      customScene: 'zeta-function-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

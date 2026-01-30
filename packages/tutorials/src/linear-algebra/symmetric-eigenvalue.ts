@@ -1,3 +1,4 @@
+import { Vector3 } from '@learnmath/core';
 import { Tutorial } from '../types';
 
 export const symmetricEigenvalueTutorial: Tutorial = {
@@ -17,7 +18,8 @@ export const symmetricEigenvalueTutorial: Tutorial = {
         '・必ず対角化可能\n\n' +
         'これらの性質は「スペクトル定理」としてまとめられ、\n' +
         '物理学から機械学習まで幅広く応用されています。',
-      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      sceneConfig: { showGrid: true, showAxes: true, vectors: [{ id: 'v1', vector: new Vector3(1, 0, 0), color: '#ff5722', label: 'e₁' }, { id: 'v2', vector: new Vector3(0, 1, 0), color: '#4caf50', label: 'e₂' }], cameraPosition: [0, 0, 5] },
+      customScene: 'symmetric-eigenvalue-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -34,6 +36,7 @@ export const symmetricEigenvalueTutorial: Tutorial = {
         'λ₂=1: v₂ = (1,-1)/√2\n\n' +
         '確かに v₁·v₂ = 0（直交）で、両方とも実数の固有値です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'symmetric-eigenvalue-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -121,6 +124,7 @@ export const symmetricEigenvalueTutorial: Tutorial = {
         '5. 物理学でエルミート演算子として登場\n\n' +
         '対称行列は線形代数で最も扱いやすい行列です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 6] },
+      customScene: 'symmetric-eigenvalue-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

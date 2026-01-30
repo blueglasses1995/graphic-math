@@ -11,6 +11,7 @@ export const commonLogTutorial: Tutorial = {
       title: '桁数を数える道具',
       content:
         'log₁₀(1000) = 3。1000は4桁の数で、0が3つ。常用対数は「10を何回かけたか」を表し、数の桁数と直結します。',
+      customScene: 'common-log-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const commonLogTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '数値を変えて log₁₀ の値を観察してください。10倍するたびに対数が1増えるのがわかります。',
+      customScene: 'common-log-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const commonLogTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '常用対数 log₁₀ は「10を何回かけたか」を表し、桁数と密接に関わります。10倍で+1、100倍で+2。\n\n数値を変えて log₁₀ の挙動を確かめてみてください。',
+      customScene: 'common-log-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

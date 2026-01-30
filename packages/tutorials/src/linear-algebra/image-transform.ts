@@ -15,6 +15,7 @@ export const imageTransformTutorial: Tutorial = {
         'これらすべてが行列の掛け算1つで実現されています。\n\n' +
         '複数の変換を組み合わせても、最終的には1つの行列に' +
         'まとめられる。これが線形代数の力です。',
+      customScene: 'image-transform-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -49,6 +50,7 @@ export const imageTransformTutorial: Tutorial = {
         '合成：M = R × S = [[1.73, -1], [1, 1.73]]\n\n' +
         '1つの行列Mをすべてのピクセルに適用するだけで、' +
         '拡大と回転が同時に行われます。',
+      customScene: 'image-transform-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -169,6 +171,7 @@ export const imageTransformTutorial: Tutorial = {
         '4. SVD：任意の変換 = 回転→拡大→回転\n' +
         '5. GPUが行列演算を高速実行\n\n' +
         '次は連立方程式の幾何学を学びます。',
+      customScene: 'image-transform-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

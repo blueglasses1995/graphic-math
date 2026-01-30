@@ -11,6 +11,7 @@ export const controlTheoryTutorial: Tutorial = {
       title: '安定な系、不安定な系',
       content:
         '制御理論では、システムの「安定性」が最も重要です。\n\n・エアコンの温度制御: 設定温度に収束する（安定）\n・マイクのハウリング: 音が際限なく大きくなる（不安定）\n\nこの安定性を判定するのに、複素数が決定的な役割を果たします。',
+      customScene: 'control-theory-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -53,6 +54,7 @@ export const controlTheoryTutorial: Tutorial = {
       title: '極と安定性を体験',
       content:
         '極の位置（実部と虚部）を変えて、システムの応答がどう変わるか観察しましょう。\n\n実部が負なら減衰、正なら発散。虚部が振動の周波数を決めます。',
+      customScene: 'control-theory-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -112,6 +114,7 @@ export const controlTheoryTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '制御理論と複素数:\n\n・伝達関数 G(s) の s は複素数\n・極（分母=0の解）が安定性を決定\n・Re(s) < 0 → 安定、Re(s) > 0 → 不安定\n・虚部は振動周波数を決める\n・ナイキスト線図で安定判別\n\n複素数は制御工学の安定性解析に不可欠なツールです。',
+      customScene: 'control-theory-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

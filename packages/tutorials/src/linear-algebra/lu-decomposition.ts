@@ -1,3 +1,4 @@
+import { Vector3 } from '@learnmath/core';
 import { Tutorial } from '../types';
 
 export const luDecompositionTutorial: Tutorial = {
@@ -17,7 +18,8 @@ export const luDecompositionTutorial: Tutorial = {
         'U：上三角行列（Upper triangular）\n\n' +
         '三角行列の方程式は前進代入・後退代入で\n' +
         'O(n²)で解けるため、Ax = b を効率的に解けます。',
-      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      sceneConfig: { showGrid: true, showAxes: true, vectors: [{ id: 'v1', vector: new Vector3(1, 0, 0), color: '#ff5722', label: 'e₁' }, { id: 'v2', vector: new Vector3(0, 1, 0), color: '#4caf50', label: 'e₂' }], cameraPosition: [0, 0, 5] },
+      customScene: 'lu-decomposition-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -35,6 +37,7 @@ export const luDecompositionTutorial: Tutorial = {
         '= [[4,3],[6,3]] = A ✓\n\n' +
         'Lの下三角部分には消去で使った倍率が入ります。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'lu-decomposition-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -122,6 +125,7 @@ export const luDecompositionTutorial: Tutorial = {
         '5. 対称正定値ならコレスキー分解が使える\n\n' +
         'LU分解は実用的な連立方程式の解法の基礎です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 6] },
+      customScene: 'lu-decomposition-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

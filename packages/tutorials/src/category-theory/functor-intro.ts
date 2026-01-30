@@ -12,6 +12,7 @@ export const functorIntroTutorial: Tutorial = {
       stepType: 'animation',
       content: '関手Fは圏Cから圏Dへの「構造を保つ」写像です。対象を対象に、射を射に移し、合成と恒等射を保存します。2つの圏の対応関係をアニメーションで見てみましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'functor-intro-animation',
       interactive: false,
       nextCondition: 'click',
     },
@@ -21,6 +22,7 @@ export const functorIntroTutorial: Tutorial = {
       stepType: 'interactive',
       content: '圏Cの対象と射を選ぶと、関手Fによる像が圏Dに表示されます。合成の保存 F(g∘f) = F(g)∘F(f) を確認しましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'functor-intro-interactive',
       interactive: true,
       nextCondition: 'interaction',
     },
@@ -76,6 +78,7 @@ export const functorIntroTutorial: Tutorial = {
       stepType: 'interactive',
       content: '関手は圏と圏をつなぐ橋です。構造を保存しながら一つの数学的世界を別の世界に翻訳します。自然変換を学ぶことで、関手同士の関係も理解できるようになります。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'functor-intro-summary',
       interactive: true,
       nextCondition: 'interaction',
     }

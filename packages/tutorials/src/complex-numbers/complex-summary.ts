@@ -106,6 +106,7 @@ export const complexSummaryTutorial: Tutorial = {
       title: '学びを終えて',
       content:
         'x² = -1 という「不可能」から始まった旅は、数学の美しい世界への入口でした。\n\n複素数は:\n・方程式をすべて解ける世界（代数的閉体）\n・回転を数で表現する道具\n・指数関数と三角関数を結ぶ架け橋\n\nリチャード・ファインマンの言葉:\n「虚数は我々の想像以上に実在的である」\n\n実践チュートリアルで、さらに複素数の力を体験してください。',
+      customScene: 'complex-summary-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

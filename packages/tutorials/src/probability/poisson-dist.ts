@@ -11,7 +11,10 @@ export const poissonDistTutorial: Tutorial = {
       title: '稀な出来事は何回起こる？',
       content:
         '1時間にコンビニに来る客数、1ページの誤字数、1年間の交通事故数。これらの「一定期間に稀な事象が何回起こるか」を記述するのがポアソン分布です。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'poisson-dist-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',
@@ -41,7 +44,10 @@ export const poissonDistTutorial: Tutorial = {
       title: 'λを変えてみよう',
       content:
         'λを変えてポアソン分布の形を観察しましょう。λが大きくなると分布は右に移動し、正規分布に近い形になります。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'poisson-dist-interactive',
       interactive: true,
       nextCondition: 'click',
       stepType: 'interactive',
@@ -81,7 +87,10 @@ export const poissonDistTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'ポアソン分布 Poi(λ) のポイント:\n\n• P(X=k) = e⁻λλᵏ/k!\n• E[X] = Var(X) = λ\n• 稀な事象の発生回数をモデル化\n• 二項分布の極限として導出可能\n\n待ち行列理論や品質管理で広く使われます。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'poisson-dist-summary',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',

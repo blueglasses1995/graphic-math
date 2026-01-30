@@ -1,3 +1,4 @@
+import { Vector3 } from '@learnmath/core';
 import { Tutorial } from '../types';
 
 export const laCsOverviewTutorial: Tutorial = {
@@ -19,7 +20,8 @@ export const laCsOverviewTutorial: Tutorial = {
         '・科学計算：連立方程式、最適化\n' +
         '・情報検索：PageRank、Word2Vec\n\n' +
         'ここでは全体像を振り返りましょう。',
-      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      sceneConfig: { showGrid: true, showAxes: true, vectors: [{ id: 'v1', vector: new Vector3(1, 0, 0), color: '#ff5722', label: 'e₁' }, { id: 'v2', vector: new Vector3(0, 1, 0), color: '#4caf50', label: 'e₂' }], cameraPosition: [0, 0, 5] },
+      customScene: 'la-cs-overview-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -40,6 +42,7 @@ export const laCsOverviewTutorial: Tutorial = {
         '・行列分解（SVD, QR, LU）\n' +
         '・数値計算、AI、CG、データサイエンス',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'la-cs-overview-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -139,6 +142,7 @@ export const laCsOverviewTutorial: Tutorial = {
         '最も普遍的で強力な数学的ツールです。\n\n' +
         'この知識を武器に、さらなる学びの旅へ出発しましょう！',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 6] },
+      customScene: 'la-cs-overview-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

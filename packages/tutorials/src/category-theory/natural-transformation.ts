@@ -12,6 +12,7 @@ export const naturalTransformationTutorial: Tutorial = {
       stepType: 'animation',
       content: '2つの関手F, G: C→Dがあるとき、FからGへの「自然な」移り方が自然変換です。各対象での変換が射と整合する様子をアニメーションで確認しましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'natural-transformation-animation',
       interactive: false,
       nextCondition: 'click',
     },
@@ -21,6 +22,7 @@ export const naturalTransformationTutorial: Tutorial = {
       stepType: 'interactive',
       content: '自然変換 α: F⟹G の各成分 α_A: F(A)→G(A) を配置し、自然性の正方形 G(f)∘α_A = α_B∘F(f) が可換であることを確認しましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'natural-transformation-interactive',
       interactive: true,
       nextCondition: 'interaction',
     },
@@ -76,6 +78,7 @@ export const naturalTransformationTutorial: Tutorial = {
       stepType: 'interactive',
       content: '自然変換は「関手の間の射」です。マックレーンは「圏論は関手を定義するために生まれ、関手は自然変換を定義するために生まれた」と述べました。自然変換は圏論の真の主役です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'natural-transformation-summary',
       interactive: true,
       nextCondition: 'interaction',
     }

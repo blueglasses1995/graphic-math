@@ -11,6 +11,7 @@ export const entropyTutorial: Tutorial = {
       title: '驚きを数値化する',
       content:
         'コイン投げの結果は「表か裏」で1ビット。サイコロの結果は log₂(6) ≈ 2.58ビット。可能性が多いほど「驚き」が大きく、情報量も増えます。対数はこの驚きを測る道具です。',
+      customScene: 'entropy-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const entropyTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '選択肢の数を変えて、情報量（ビット数）がどう変わるか観察してください。',
+      customScene: 'entropy-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const entropyTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'エントロピーに対数が使われる理由は「かけ算を足し算に変える」から。情報量もエントロピーも対数で測ることで加法性を持ちます。\n\n確率分布を変えてエントロピーの変化を確認してください。',
+      customScene: 'entropy-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

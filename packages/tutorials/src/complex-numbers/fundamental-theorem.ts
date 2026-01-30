@@ -11,6 +11,7 @@ export const fundamentalTheoremTutorial: Tutorial = {
       title: '究極の定理',
       content:
         '代数学の基本定理:\n\n複素数係数のn次多項式方程式は、複素数の範囲で（重複を含めて）ちょうどn個の解を持つ。\n\nつまり、複素数まで拡張すれば、すべての多項式方程式が解けるのです。',
+      customScene: 'fundamental-theorem-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +106,7 @@ export const fundamentalTheoremTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '代数学の基本定理:\n\n・n次方程式は複素数の範囲でn個の解を持つ\n・多項式は1次式の積に完全に分解できる\n・ℂは代数的閉体（これ以上の拡張は不要）\n・ガウスが証明（1799年）\n\n次は複素数の全体をまとめましょう。',
+      customScene: 'fundamental-theorem-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

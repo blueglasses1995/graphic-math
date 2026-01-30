@@ -12,6 +12,7 @@ export const homomorphicEncryptionTutorial: Tutorial = {
       content:
         'クラウドにデータを預けて計算してもらいたい。\nでもデータの中身は見られたくない。\n\n暗号化したまま計算できたら？\n\n準同型暗号はまさにそれを実現します。\nEnc(a) と Enc(b) から Enc(a+b) を復号せずに計算！',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'homomorphic-encryption-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -22,6 +23,7 @@ export const homomorphicEncryptionTutorial: Tutorial = {
       content:
         '簡単な例: RSA暗号は乗法準同型\n\nEnc(m₁) · Enc(m₂) = m₁ᵉ · m₂ᵉ = (m₁m₂)ᵉ = Enc(m₁m₂)\n\n暗号文同士を掛けると、平文の積の暗号文になる！\n\n数値を選んで準同型性を確認しましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'homomorphic-encryption-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -82,6 +84,7 @@ export const homomorphicEncryptionTutorial: Tutorial = {
       content:
         '準同型暗号:\n\n• 暗号化したまま計算が可能\n• 群・環の準同型が数学的基盤\n• 部分準同型 → やや準同型 → 完全準同型\n• FHEは格子暗号に基づく\n• プライバシー保護計算の未来を開く\n\n代数学が最先端技術を支えています。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'homomorphic-encryption-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

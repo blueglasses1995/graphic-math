@@ -1,3 +1,4 @@
+import { Vector3 } from '@learnmath/core';
 import { Tutorial } from '../types';
 
 export const positiveDefiniteTutorial: Tutorial = {
@@ -16,7 +17,8 @@ export const positiveDefiniteTutorial: Tutorial = {
         '行列 A が正定値であることです。\n\n' +
         '最適化問題で「最小値が存在する」ことの保証として\n' +
         '正定値行列は極めて重要な役割を果たします。',
-      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      sceneConfig: { showGrid: true, showAxes: true, vectors: [{ id: 'v1', vector: new Vector3(1, 0, 0), color: '#ff5722', label: 'e₁' }, { id: 'v2', vector: new Vector3(0, 1, 0), color: '#4caf50', label: 'e₂' }], cameraPosition: [0, 0, 5] },
+      customScene: 'positive-definite-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -34,6 +36,7 @@ export const positiveDefiniteTutorial: Tutorial = {
         '固有値：3, 1（両方正）→ 正定値！\n' +
         '首座小行列式：2 > 0, det = 3 > 0 → 正定値！',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'positive-definite-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -123,6 +126,7 @@ export const positiveDefiniteTutorial: Tutorial = {
         '5. 共分散行列は正定値（退化しない場合）\n\n' +
         '正定値行列は最適化と統計の基礎です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 6] },
+      customScene: 'positive-definite-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

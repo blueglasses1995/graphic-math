@@ -11,6 +11,7 @@ export const sigmoidTutorial: Tutorial = {
       title: '0と1の間を滑らかにつなぐ',
       content:
         'σ(x) = 1/(1+e^(-x))。x = -∞ で0、x = +∞ で1に近づくS字カーブ。機械学習で確率を表現するのに使われます。この関数の逆関数が対数です。',
+      customScene: 'sigmoid-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const sigmoidTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'x を変えて σ(x) の値を確認してください。x = 0 で σ = 0.5、x = 2 で約0.88、x = -2 で約0.12 です。',
+      customScene: 'sigmoid-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const sigmoidTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'シグモイド関数の逆関数がロジット（対数オッズ）。実数全体を確率 [0,1] に変換します。機械学習の分類、ロジスティック回帰、交差エントロピーなど、対数は現代AIの基盤技術です。\n\nシグモイドのカーブを触って確かめてください。',
+      customScene: 'sigmoid-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

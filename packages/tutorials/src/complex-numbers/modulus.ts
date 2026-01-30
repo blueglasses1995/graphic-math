@@ -12,6 +12,7 @@ export const modulusTutorial: Tutorial = {
       title: '原点からの距離',
       content:
         '複素数 z = a + bi の絶対値（モジュラス）は:\n\n|z| = √(a² + b²)\n\nこれは複素平面上で原点から点 z までの距離です。\n\n例: |3 + 4i| = √(9 + 16) = √25 = 5',
+      customScene: 'modulus-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -127,6 +128,7 @@ export const modulusTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '絶対値（モジュラス）のポイント:\n\n・|z| = √(a² + b²)（原点からの距離）\n・|z|² = z × z̄\n・|z₁z₂| = |z₁||z₂|\n・|z| = r は半径rの円\n・三角不等式が成り立つ\n\n次は偏角（アーギュメント）を学びましょう。',
+      customScene: 'modulus-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

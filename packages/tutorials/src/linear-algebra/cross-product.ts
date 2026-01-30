@@ -16,6 +16,7 @@ export const crossProductTutorial: Tutorial = {
         '2本の矢印が張る平面に対して、まっすぐ立ち上がる矢印。' +
         'これがクロス積の幾何学的な意味です。\n\n' +
         '注意：クロス積は3D空間でのみ定義されます。',
+      customScene: 'cross-product-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -55,6 +56,7 @@ export const crossProductTutorial: Tutorial = {
         'Z軸方向のベクトルが得られました。\n' +
         'X軸とY軸に垂直 → Z軸。直感通りです。\n\n' +
         '大きさ |a × b| = 6 は、aとbが作る平行四辺形の面積に等しい！',
+      customScene: 'cross-product-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -244,6 +246,7 @@ export const crossProductTutorial: Tutorial = {
         '5. 反交換的：a × b = -(b × a)\n' +
         '6. 物理学（トルク、磁場、角運動量）で活躍\n\n' +
         '次は基底の変換を学びます。座標系を変えると何が起きるでしょうか？',
+      customScene: 'cross-product-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

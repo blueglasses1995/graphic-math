@@ -11,7 +11,10 @@ export const combinationTutorial: Tutorial = {
       title: '選び方は何通り？',
       content:
         '5人から3人の委員を選ぶ方法は？順列と違い、誰が先かは関係ありません。ABC と BAC は同じ選び方。順列の重複を除いたものが組合せです。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'combination-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',
@@ -41,7 +44,10 @@ export const combinationTutorial: Tutorial = {
       title: 'パスカルの三角形',
       content:
         'nCr はパスカルの三角形に並びます。nとrを変えて値がどう変化するか確認しましょう。上の2つの数を足すと下の数になる規則があります。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'combination-interactive',
       interactive: true,
       nextCondition: 'click',
       stepType: 'interactive',
@@ -81,7 +87,10 @@ export const combinationTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '組合せのポイント:\n\n• nCr = n! / (r!(n-r)!)\n• 順序を無視した選び方の数\n• nCr = nC(n-r) の対称性\n• 確率 = 好ましい組合せ / 全組合せ\n\n順列は「並べる」、組合せは「選ぶ」。この区別が確率計算の鍵です。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'combination-summary',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',

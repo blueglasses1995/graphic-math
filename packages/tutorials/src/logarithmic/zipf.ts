@@ -11,6 +11,7 @@ export const zipfTutorial: Tutorial = {
       title: '2番目は半分、3番目は1/3',
       content:
         '英語で最も多い単語は "the"。2番目の "of" は "the" の約半分の頻度。3番目の "and" は約1/3。順位 r の単語の頻度は 1/r に比例します。',
+      customScene: 'zipf-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const zipfTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '順位と頻度の関係をグラフで確認してください。両対数グラフにすると直線に見えるのがジップの法則の特徴です。',
+      customScene: 'zipf-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const zipfTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'ジップの法則: 順位 r の要素の頻度は 1/r に比例。両対数グラフで傾き-1の直線になります。言語、都市、ウェブなど幅広い現象に現れる普遍的な法則です。\n\nデータを変えてジップの法則を確認してください。',
+      customScene: 'zipf-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

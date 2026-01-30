@@ -11,6 +11,7 @@ export const logDigitsTutorial: Tutorial = {
       title: '2¹⁰⁰ は何桁？',
       content:
         '2¹⁰⁰ を直接計算するのは大変。でも log₁₀(2¹⁰⁰) = 100 × log₁₀(2) = 100 × 0.301 = 30.1。整数部分が30なので、2¹⁰⁰ は31桁の数です。',
+      customScene: 'log-digits-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const logDigitsTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '底と指数を変えて、対数から桁数を求めてみてください。桁数 = floor(log₁₀(N)) + 1 です。',
+      customScene: 'log-digits-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const logDigitsTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '桁数 = floor(log₁₀(N)) + 1。巨大な数の桁数も対数で簡単に求められます。小数部分からは最高位の数字もわかります。\n\n自由に数を変えて桁数を予測してみてください。',
+      customScene: 'log-digits-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

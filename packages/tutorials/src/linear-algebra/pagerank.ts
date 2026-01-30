@@ -1,3 +1,4 @@
+import { Vector3 } from '@learnmath/core';
 import { Tutorial } from '../types';
 
 export const pagerankTutorial: Tutorial = {
@@ -18,8 +19,10 @@ export const pagerankTutorial: Tutorial = {
       sceneConfig: {
         showGrid: true,
         showAxes: true,
+        vectors: [{ id: 'v1', vector: new Vector3(1, 0, 0), color: '#ff5722', label: 'e₁' }, { id: 'v2', vector: new Vector3(0, 1, 0), color: '#4caf50', label: 'e₂' }],
         cameraPosition: [0, 0, 5],
       },
+      customScene: 'pagerank-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -42,6 +45,7 @@ export const pagerankTutorial: Tutorial = {
         showAxes: true,
         cameraPosition: [0, 0, 5],
       },
+      customScene: 'pagerank-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -154,6 +158,7 @@ export const pagerankTutorial: Tutorial = {
         showAxes: true,
         cameraPosition: [0, 0, 5],
       },
+      customScene: 'pagerank-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

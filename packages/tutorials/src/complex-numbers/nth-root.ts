@@ -12,6 +12,7 @@ export const nthRootTutorial: Tutorial = {
       title: 'n乗根とは',
       content:
         'zⁿ = w を満たす z を w の n乗根と言います。\n\n実数では √4 = 2 のように1つ（正の方）ですが、複素数ではちょうど n 個の解があります。\n\nこれらの解は複素平面上で美しいパターンを描きます。',
+      customScene: 'nth-root-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -130,6 +131,7 @@ export const nthRootTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'n乗根のポイント:\n\n・複素数のn乗根はちょうどn個ある\n・zₖ = r^(1/n)∠((θ+2kπ)/n)\n・1のn乗根は単位円上に正n角形を形成\n・一般のn乗根も正n角形を形成（半径が変わる）\n\n次はオイラーの公式を学びましょう。',
+      customScene: 'nth-root-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

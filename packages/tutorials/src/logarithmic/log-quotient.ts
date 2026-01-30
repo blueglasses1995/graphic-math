@@ -11,6 +11,7 @@ export const logQuotientTutorial: Tutorial = {
       title: '割り算が引き算になる',
       content:
         'log₂(32 / 4) = log₂(32) - log₂(4) = 5 - 2 = 3。確かに 32 / 4 = 8 で log₂(8) = 3。対数を使うと割り算が引き算に変わります。',
+      customScene: 'log-quotient-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const logQuotientTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'A と B の値を変えて、log(A / B) と log(A) - log(B) が常に一致することを確認してください。',
+      customScene: 'log-quotient-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const logQuotientTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'log(A/B) = log A - log B。対数は商を差に変換します。1より小さい数の対数は負になります。\n\n自由に値を変えてこの法則を確かめてください。',
+      customScene: 'log-quotient-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

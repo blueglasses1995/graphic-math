@@ -12,6 +12,7 @@ export const whyCategoryTutorial: Tutorial = {
       stepType: 'animation',
       content: '集合論、代数学、位相空間論、プログラミング——これらすべてに共通する「構造」を記述する言語があります。それが圏論です。異なる分野の間に潜む共通パターンをアニメーションで見てみましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'why-category-animation',
       interactive: false,
       nextCondition: 'click',
     },
@@ -21,6 +22,7 @@ export const whyCategoryTutorial: Tutorial = {
       stepType: 'interactive',
       content: '集合の間の写像、群の間の準同型、位相空間の間の連続写像——これらはすべて「射」として統一できます。対応関係をドラッグして確認してみましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'why-category-interactive',
       interactive: true,
       nextCondition: 'interaction',
     },
@@ -76,6 +78,7 @@ export const whyCategoryTutorial: Tutorial = {
       stepType: 'interactive',
       content: '圏論は「構造の構造」を扱う数学です。対象と射という最小限の概念から出発し、関手、自然変換、普遍性など強力な概念を構築します。これからの学習で、この抽象的な世界を一歩ずつ探検していきましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'why-category-summary',
       interactive: true,
       nextCondition: 'interaction',
     }

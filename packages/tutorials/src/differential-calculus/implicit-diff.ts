@@ -11,6 +11,7 @@ export const implicitDiffTutorial: Tutorial = {
       title: 'y が解けないとき',
       content:
         'x² + y² = 1（円）のように、y = f(x) の形に解けない式でも微分できます。両辺を x で微分して、dy/dx を求める。それが「陰関数微分」です。',
+      customScene: 'implicit-diff-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const implicitDiffTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '円 x²+y²=1 の上の点を動かして、接線の傾きがどう変わるか観察してください。上半分では負の傾き、下半分では正の傾きになります。',
+      customScene: 'implicit-diff-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const implicitDiffTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '陰関数微分：両辺を x で微分し、dy/dx について解く。y を陽に求めなくても傾きがわかります。\n\n次は「平均値の定理」。微分の理論的支柱を学びましょう。',
+      customScene: 'implicit-diff-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

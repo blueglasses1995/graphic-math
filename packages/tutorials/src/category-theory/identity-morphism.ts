@@ -12,6 +12,7 @@ export const identityMorphismTutorial: Tutorial = {
       stepType: 'animation',
       content: '各対象Aには「何もしない」射 id_A: A→A が存在します。一見無意味に思えるこの射が、圏の構造を支える重要な役割を果たします。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'identity-morphism-animation',
       interactive: false,
       nextCondition: 'click',
     },
@@ -21,6 +22,7 @@ export const identityMorphismTutorial: Tutorial = {
       stepType: 'interactive',
       content: 'f: A→B に対して、f∘id_A と id_B∘f を計算してみましょう。どちらも f と一致することを視覚的に確認できます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'identity-morphism-interactive',
       interactive: true,
       nextCondition: 'interaction',
     },
@@ -76,6 +78,7 @@ export const identityMorphismTutorial: Tutorial = {
       stepType: 'interactive',
       content: '恒等射は「何もしない」射ですが、圏の公理を支える不可欠な要素です。単位律により合成が安定し、対象を射を通じて識別する基盤となります。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'identity-morphism-summary',
       interactive: true,
       nextCondition: 'interaction',
     }

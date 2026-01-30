@@ -11,6 +11,7 @@ export const diffEqIntroTutorial: Tutorial = {
       title: '変化の法則を方程式にする',
       content:
         '「人口の増加率は現在の人口に比例する」→ dP/dt = kP。変化率の関係を式にしたものが微分方程式です。自然法則の多くは微分方程式で記述されます。',
+      customScene: 'diff-eq-intro-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const diffEqIntroTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '初期値と成長率 k を変えて、解の曲線がどう変わるか観察してください。k > 0 で指数増大、k < 0 で指数減衰です。',
+      customScene: 'diff-eq-intro-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const diffEqIntroTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '微分方程式は「変化の法則」を記述する。最も基本的な dy/dx = ky の解は y = Ceᵏˣ。物理・生物・経済学の基盤です。\n\n次は「曲率」。曲線の曲がり具合を数値化しましょう。',
+      customScene: 'diff-eq-intro-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

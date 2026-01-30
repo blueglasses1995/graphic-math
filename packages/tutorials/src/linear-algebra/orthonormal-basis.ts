@@ -1,3 +1,4 @@
+import { Vector3 } from '@learnmath/core';
 import { Tutorial } from '../types';
 
 export const orthonormalBasisTutorial: Tutorial = {
@@ -17,7 +18,8 @@ export const orthonormalBasisTutorial: Tutorial = {
         '標準基底 e₁=(1,0,0), e₂=(0,1,0), e₃=(0,0,1) は\n' +
         '最も馴染みのある正規直交基底です。\n' +
         'なぜこの性質が便利なのか見ていきましょう。',
-      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      sceneConfig: { showGrid: true, showAxes: true, vectors: [{ id: 'v1', vector: new Vector3(1, 0, 0), color: '#ff5722', label: 'e₁' }, { id: 'v2', vector: new Vector3(0, 1, 0), color: '#4caf50', label: 'e₂' }], cameraPosition: [0, 0, 5] },
+      customScene: 'orthonormal-basis-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -33,6 +35,7 @@ export const orthonormalBasisTutorial: Tutorial = {
         '内積を取るだけで座標が出るのです。\n\n' +
         'これが正規直交基底の最大の利点です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'orthonormal-basis-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -122,6 +125,7 @@ export const orthonormalBasisTutorial: Tutorial = {
         '5. フーリエ解析など幅広い分野の基礎\n\n' +
         '正規直交基底は数値計算の安定性にも貢献します。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 6] },
+      customScene: 'orthonormal-basis-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

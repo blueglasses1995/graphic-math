@@ -11,7 +11,10 @@ export const expectedValueTutorial: Tutorial = {
       title: '平均的にはいくら？',
       content:
         'サイコロ1回振って出た目の数×100円もらえるゲーム。参加費はいくらなら公平？期待値を計算すれば分かります。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'expected-value-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',
@@ -41,7 +44,10 @@ export const expectedValueTutorial: Tutorial = {
       title: 'シミュレーション',
       content:
         'サイコロを何回も振って、平均値が期待値(3.5)に近づいていく様子を観察しましょう。回数を増やすと収束が見えます。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'expected-value-interactive',
       interactive: true,
       nextCondition: 'click',
       stepType: 'interactive',
@@ -81,7 +87,10 @@ export const expectedValueTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '期待値は「長期的な平均」。\n\n• E[X] = Σ xP(x)\n• 線形性: E[aX+bY] = aE[X]+bE[Y]\n• 公平なゲーム ⟺ 期待値 = 参加費\n• 意思決定の基本指標\n\n次は「分散と標準偏差」でバラつきを学びます。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'expected-value-summary',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',

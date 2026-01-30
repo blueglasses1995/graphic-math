@@ -11,6 +11,7 @@ export const ruleOf72Tutorial: Tutorial = {
       title: '暗算で倍増時間を求める',
       content:
         '「年利6%なら何年で2倍？」→「72÷6 = 12年」。たったこれだけ！金融の世界で広く使われるこの便利な法則は、指数関数の性質から生まれています。その仕組みを見てみましょう。',
+      customScene: "rule-of-72-animation",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const ruleOf72Tutorial: Tutorial = {
       title: '72の法則の精度を確認しよう',
       content:
         '利率を変えて、72の法則による概算と正確な計算値を比較しましょう。どの利率で精度が高いか確認してください。',
+      customScene: "rule-of-72-interactive",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +107,7 @@ export const ruleOf72Tutorial: Tutorial = {
       title: 'まとめ',
       content:
         '72の法則：\n• 倍増時間 ≈ 72 ÷ 成長率(%)\n• ln2 ≈ 0.693 の近似\n• 72は約数が多く暗算に便利\n• 投資・インフレ・GDP等に幅広く適用\n• 指数関数の本質を暗算で活用できる便利ツール\n\n指数関数の実践的な応用の総仕上げです。',
+      customScene: "rule-of-72-summary",
       sceneConfig: {
         showGrid: true,
         showAxes: true,

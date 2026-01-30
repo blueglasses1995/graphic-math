@@ -12,6 +12,7 @@ export const cryptoProtocolTutorial: Tutorial = {
       content:
         '安全な暗号があっても、使い方を間違えれば安全性は崩れます。\n\n暗号プロトコルは「誰が、いつ、何を送るか」の手順書。\n\nTLS、SSH、Signal… 私たちが日常的に使うプロトコルは、\n精緻な数学的設計に基づいています。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'crypto-protocol-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -22,6 +23,7 @@ export const cryptoProtocolTutorial: Tutorial = {
       content:
         'TLS 1.3 ハンドシェイクの流れ:\n\n1. Client Hello: 対応する暗号スイートと鍵共有パラメータ\n2. Server Hello: 選択した暗号スイートと鍵共有\n3. 共有秘密鍵の導出\n4. 暗号化通信開始\n\nわずか1往復（1-RTT）で安全な通信を確立。\n各ステップの役割を確認しましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'crypto-protocol-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -82,6 +84,7 @@ export const cryptoProtocolTutorial: Tutorial = {
       content:
         '暗号プロトコル設計:\n\n• プロトコル = 暗号の「使い方」の手順\n• 安全性はゲームベースで厳密に定義\n• 帰着による数学的安全性証明\n• ランダムオラクルモデルと標準モデル\n• TLS, SSH等で実用化\n\n代数学の困難性が安全性の基盤です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'crypto-protocol-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

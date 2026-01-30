@@ -11,6 +11,7 @@ export const cosDerivativeTutorial: Tutorial = {
       title: 'cos の傾きにはマイナスが付く',
       content:
         'cos(x) のグラフは x=0 で最大値 1。ここから右下がりになるので、傾きは負。sin の微分では cos がそのまま出ましたが、cos の微分ではマイナスが付きます。',
+      customScene: 'cos-derivative-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const cosDerivativeTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'x を動かして cos(x) の接線の傾きを追いかけてください。傾きのグラフは −sin(x) の形をしています。',
+      customScene: 'cos-derivative-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const cosDerivativeTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '(cos x)\' = −sin x。sin の微分に比べてマイナスが付きます。三角関数の微分は4回で一周するサイクルを持ちます。\n\n次は指数関数 eˣ の微分です。微分しても変わらない不思議な関数を見てみましょう。',
+      customScene: 'cos-derivative-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

@@ -12,6 +12,7 @@ export const toposIntroTutorial: Tutorial = {
       stepType: 'animation',
       content: 'トポスは「圏の中で集合論や論理が展開できる」驚くべき構造です。部分対象分類子が真偽値を一般化し、内部論理が構成される様子をアニメーションで見ましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'topos-intro-animation',
       interactive: false,
       nextCondition: 'click',
     },
@@ -21,6 +22,7 @@ export const toposIntroTutorial: Tutorial = {
       stepType: 'interactive',
       content: '部分対象分類子 Ω が部分対象と特性射の間の対応をどう与えるかを視覚的に体験しましょう。Sub(A) ≅ Hom(A, Ω) の対応を確認できます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'topos-intro-interactive',
       interactive: true,
       nextCondition: 'interaction',
     },
@@ -76,6 +78,7 @@ export const toposIntroTutorial: Tutorial = {
       stepType: 'interactive',
       content: 'トポスは「一般化された空間」であり「一般化された論理の宇宙」です。圏論、論理学、幾何学が深く交差する領域であり、数学の基礎に関する新しい視点を提供します。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'topos-intro-summary',
       interactive: true,
       nextCondition: 'interaction',
     }

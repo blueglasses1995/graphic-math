@@ -11,7 +11,10 @@ export const jointMarginalTutorial: Tutorial = {
       title: '2つの変数を一度に見る',
       content:
         '身長と体重の関係を調べたいとき、それぞれ別々に見るのでは不十分です。「身長が170cm以上かつ体重が70kg以上」のような2変数の同時確率が必要です。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'joint-marginal-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',
@@ -41,7 +44,10 @@ export const jointMarginalTutorial: Tutorial = {
       title: '同時確率表を作ろう',
       content:
         '同時確率表の値を変えて、周辺確率がどう変化するか確認しましょう。行の合計と列の合計が周辺分布になります。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'joint-marginal-interactive',
       interactive: true,
       nextCondition: 'click',
       stepType: 'interactive',
@@ -81,7 +87,10 @@ export const jointMarginalTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '同時確率と周辺確率:\n\n• 同時確率: 2変数が同時に取る値の確率\n• 周辺確率: 同時確率を片方について合計\n• 独立 ⟺ 同時確率 = 周辺確率の積\n\n多変量データの分析に不可欠な概念です。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'joint-marginal-summary',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',

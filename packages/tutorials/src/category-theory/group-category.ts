@@ -12,6 +12,7 @@ export const groupCategoryTutorial: Tutorial = {
       stepType: 'animation',
       content: '群を対象、群準同型を射とする圏Grpは代数学の中心的な圏です。忘却関手と自由関手がSetとの間に美しい随伴を形成する様子をアニメーションで見ましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'group-category-animation',
       interactive: false,
       nextCondition: 'click',
     },
@@ -21,6 +22,7 @@ export const groupCategoryTutorial: Tutorial = {
       stepType: 'interactive',
       content: '具体的な群（整数加法群ℤ、巡回群ℤ/nℤ、対称群S_n）の間の準同型を構成してみましょう。準同型が群演算を保存することを確認できます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'group-category-interactive',
       interactive: true,
       nextCondition: 'interaction',
     },
@@ -76,6 +78,7 @@ export const groupCategoryTutorial: Tutorial = {
       stepType: 'interactive',
       content: '群の圏Grpは代数学を圏論的に捉える典型例です。忘却・自由の随伴は代数構造の「自由構成」を統一的に理解する鍵です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'group-category-summary',
       interactive: true,
       nextCondition: 'interaction',
     }

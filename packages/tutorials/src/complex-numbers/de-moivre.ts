@@ -12,6 +12,7 @@ export const deMoivreTutorial: Tutorial = {
       title: '累乗の公式',
       content:
         'ド・モアブルの定理:\n\n(cos θ + i sin θ)ⁿ = cos(nθ) + i sin(nθ)\n\n極形式の掛け算を繰り返し適用した結果です。\n\nn回掛けると偏角がn倍になる、というシンプルな法則です。',
+      customScene: 'de-moivre-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -121,6 +122,7 @@ export const deMoivreTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'ド・モアブルの定理:\n\n・(cos θ + i sin θ)ⁿ = cos(nθ) + i sin(nθ)\n・累乗すると偏角がn倍になる\n・多倍角の公式を導出できる\n・負の整数でも成立\n\n次はn乗根について学びましょう。',
+      customScene: 'de-moivre-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

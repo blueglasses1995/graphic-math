@@ -11,6 +11,7 @@ export const semiLogTutorial: Tutorial = {
       title: '指数関数が直線になる',
       content:
         'y = 2^x を普通にプロットすると急カーブ。でもy軸を対数スケールにすると直線に変わります。これが片対数グラフの力です。',
+      customScene: 'semi-log-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const semiLogTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'y軸のスケールを線形と対数で切り替えて、指数関数の見え方がどう変わるか観察してください。',
+      customScene: 'semi-log-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const semiLogTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '片対数グラフはy軸だけを対数スケールにしたグラフ。指数関数が直線に見え、成長率や半減期を視覚的に読み取れます。\n\nスケールを切り替えて確認してみてください。',
+      customScene: 'semi-log-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

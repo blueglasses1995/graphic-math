@@ -12,6 +12,7 @@ export const categoryOutlookTutorial: Tutorial = {
       stepType: 'animation',
       content: '高次圏論、ホモトピー型理論、応用圏論——圏論は今も急速に発展し続けています。最先端の研究分野をマップとしてアニメーション表示します。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'category-outlook-animation',
       interactive: false,
       nextCondition: 'click',
     },
@@ -21,6 +22,7 @@ export const categoryOutlookTutorial: Tutorial = {
       stepType: 'interactive',
       content: '圏論の研究分野マップをクリックして、各分野の概要を確認しましょう。高次圏論、応用圏論、計算圏論などの関係が見えてきます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'category-outlook-interactive',
       interactive: true,
       nextCondition: 'interaction',
     },
@@ -76,6 +78,7 @@ export const categoryOutlookTutorial: Tutorial = {
       stepType: 'interactive',
       content: '圏論は数学の共通言語として発展し続け、新しい数学的構造の発見と他分野への応用を推進しています。この講座で学んだ基礎の上に、あなた自身の探求を続けてください。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'category-outlook-summary',
       interactive: true,
       nextCondition: 'interaction',
     }

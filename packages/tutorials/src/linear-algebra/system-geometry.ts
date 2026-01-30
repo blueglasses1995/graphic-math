@@ -15,6 +15,7 @@ export const systemGeometryTutorial: Tutorial = {
         '連立方程式を解くとは、複数の直線（または平面）の「交点」を見つけることです。\n\n' +
         '交わる？ 平行？ 一致する？\n' +
         '幾何学的な視点で見ると、解の構造が一目瞭然になります。',
+      customScene: 'system-geometry-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -49,6 +50,7 @@ export const systemGeometryTutorial: Tutorial = {
         '→ 2本の直線は平行ではない → 交点が1つある\n\n' +
         '解：x = (4×3-1×7)/5 = 1, y = (2×7-4×1)/5 = 2\n\n' +
         '(1, 2) が交点です。',
+      customScene: 'system-geometry-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -186,6 +188,7 @@ export const systemGeometryTutorial: Tutorial = {
         '4. det = 0 → 平行（解なし）or 一致（無数の解）\n' +
         '5. 行の視点（交差）と列の視点（合成）\n\n' +
         '次は最小二乗法を学びます。',
+      customScene: 'system-geometry-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

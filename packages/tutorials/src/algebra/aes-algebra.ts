@@ -12,6 +12,7 @@ export const aesAlgebraTutorial: Tutorial = {
       content:
         'AES（Advanced Encryption Standard）は世界で最も広く使われる暗号です。\n\nWi-Fi、HTTPS、ファイル暗号化…あらゆる場所で動いています。\n\nその内部では有限体 GF(2⁸) の演算が巧みに使われています。\n代数学が現代のセキュリティを支えているのです。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'aes-algebra-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -22,6 +23,7 @@ export const aesAlgebraTutorial: Tutorial = {
       content:
         'GF(2⁸) は256個の元を持つ有限体です。\n\n元はバイト（8ビット）で表現され:\n加法: ビットごとのXOR\n乗法: 多項式の積 mod 既約多項式\n\n既約多項式: x⁸ + x⁴ + x³ + x + 1\n\nバイトを選んで演算を試してみましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'aes-algebra-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -82,6 +84,7 @@ export const aesAlgebraTutorial: Tutorial = {
       content:
         'AESの代数構造:\n\n• GF(2⁸) 上の演算が基盤\n• S-Box: 乗法逆元で非線形性を実現\n• MixColumns: MDS行列で拡散\n• 全操作が代数的に説明可能\n• 代数学が実用暗号を支える最良の例\n\n理論と実践が見事に融合した暗号です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'aes-algebra-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

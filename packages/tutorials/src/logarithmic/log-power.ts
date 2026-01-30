@@ -11,6 +11,7 @@ export const logPowerTutorial: Tutorial = {
       title: '累乗が掛け算になる',
       content:
         'log₂(8²) = 2 × log₂(8) = 2 × 3 = 6。確かに 8² = 64 で log₂(64) = 6。対数の世界では累乗が単純な掛け算になります。',
+      customScene: 'log-power-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const logPowerTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '底、真数、指数を変えて log(A^n) と n × log(A) が一致することを確認してください。',
+      customScene: 'log-power-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const logPowerTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'log(A^n) = n × log A。対数は累乗を掛け算に変換します。平方根や立方根にも適用できます。\n\n自由に値を変えてこの法則を確かめてみてください。',
+      customScene: 'log-power-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

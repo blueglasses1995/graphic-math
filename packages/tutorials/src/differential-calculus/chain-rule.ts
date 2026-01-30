@@ -11,6 +11,7 @@ export const chainRuleTutorial: Tutorial = {
       title: '関数の中に関数',
       content:
         'sin(x²) は「まず x² を計算し、次に sin をかける」合成関数です。この入れ子構造を微分するとき、外側と内側の両方を考慮する必要があります。歯車が連動するアニメーションで見てみましょう。',
+      customScene: 'chain-rule-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const chainRuleTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '内側の関数 g(x) と外側の関数 f(u) を切り替えて、合成関数の傾きがどう決まるか体験してください。',
+      customScene: 'chain-rule-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const chainRuleTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '[f(g(x))]\' = f\'(g(x))·g\'(x)。「外微分 × 内微分」。連鎖律は合成関数を分解して微分する最強ツールです。\n\n次は三角関数の微分に進みましょう。',
+      customScene: 'chain-rule-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

@@ -11,6 +11,7 @@ export const velocityToDistanceTutorial: Tutorial = {
       title: '速度計から距離を知る',
       content:
         '車の速度計が v(t) を表示しています。\n\n速度のグラフの下の面積が「移動距離」になります。\n\nこれは ∫₀ᵗ v(τ) dτ そのものです。\n\nアニメーションで速度から距離が積み上がる様子を見てみましょう。',
+      customScene: 'velocity-to-distance-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const velocityToDistanceTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '時刻 t を動かして、速度のグラフの面積と距離の関係を確かめてみましょう。\n\n速度が大きい区間では距離の増え方が速く、速度が小さいと遅くなります。',
+      customScene: 'velocity-to-distance-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const velocityToDistanceTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '速度の積分 = 距離（変位）。これが積分の最も基本的な物理応用です。\n\n加速度を積分すれば速度、速度を積分すれば位置。\n\n微分と積分は物理のあらゆる場面で使われています。\n\nグラフを操作して、速度と距離の関係を体感してみてください。',
+      customScene: 'velocity-to-distance-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

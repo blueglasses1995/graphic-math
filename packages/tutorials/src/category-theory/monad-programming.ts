@@ -12,6 +12,7 @@ export const monadProgrammingTutorial: Tutorial = {
       stepType: 'animation',
       content: 'Maybe, List, IO, State——これらはすべてモナドです。純粋関数型プログラミングで副作用を安全に扱うモナドの仕組みをアニメーションで確認しましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'monad-programming-animation',
       interactive: false,
       nextCondition: 'click',
     },
@@ -21,6 +22,7 @@ export const monadProgrammingTutorial: Tutorial = {
       stepType: 'interactive',
       content: 'Maybeモナドで >>=(bind)を使った計算の連鎖を体験しましょう。Just値の伝播とNothing（失敗）の短絡評価を視覚的に確認できます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'monad-programming-interactive',
       interactive: true,
       nextCondition: 'interaction',
     },
@@ -76,6 +78,7 @@ export const monadProgrammingTutorial: Tutorial = {
       stepType: 'interactive',
       content: 'モナドは圏論の抽象的概念が実用的プログラミングに直結する最も美しい例です。副作用の管理、計算の合成、エラーハンドリングをモナドで統一的に扱えます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'monad-programming-summary',
       interactive: true,
       nextCondition: 'interaction',
     }

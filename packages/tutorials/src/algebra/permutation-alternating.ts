@@ -12,6 +12,7 @@ export const permutationAlternatingTutorial: Tutorial = {
       content:
         '3枚のカードを並び替える方法は 3! = 6 通り。\nこれが対称群 S₃ です。\n\nでは「偶数回の交換」で達成できる並び替えだけを集めたら？\nそれが交代群 A₃ ── 対称群の半分の大きさを持つ重要な部分群です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'permutation-alternating-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -22,6 +23,7 @@ export const permutationAlternatingTutorial: Tutorial = {
       content:
         '置換を互換の積に分解し、偶置換か奇置換かを判定しましょう。\n\n(1 2 3) = (1 3)(1 2) → 互換2つ → 偶置換\n(1 2) → 互換1つ → 奇置換\n\n置換を選んで分解を確認してください。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'permutation-alternating-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -82,6 +84,7 @@ export const permutationAlternatingTutorial: Tutorial = {
       content:
         '• 対称群 Sₙ: n個の元の全置換（位数 n!）\n• 交代群 Aₙ: 偶置換の全体（位数 n!/2）\n• Aₙ ◁ Sₙ（正規部分群）\n• A₅ 以上は単純群 → 方程式の可解性に関係\n• パズルの到達可能性にも関連\n\n群論の中核をなす概念です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'permutation-alternating-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

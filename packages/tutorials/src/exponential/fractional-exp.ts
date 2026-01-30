@@ -11,6 +11,7 @@ export const fractionalExpTutorial: Tutorial = {
       title: '2の0.5乗って何？',
       content:
         '2⁰·⁵ とはどんな数でしょう？2¹=2、2⁰=1 だから、その間の数？実は √2 ≈ 1.414 です。なぜ「半分の指数」が「平方根」になるのか、アニメーションで見てみましょう。',
+      customScene: "fractional-exp-animation",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const fractionalExpTutorial: Tutorial = {
       title: '指数を小数で変えてみよう',
       content:
         'スライダーで指数を0から2まで連続的に変えてみましょう。整数以外の指数でも滑らかにつながることがわかります。',
+      customScene: "fractional-exp-interactive",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +107,7 @@ export const fractionalExpTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '分数の指数：\n• a^(1/n) = ⁿ√a（n乗根）\n• a^(m/n) = (ⁿ√a)ᵐ\n• 指数法則の自然な拡張\n• グラフ上では整数点の間を滑らかにつなぐ\n\nこれで指数は整数→0→負→分数へと拡張されました。',
+      customScene: "fractional-exp-summary",
       sceneConfig: {
         showGrid: true,
         showAxes: true,

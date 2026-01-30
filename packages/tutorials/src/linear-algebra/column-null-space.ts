@@ -15,6 +15,7 @@ export const columnNullSpaceTutorial: Tutorial = {
         '行列Aによる変換で、ゼロに潰される入力の集合 → 零空間\n\n' +
         '列空間は「行ける場所」、零空間は「消える方向」です。\n' +
         'この2つを知れば、行列の性質がほぼわかります。',
+      customScene: 'column-null-space-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -48,6 +49,7 @@ export const columnNullSpaceTutorial: Tutorial = {
         '(1,2) と (3,1) は線形独立なので、スパンは2次元平面全体。\n' +
         '→ 列空間 = R² 全体\n' +
         '→ Ax = b は任意の b に対して解を持ちます。',
+      customScene: 'column-null-space-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -180,6 +182,7 @@ export const columnNullSpaceTutorial: Tutorial = {
         '4. 次元定理：rank + nullity = 列数\n' +
         '5. 解の判定：列空間（存在性）+ 零空間（一意性）\n\n' +
         '次はドット積の幾何学を学びましょう。',
+      customScene: 'column-null-space-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

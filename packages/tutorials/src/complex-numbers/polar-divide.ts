@@ -11,6 +11,7 @@ export const polarDivideTutorial: Tutorial = {
       title: '掛け算の逆',
       content:
         '掛け算が「絶対値の積、偏角の和」なら、割り算は？\n\nz₁ / z₂ = (r₁/r₂)(cos(θ₁-θ₂) + i sin(θ₁-θ₂))\n\n絶対値は割り算、偏角は引き算です！\n\n掛け算の完全な裏返しです。',
+      customScene: 'polar-divide-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -53,6 +54,7 @@ export const polarDivideTutorial: Tutorial = {
       title: '割り算を体験',
       content:
         '偏角を変化させて、割り算の結果がどう動くか観察してみましょう。\n\n掛け算とは偏角の変化が逆方向になることを確認してください。',
+      customScene: 'polar-divide-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -113,6 +115,7 @@ export const polarDivideTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '極形式での割り算:\n\n・r₁∠θ₁ / r₂∠θ₂ = (r₁/r₂)∠(θ₁-θ₂)\n・絶対値は商、偏角は差\n・逆数: 1/z = (1/r)∠(-θ)\n・用途に応じて直交形式と極形式を使い分ける\n\n次はド・モアブルの定理を学びましょう。',
+      customScene: 'polar-divide-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

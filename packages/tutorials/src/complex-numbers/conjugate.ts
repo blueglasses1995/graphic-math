@@ -12,6 +12,7 @@ export const conjugateTutorial: Tutorial = {
       title: '鏡に映した複素数',
       content:
         'z = a + bi の共役複素数は、虚部の符号を反転させた数です。\n\nz̄ = a - bi\n\n複素平面では、実軸に関して鏡像の位置にあります。\n\n例: z = 3 + 2i → z̄ = 3 - 2i',
+      customScene: 'conjugate-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -110,6 +111,7 @@ export const conjugateTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '共役複素数のポイント:\n\n・z̄ は虚部の符号を反転（実軸に関する鏡像）\n・z × z̄ = |z|²（常に非負の実数）\n・割り算は分母に共役を掛けて実数化\n・z = z̄ ⟺ z は実数\n\n次は絶対値（モジュラス）を学びましょう。',
+      customScene: 'conjugate-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

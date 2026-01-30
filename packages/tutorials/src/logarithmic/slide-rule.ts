@@ -11,6 +11,7 @@ export const slideRuleTutorial: Tutorial = {
       title: '棒をスライドしてかけ算',
       content:
         '計算尺は対数目盛の定規を2本重ねた道具。一方をスライドさせるだけでかけ算ができます。log(A) + log(B) = log(AB) の原理です。',
+      customScene: 'slide-rule-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const slideRuleTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '仮想の計算尺をスライドさせて、2 × 3 = 6 を求めてみてください。対数目盛上で2の位置に3を合わせると6が読めます。',
+      customScene: 'slide-rule-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const slideRuleTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '計算尺は log(AB) = log A + log B を物理的に実現した道具。スライドするだけでかけ算・割り算ができます。\n\n仮想計算尺で自由に計算を試してみてください。',
+      customScene: 'slide-rule-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

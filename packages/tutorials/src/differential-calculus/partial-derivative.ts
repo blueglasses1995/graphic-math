@@ -11,6 +11,7 @@ export const partialDerivativeTutorial: Tutorial = {
       title: '2つの変数を持つ関数',
       content:
         'f(x,y) = x² + y² は曲面（お椀型）を描きます。x 方向の傾きと y 方向の傾きは別々に求められます。「他の変数を固定して1つだけ微分する」のが偏微分です。',
+      customScene: 'partial-derivative-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const partialDerivativeTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '曲面上の点を動かして、x方向の傾きと y方向の傾きを別々に確認してください。同じ点でも方向によって傾きが異なります。',
+      customScene: 'partial-derivative-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const partialDerivativeTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '偏微分: 他の変数を固定して1変数で微分する。∂f/∂x と ∂f/∂y で方向別の変化率がわかります。\n\n次は偏微分をまとめた「勾配ベクトル」を学びましょう。',
+      customScene: 'partial-derivative-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

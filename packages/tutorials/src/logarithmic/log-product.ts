@@ -11,6 +11,7 @@ export const logProductTutorial: Tutorial = {
       title: 'かけ算が足し算になる',
       content:
         'log₂(4 × 8) = log₂(4) + log₂(8) = 2 + 3 = 5。確かに 4 × 8 = 32 で log₂(32) = 5。対数を使うと、かけ算が足し算に変わります。',
+      customScene: 'log-product-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const logProductTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'A と B の値を変えて、log(A × B) と log(A) + log(B) が常に一致することを確認してください。',
+      customScene: 'log-product-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const logProductTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'log(AB) = log A + log B。対数は積を和に変換します。指数法則 a^m × a^n = a^(m+n) から導かれます。\n\n自由に値を変えてこの法則を確かめてみてください。',
+      customScene: 'log-product-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

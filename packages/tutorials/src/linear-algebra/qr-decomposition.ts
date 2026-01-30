@@ -1,3 +1,4 @@
+import { Vector3 } from '@learnmath/core';
 import { Tutorial } from '../types';
 
 export const qrDecompositionTutorial: Tutorial = {
@@ -16,7 +17,8 @@ export const qrDecompositionTutorial: Tutorial = {
         '自然にQR分解が得られます。\n\n' +
         'QR分解は最小二乗法や固有値計算のアルゴリズム（QR法）の\n' +
         '基礎となる重要な分解です。',
-      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      sceneConfig: { showGrid: true, showAxes: true, vectors: [{ id: 'v1', vector: new Vector3(1, 0, 0), color: '#ff5722', label: 'e₁' }, { id: 'v2', vector: new Vector3(0, 1, 0), color: '#4caf50', label: 'e₂' }], cameraPosition: [0, 0, 5] },
+      customScene: 'qr-decomposition-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -33,6 +35,7 @@ export const qrDecompositionTutorial: Tutorial = {
         'Rの対角成分は各ベクトルの直交化後の長さ、\n' +
         '上三角の成分は射影の大きさを表します。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'qr-decomposition-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -122,6 +125,7 @@ export const qrDecompositionTutorial: Tutorial = {
         '5. ハウスホルダー法はより数値的に安定\n\n' +
         'QR分解は数値線形代数の中核をなす技法です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 6] },
+      customScene: 'qr-decomposition-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

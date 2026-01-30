@@ -11,6 +11,7 @@ export const bacteriaGrowthTutorial: Tutorial = {
       title: '20分ごとに2倍',
       content:
         '大腸菌は理想的な条件で約20分ごとに分裂します。1匹から始めて24時間後には何匹に？2⁷² ≈ 4.7×10²¹。地球上の砂粒の数を超えます。細菌がどんどん分裂していくアニメーションを見てみましょう。',
+      customScene: 'bacteria-growth-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const bacteriaGrowthTutorial: Tutorial = {
       title: '培養条件をシミュレーション',
       content:
         '初期菌数、分裂時間、培養時間を変えて、細菌数の変化を観察しましょう。分裂時間がわずかに変わるだけで最終数が大きく変わることに注目してください。',
+      customScene: 'bacteria-growth-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +107,7 @@ export const bacteriaGrowthTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '細菌の増殖：\n• N(t) = N₀·2^(t/g)\n• 世代時間gで2倍に分裂\n• 対数増殖期は純粋な指数的成長\n• 栄養制限で成長が止まる（ロジスティック的）\n• 食品衛生の基本原理\n\n実世界での指数的成長の最もわかりやすい例です。',
+      customScene: 'bacteria-growth-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

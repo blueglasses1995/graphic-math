@@ -12,6 +12,7 @@ export const argumentTutorial: Tutorial = {
       title: '角度で方向を表す',
       content:
         '複素数 z = a + bi の偏角（argument）は、正の実軸から z への角度 θ です。\n\narg(z) = θ\n\nここで a = |z| cos θ、b = |z| sin θ です。\n\n偏角は複素数の「方向」を表します。',
+      customScene: 'argument-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -70,6 +71,7 @@ export const argumentTutorial: Tutorial = {
       title: '偏角を体験',
       content:
         '点をドラッグして、偏角がどう変化するか観察してみましょう。\n\n正の実軸（右方向）からの反時計回りの角度が偏角です。',
+      customScene: 'argument-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -124,6 +126,7 @@ export const argumentTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '偏角（アーギュメント）のポイント:\n\n・arg(z) = 正の実軸からの角度\n・atan2(b, a) で計算\n・主値 Arg(z) は -π < θ ≦ π\n・掛け算 → 偏角の足し算\n\n絶対値と偏角がわかれば、複素数を「極形式」で表せます。次はそれを学びましょう。',
+      customScene: 'argument-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

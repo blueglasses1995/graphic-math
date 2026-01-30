@@ -11,6 +11,7 @@ export const juliaSetTutorial: Tutorial = {
       title: 'マンデルブロの親戚',
       content:
         'ジュリア集合は、マンデルブロ集合と同じ z → z² + c を使いますが、視点が異なります。\n\nマンデルブロ: c を変えて z₀=0 を固定\nジュリア: c を固定して z₀ を変える\n\nつまり「初期値 z₀ が発散するかどうか」で集合を定義します。',
+      customScene: 'julia-set-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -53,6 +54,7 @@ export const juliaSetTutorial: Tutorial = {
       title: 'ジュリア集合を探索',
       content:
         'パラメータ c を動かして、ジュリア集合の形がどう変化するか観察してみましょう。\n\nマンデルブロ集合の境界付近で最も美しいパターンが見られます。',
+      customScene: 'julia-set-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -112,6 +114,7 @@ export const juliaSetTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'ジュリア集合:\n\n・z → z² + c で c を固定、z₀ を変える\n・マンデルブロ集合の「断面」\n・c がマンデルブロ内 → 連結、外 → 塵\n・原点に関して対称\n・パラメータ c により無限の多様性\n\nフラクタルは複素数の反復のダイナミクスを美しく可視化した例です。',
+      customScene: 'julia-set-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

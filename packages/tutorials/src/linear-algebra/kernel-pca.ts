@@ -1,3 +1,4 @@
+import { Vector3 } from '@learnmath/core';
 import { Tutorial } from '../types';
 
 export const kernelPcaTutorial: Tutorial = {
@@ -17,7 +18,8 @@ export const kernelPcaTutorial: Tutorial = {
         'カーネルトリックを使って非線形な構造を発見します。\n\n' +
         'データを高次元空間に写像してからPCAを行いますが、\n' +
         '実際には写像を明示的に計算する必要がありません！',
-      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      sceneConfig: { showGrid: true, showAxes: true, vectors: [{ id: 'v1', vector: new Vector3(1, 0, 0), color: '#ff5722', label: 'e₁' }, { id: 'v2', vector: new Vector3(0, 1, 0), color: '#4caf50', label: 'e₂' }], cameraPosition: [0, 0, 5] },
+      customScene: 'kernel-pca-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -36,6 +38,7 @@ export const kernelPcaTutorial: Tutorial = {
         '高次元に行かずに高次元の内積が計算できる。\n' +
         'これがカーネルトリックの魔法です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'kernel-pca-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -129,6 +132,7 @@ export const kernelPcaTutorial: Tutorial = {
         '5. SVM等他の手法にもカーネルトリック適用可能\n\n' +
         'カーネル法は線形代数を非線形問題に拡張する強力な枠組みです。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 6] },
+      customScene: 'kernel-pca-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

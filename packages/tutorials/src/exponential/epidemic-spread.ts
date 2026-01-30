@@ -11,6 +11,7 @@ export const epidemicSpreadTutorial: Tutorial = {
       title: '1人から始まるパンデミック',
       content:
         '1人の感染者が平均2.5人に感染させる場合、10世代で何人に？2.5¹⁰ ≈ 9,536人。指数的拡大の初期段階では対策が間に合わないことがあります。感染が広がるアニメーションを見てみましょう。',
+      customScene: "epidemic-spread-animation",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const epidemicSpreadTutorial: Tutorial = {
       title: '基本再生産数を変えてみよう',
       content:
         'R₀（基本再生産数）を変えて、感染拡大の速さがどう変わるか観察しましょう。R₀>1で拡大、R₀<1で収束します。',
+      customScene: "epidemic-spread-interactive",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +107,7 @@ export const epidemicSpreadTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '感染症の拡大：\n• 初期は指数的成長 I₀·e^((R₀-1)γt)\n• R₀>1で流行、R₀<1で収束\n• SIRモデルでロジスティック的飽和\n• 集団免疫閾値 = 1-1/R₀\n• 対策は実効再生産数を下げること\n\n数学で感染症を理解し、対策を考えられます。',
+      customScene: "epidemic-spread-summary",
       sceneConfig: {
         showGrid: true,
         showAxes: true,

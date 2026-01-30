@@ -11,6 +11,7 @@ export const halfLifeTutorial: Tutorial = {
       title: '半分になるまでの時間',
       content:
         '放射性物質は一定の時間ごとに半分に減っていきます。100g → 50g → 25g → 12.5g → ...。この「半分になる時間」が半減期です。物質が段階的に半減していくアニメーションを見てみましょう。',
+      customScene: "half-life-animation",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const halfLifeTutorial: Tutorial = {
       title: '半減期を変えてみよう',
       content:
         '半減期の長さを変えて、減衰のペースがどう変わるか観察しましょう。半減期が短いほど急速に減り、長いほどゆっくり減ります。',
+      customScene: "half-life-interactive",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +107,7 @@ export const halfLifeTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '半減期：\n• 量が半分になるまでの時間\n• N(t) = N₀·(1/2)^(t/T)\n• k = ln2/T で減衰定数と関連\n• n回の半減期で 1/2ⁿ に減少\n• 炭素年代測定など実用的な応用がある\n\n次は成長の逆、「倍増時間」を学びます。',
+      customScene: "half-life-summary",
       sceneConfig: {
         showGrid: true,
         showAxes: true,

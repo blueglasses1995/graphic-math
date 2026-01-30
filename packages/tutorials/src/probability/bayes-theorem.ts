@@ -11,7 +11,10 @@ export const bayesTheoremTutorial: Tutorial = {
       title: '結果から原因を推理する',
       content:
         '病気の検査で陽性が出ました。本当に病気である確率は？直感的には高そうですが、実は検査の精度と病気の頻度で大きく変わります。これがベイズの定理の出番です。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'bayes-theorem-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',
@@ -41,7 +44,10 @@ export const bayesTheoremTutorial: Tutorial = {
       title: 'パラメータを変えてみよう',
       content:
         '事前確率や検査精度を変えると事後確率がどう変わるか確認しましょう。珍しい病気ほど、陽性でも実際の確率は低くなります。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'bayes-theorem-interactive',
       interactive: true,
       nextCondition: 'click',
       stepType: 'interactive',
@@ -81,7 +87,10 @@ export const bayesTheoremTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'ベイズの定理: P(A|B) = P(B|A)P(A) / P(B)\n\n• 事前確率を事後確率に更新する\n• 稀な事象は偽陽性に注意（基底率の無視）\n• 医療・AI・意思決定に広く応用\n\n結果から原因を推理する最も基本的な道具です。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'bayes-theorem-summary',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',

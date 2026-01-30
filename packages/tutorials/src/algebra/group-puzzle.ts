@@ -12,6 +12,7 @@ export const groupPuzzleTutorial: Tutorial = {
       content:
         'ルービックキューブ、15パズル、ハノイの塔。\n\nこれらのパズルの状態空間は群を成します。\n\n「操作の合成」が群の演算、\n「操作の取り消し」が逆元、\n「何もしない」が単位元。\n\n群論でパズルの構造を完全に理解できるのです。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'group-puzzle-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -22,6 +23,7 @@ export const groupPuzzleTutorial: Tutorial = {
       content:
         '3×3の8パズル（スライドパズル）を考えましょう。\n\n状態の総数: 9!/2 = 181,440（到達可能な配置）\n\nなぜ半分？偶置換しか到達できないからです。\nパズルの群 ≅ A₉ の部分群\n\nタイルを動かして群の構造を体感しましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'group-puzzle-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -82,6 +84,7 @@ export const groupPuzzleTutorial: Tutorial = {
       content:
         '群とパズル:\n\n• パズルの状態空間は群を成す\n• 置換群・対称群で状態を記述\n• 可解性は群の構造で判定\n• ケイリーグラフで最短解を分析\n• ルービックキューブの群は ≈ 4.3 × 10¹⁹\n\n群論の直感的で楽しい応用です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'group-puzzle-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

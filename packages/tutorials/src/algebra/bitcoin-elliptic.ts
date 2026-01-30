@@ -12,6 +12,7 @@ export const bitcoinEllipticTutorial: Tutorial = {
       content:
         'Bitcoinの全てのトランザクションは数学で守られています。\n\nその心臓部が楕円曲線 secp256k1:\ny² = x³ + 7 (mod p)\n\np = 2²⁵⁶ - 2³² - 977（巨大な素数）\n\nこの曲線上の離散対数問題が、あなたのBitcoinを守ります。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'bitcoin-elliptic-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -22,6 +23,7 @@ export const bitcoinEllipticTutorial: Tutorial = {
       content:
         'Bitcoinアドレスの生成:\n\n1. 秘密鍵: ランダムな256ビット整数 d\n2. 公開鍵: Q = dG（楕円曲線上のスカラー倍算）\n3. アドレス: Hash(Q) の一部\n\n秘密鍵 → 公開鍵は一瞬で計算可能\n公開鍵 → 秘密鍵は（事実上）不可能\n\nスカラー値を変えて公開鍵の変化を見ましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'bitcoin-elliptic-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -82,6 +84,7 @@ export const bitcoinEllipticTutorial: Tutorial = {
       content:
         '楕円曲線とBitcoin:\n\n• secp256k1: y² = x³ + 7 がBitcoinの基盤\n• 秘密鍵(256bit) → 公開鍵 → アドレス\n• ECDSA署名でトランザクションを認証\n• シュノア署名で進化（Taproot）\n• ECDLPの困難性が安全性を保証\n\n暗号通貨は代数学の実践的応用です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'bitcoin-elliptic-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

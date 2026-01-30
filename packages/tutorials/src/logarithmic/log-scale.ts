@@ -11,6 +11,7 @@ export const logScaleTutorial: Tutorial = {
       title: '1から1000000を1つの軸に',
       content:
         '線形スケールでは1と1000000を同じグラフに表示するのは困難。しかし対数スケールなら log₁₀(1)=0 から log₁₀(1000000)=6 まで、わずか6目盛で表現できます。',
+      customScene: 'log-scale-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const logScaleTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '線形スケールと対数スケールを切り替えて、データの見え方がどう変わるか体験してください。',
+      customScene: 'log-scale-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const logScaleTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '対数スケールは「等間隔 = 等倍率」。広い範囲のデータを扱いやすくし、指数的な成長を直線に変えます。\n\nスケールを切り替えてデータの見え方を比べてみてください。',
+      customScene: 'log-scale-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

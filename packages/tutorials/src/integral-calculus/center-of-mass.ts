@@ -11,6 +11,7 @@ export const centerOfMassTutorial: Tutorial = {
       title: 'バランスポイント',
       content:
         '指一本で板をバランスさせられる点 ── それが重心です。\n\n離散的な点なら「質量 × 位置」の平均で求められます。\n\n連続的な物体の場合は？ 積分の出番です。',
+      customScene: 'center-of-mass-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const centerOfMassTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '密度分布を変えてみてください。\n\n重心の位置がどう変わるか観察しましょう。\n\n密度が偏っている側に重心が寄ります。',
+      customScene: 'center-of-mass-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const centerOfMassTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '重心 x̄ = ∫ x·ρ(x) dx / ∫ ρ(x) dx\n\n「位置 × 質量」の平均 ── 期待値と同じ構造です。\n\n密度分布を変えて、重心の移動を確かめてみてください。',
+      customScene: 'center-of-mass-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

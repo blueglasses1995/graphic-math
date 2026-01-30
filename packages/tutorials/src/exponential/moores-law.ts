@@ -11,6 +11,7 @@ export const mooresLawTutorial: Tutorial = {
       title: 'スマホの中の100億個',
       content:
         '1971年のIntel 4004は2,300個のトランジスタ。2020年のApple M1は160億個。50年で約700万倍。約2年で2倍のペースで増え続けました。この驚異的な指数的成長を「ムーアの法則」と呼びます。',
+      customScene: "moores-law-animation",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const mooresLawTutorial: Tutorial = {
       title: 'トランジスタ数の推移を見よう',
       content:
         '年代ごとのトランジスタ数のグラフを対数スケールと線形スケールで切り替えて観察しましょう。対数スケールではほぼ直線に見えることに注目してください。',
+      customScene: "moores-law-interactive",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +107,7 @@ export const mooresLawTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'ムーアの法則：\n• 約2年でトランジスタ数が2倍\n• 50年で約700万倍の指数的成長\n• 対数グラフで直線 = 指数的成長の証拠\n• 社会を根本的に変えた\n• 物理的限界に近づきつつある\n\n技術進歩の指数的成長の最も有名な例です。',
+      customScene: "moores-law-summary",
       sceneConfig: {
         showGrid: true,
         showAxes: true,

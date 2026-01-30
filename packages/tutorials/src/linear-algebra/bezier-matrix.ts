@@ -1,3 +1,4 @@
+import { Vector3 } from '@learnmath/core';
 import { Tutorial } from '../types';
 
 export const bezierMatrixTutorial: Tutorial = {
@@ -16,7 +17,8 @@ export const bezierMatrixTutorial: Tutorial = {
         'すべてベジエ曲線です。\n\n' +
         'ベジエ曲線は制御点と行列の掛け算で定義され、\n' +
         '線形代数が美しい曲線を生み出しています。',
-      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      sceneConfig: { showGrid: true, showAxes: true, vectors: [{ id: 'v1', vector: new Vector3(1, 0, 0), color: '#ff5722', label: 'e₁' }, { id: 'v2', vector: new Vector3(0, 1, 0), color: '#4caf50', label: 'e₂' }], cameraPosition: [0, 0, 5] },
+      customScene: 'bezier-matrix-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -33,6 +35,7 @@ export const bezierMatrixTutorial: Tutorial = {
         '制御点を動かすと曲線が直感的に変形します。\n' +
         'これがデザインツールの使いやすさの秘密です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'bezier-matrix-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -124,6 +127,7 @@ export const bezierMatrixTutorial: Tutorial = {
         '5. B-スプライン、NURBSへと発展\n\n' +
         '曲線・曲面の表現は行列の基底変換の応用です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 6] },
+      customScene: 'bezier-matrix-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

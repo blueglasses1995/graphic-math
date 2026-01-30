@@ -11,6 +11,7 @@ export const riemannSumTutorial: Tutorial = {
       title: 'リーマン和',
       content:
         '前回は長方形で面積を近似しました。\n\nこれを数学的に定式化したのが「リーマン和」です。\n\n区間を n 等分し、各小区間の代表点での関数値 × 幅 を足し合わせます。\n\nアニメーションで n が増えていく様子を見てみましょう。',
+      customScene: 'riemann-sum-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const riemannSumTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '分割数 n を変えてリーマン和の値がどう変わるか確かめてみましょう。\n\nn = 4, 10, 50, 100 と増やしていくと、値が収束していく様子が見えます。',
+      customScene: 'riemann-sum-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const riemannSumTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'リーマン和 Sₙ = Σ f(xᵢ*) · Δx の n → ∞ の極限が定積分です。\n\nこれは「無限に細かい長方形の和」という直感を数学的に定式化したものです。\n\n分割数を変えて、収束の様子を体感してみてください。',
+      customScene: 'riemann-sum-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

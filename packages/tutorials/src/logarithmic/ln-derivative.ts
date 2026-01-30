@@ -11,6 +11,7 @@ export const lnDerivativeTutorial: Tutorial = {
       title: '接線の傾きが 1/x',
       content:
         'y = ln(x) のグラフ上の点 x における接線の傾きは 1/x。x = 1 で傾き1、x = 2 で傾き0.5、x = 10 で傾き0.1。x が大きくなるほど傾きが緩やかになります。',
+      customScene: 'ln-derivative-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const lnDerivativeTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '点を動かして、各位置での接線の傾きが 1/x と一致することを確認してください。',
+      customScene: 'ln-derivative-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const lnDerivativeTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'd/dx ln(x) = 1/x。これが自然対数が「自然」と呼ばれる理由の一つ。シンプルで美しい導関数です。\n\n接線を動かして傾きの変化を体感してください。',
+      customScene: 'ln-derivative-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

@@ -12,6 +12,7 @@ export const codingLinearAlgebraTutorial: Tutorial = {
       content:
         'CDの傷、通信ノイズ、宇宙からの信号。\nデータは常にエラーの危険にさらされています。\n\n符号理論は「余分な情報」を加えてエラーを検出・訂正します。\n\nその基盤は線形代数と有限体です。\nベクトル空間の構造がデータを守るのです。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'coding-linear-algebra-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -22,6 +23,7 @@ export const codingLinearAlgebraTutorial: Tutorial = {
       content:
         'ハミング(7,4)符号: 4ビットのデータを7ビットに符号化。\n\n生成行列 G で符号化: c = mG\nパリティ検査行列 H で誤り検出: Hcᵀ = 0?\n\nシンドローム s = Hrᵀ ≠ 0 なら誤りあり。\nsの値から誤り位置が特定できます。\n\nデータを入力して符号化・誤り訂正を試しましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'coding-linear-algebra-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -82,6 +84,7 @@ export const codingLinearAlgebraTutorial: Tutorial = {
       content:
         '符号理論と線形代数:\n\n• 線形符号 = 有限体上のベクトル空間の部分空間\n• 生成行列・パリティ検査行列で符号を記述\n• 最小距離が訂正能力を決定\n• リード・ソロモン符号: 多項式評価で最適な符号\n• QRコード等で広く実用化\n\n代数学が情報を守ります。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'coding-linear-algebra-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

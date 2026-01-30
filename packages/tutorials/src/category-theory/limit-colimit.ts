@@ -12,6 +12,7 @@ export const limitColimitTutorial: Tutorial = {
       stepType: 'animation',
       content: '積、等化子、引き戻しは「極限」として、余積、余等化子、押し出しは「余極限」として統一できます。図式からの最良の「まとめ方」をアニメーションで見ましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'limit-colimit-animation',
       interactive: false,
       nextCondition: 'click',
     },
@@ -21,6 +22,7 @@ export const limitColimitTutorial: Tutorial = {
       stepType: 'interactive',
       content: '図式 D: J→C の極限を構成しましょう。錐（cone）を作り、普遍錐（極限）への一意な射が存在することを確認してください。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'limit-colimit-interactive',
       interactive: true,
       nextCondition: 'interaction',
     },
@@ -76,6 +78,7 @@ export const limitColimitTutorial: Tutorial = {
       stepType: 'interactive',
       content: '極限と余極限は圏論の普遍的構成を統一する枠組みです。積、等化子、引き戻しなど個別に見えた概念が一つの原理から導かれます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'limit-colimit-summary',
       interactive: true,
       nextCondition: 'interaction',
     }

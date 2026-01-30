@@ -12,6 +12,7 @@ export const morphismCompositionTutorial: Tutorial = {
       stepType: 'animation',
       content: 'f: A→B と g: B→C があるとき、g∘f: A→C が得られます。この「矢印をつなげる」操作こそが圏論の心臓部です。合成の連鎖をアニメーションで見てみましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'morphism-composition-animation',
       interactive: false,
       nextCondition: 'click',
     },
@@ -21,6 +22,7 @@ export const morphismCompositionTutorial: Tutorial = {
       stepType: 'interactive',
       content: '射f, g, hを順番に選んでドラッグし、合成射を作ってみましょう。結合律 h∘(g∘f) = (h∘g)∘f が成り立つことを、2通りの合成順序で確認できます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'morphism-composition-interactive',
       interactive: true,
       nextCondition: 'interaction',
     },
@@ -76,6 +78,7 @@ export const morphismCompositionTutorial: Tutorial = {
       stepType: 'interactive',
       content: '射の合成は圏の核心です。結合律により射を自由に連鎖でき、可換図式で関係を視覚的に表現できます。自分で可換図式を描いて、合成関係を確認してみましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'morphism-composition-summary',
       interactive: true,
       nextCondition: 'interaction',
     }

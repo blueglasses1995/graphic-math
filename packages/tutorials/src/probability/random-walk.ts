@@ -11,7 +11,10 @@ export const randomWalkTutorial: Tutorial = {
       title: '酔っ払いの散歩',
       content:
         '酔っ払いが一歩ずつランダムに右か左に動きます。n歩後にどこにいるでしょう？この単純なモデルが株価変動から拡散現象まで多くの現象を説明します。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'random-walk-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',
@@ -41,7 +44,10 @@ export const randomWalkTutorial: Tutorial = {
       title: 'ランダムウォークを描こう',
       content:
         'ランダムウォークの軌跡を複数本描いて、バラつきの様子を観察しましょう。歩数を増やすと√nの広がりが確認できます。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'random-walk-interactive',
       interactive: true,
       nextCondition: 'click',
       stepType: 'interactive',
@@ -81,7 +87,10 @@ export const randomWalkTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'ランダムウォーク:\n\n• E[Sₙ]=0, σ=√n\n• 1D/2Dでは確率1で原点回帰、3D以上では不確実\n• 株価・拡散・高分子など広範な応用\n• 単純だが豊かな数学的構造を持つ\n\n確率過程の最も基本的なモデルです。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'random-walk-summary',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',

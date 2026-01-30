@@ -12,6 +12,7 @@ export const adjointFunctorTutorial: Tutorial = {
       stepType: 'animation',
       content: '随伴は「最良の近似」の概念です。自由群と忘却関手、テンソル積とHom関手——多くの重要な構成が随伴として統一的に理解できます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'adjoint-functor-animation',
       interactive: false,
       nextCondition: 'click',
     },
@@ -21,6 +22,7 @@ export const adjointFunctorTutorial: Tutorial = {
       stepType: 'interactive',
       content: '左随伴F ⊣ 右随伴G の関係 Hom_D(F(A), B) ≅ Hom_C(A, G(B)) を視覚的に体験しましょう。対応する射のペアを結んでみてください。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'adjoint-functor-interactive',
       interactive: true,
       nextCondition: 'interaction',
     },
@@ -76,6 +78,7 @@ export const adjointFunctorTutorial: Tutorial = {
       stepType: 'interactive',
       content: '随伴はマックレーンが「圏論の中心概念」と呼んだほど重要です。左随伴は余極限を保存し、右随伴は極限を保存します。数学の多くの構成が随伴として統一的に理解できます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'adjoint-functor-summary',
       interactive: true,
       nextCondition: 'interaction',
     }

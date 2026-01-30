@@ -11,7 +11,10 @@ export const insuranceMathTutorial: Tutorial = {
       title: '保険はなぜ成り立つ？',
       content:
         '保険会社は事故が起きたら大金を払います。それでも利益が出るのはなぜ？大数の法則と期待値の計算で、保険のビジネスモデルを理解しましょう。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'insurance-math-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',
@@ -41,7 +44,10 @@ export const insuranceMathTutorial: Tutorial = {
       title: '加入者数を変えてみよう',
       content:
         '加入者数を変えて、保険会社の損益のバラつきがどう変化するか確認しましょう。人数が増えるほど安定することが分かります。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'insurance-math-interactive',
       interactive: true,
       nextCondition: 'click',
       stepType: 'interactive',
@@ -81,7 +87,10 @@ export const insuranceMathTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '保険の数学:\n\n• 保険料 = 期待損失 + 運営費 + 利益\n• 大数の法則でリスクが予測可能に\n• リスクプーリングで個人のリスクを分散\n• 加入者は期待値より「安心」に価値を見出す\n\n確率と期待値の実社会での応用例です。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'insurance-math-summary',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',

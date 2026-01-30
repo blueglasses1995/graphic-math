@@ -17,6 +17,7 @@ export const threeDimensionsTutorial: Tutorial = {
         '2Dベクトル → 3Dベクトル\n' +
         '面積の変化 → 体積の変化\n\n' +
         '次元が1つ増えるだけで、世界は劇的に豊かになります。',
+      customScene: 'three-dimensions-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -57,6 +58,7 @@ export const threeDimensionsTutorial: Tutorial = {
         '任意のベクトル v = (a, b, c) = ai + bj + ck\n\n' +
         '3Dでの線形変換は3×3行列で表されます。\n' +
         '各列は i, j, k がそれぞれどこに移るかを示します。',
+      customScene: 'three-dimensions-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -229,6 +231,7 @@ export const threeDimensionsTutorial: Tutorial = {
         '4. ランクによる「潰れ方」の段階\n' +
         '5. 概念的にはn次元にも拡張可能\n\n' +
         '次は線形代数の全体像をまとめましょう。',
+      customScene: 'three-dimensions-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

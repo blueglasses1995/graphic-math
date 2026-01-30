@@ -11,6 +11,7 @@ export const changeOfBaseTutorial: Tutorial = {
       title: 'どんな底でも計算できる',
       content:
         '電卓には log₁₀ と ln しかないのに、log₂(7) を計算できます。底の変換公式: log₂(7) = ln(7) / ln(2) ≈ 2.807。',
+      customScene: 'change-of-base-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const changeOfBaseTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '底と真数を変えて、底の変換公式で計算した値と直接計算した値が一致することを確かめてください。',
+      customScene: 'change-of-base-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const changeOfBaseTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'log_a(x) = log_b(x) / log_b(a)。底の変換公式により、任意の底の対数を計算できます。\n\n自由に底を変えて変換公式を体感してください。',
+      customScene: 'change-of-base-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

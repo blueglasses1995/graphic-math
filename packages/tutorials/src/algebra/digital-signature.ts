@@ -12,6 +12,7 @@ export const digitalSignatureTutorial: Tutorial = {
       content:
         '紙の文書には手書き署名や印鑑を押します。\n\nデジタル文書では？数学が「印鑑」の役割を果たします。\n\n• 本人だけが署名できる（偽造不可能）\n• 誰でも検証できる（公開検証）\n• 文書が改竄されていないことを保証\n\nその仕組みの核心は群論にあります。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'digital-signature-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -22,6 +23,7 @@ export const digitalSignatureTutorial: Tutorial = {
       content:
         'RSA署名の仕組み:\n\n署名生成: s = H(m)^d mod n（秘密鍵dで署名）\n署名検証: s^e mod n = H(m)?（公開鍵eで検証）\n\nメッセージを選んで署名を生成・検証してみましょう。\n秘密鍵を知らない人は署名を作れないことを確認してください。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'digital-signature-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -82,6 +84,7 @@ export const digitalSignatureTutorial: Tutorial = {
       content:
         'デジタル署名:\n\n• 秘密鍵で生成、公開鍵で検証\n• RSA, DSA, ECDSA, EdDSA 等の方式\n• 一方向性のある数学的問題に基づく\n• 改竄検出・本人認証・否認防止\n• 群論の構造が安全性を保証\n\nデジタル社会の信頼基盤です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'digital-signature-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

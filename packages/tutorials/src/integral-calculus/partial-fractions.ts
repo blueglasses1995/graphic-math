@@ -11,6 +11,7 @@ export const partialFractionsTutorial: Tutorial = {
       title: '分数を分解する',
       content:
         '∫ 1/[x(x+1)] dx をそのまま積分するのは困難です。\n\nでも 1/[x(x+1)] = 1/x - 1/(x+1) と分解できたら？\n\nそれぞれの項は ln で積分できます。\n\nこの「分解する」技法が部分分数分解です。',
+      customScene: 'partial-fractions-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const partialFractionsTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '1/[x(x+1)] のグラフと、1/x と -1/(x+1) のグラフを重ねて表示しています。\n\n2つの単純な分数の「差」が、もとの関数に一致することを確かめてみましょう。',
+      customScene: 'partial-fractions-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const partialFractionsTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '部分分数分解は、有理関数の積分を可能にする強力な技法です。\n\n手順：分母を因数分解 → 部分分数に展開 → 係数を決定 → 各項を積分。\n\n結果は ln や arctan で表されます。\n\nグラフを操作して、分解の様子を確かめてみてください。',
+      customScene: 'partial-fractions-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

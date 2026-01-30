@@ -12,6 +12,7 @@ export const blockchainMathTutorial: Tutorial = {
       content:
         '銀行なしで送金。管理者なしで記録を保持。\n\nブロックチェーンは「信頼」を「数学」で置き換えます。\n\nその数学とは:\n• 暗号学的ハッシュ関数\n• デジタル署名（楕円曲線暗号）\n• マークルツリー\n\nすべて代数学の応用です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'blockchain-math-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -22,6 +23,7 @@ export const blockchainMathTutorial: Tutorial = {
       content:
         'ブロックチェーンの核心はハッシュチェーン:\n\nBlock₁: data₁, H₀\nBlock₂: data₂, H(Block₁)\nBlock₃: data₃, H(Block₂)\n\n前のブロックのハッシュを含むことで、\n過去のデータの改竄を検出できます。\n\nブロックを追加してチェーンを体験しましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'blockchain-math-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -82,6 +84,7 @@ export const blockchainMathTutorial: Tutorial = {
       content:
         'ブロックチェーンの数学:\n\n• ハッシュチェーンでデータの整合性を保証\n• マークルツリーで効率的な検証\n• PoWはハッシュの原像耐性を利用\n• 楕円曲線暗号でトランザクションを署名\n• スマートコントラクトの形式検証\n\n代数学がWeb3の基盤を支えています。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'blockchain-math-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

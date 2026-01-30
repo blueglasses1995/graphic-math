@@ -11,6 +11,7 @@ export const piFromComplexTutorial: Tutorial = {
       title: 'πと複素数',
       content:
         'πは円周率として知られますが、複素数と深い関係があります。\n\nオイラーの等式 e^(iπ) = -1 から:\nπ = -i × ln(-1)\n\nまた、複素数を使ったπの計算公式がいくつも存在します。',
+      customScene: 'pi-from-complex-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -55,6 +56,7 @@ export const piFromComplexTutorial: Tutorial = {
       title: 'πの近似を体験',
       content:
         '半径を変えて、円内の格子点の数がπRに近づく様子を観察しましょう。\n\n半径が大きくなるほど、近似の精度が上がります。',
+      customScene: 'pi-from-complex-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -114,6 +116,7 @@ export const piFromComplexTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '複素数でπを求める:\n\n・π = ln(-1)/i（オイラーの等式から）\n・ライプニッツ公式: 複素対数から導出\n・ガウス整数: 格子点の数 ≈ πR²\n・ウォリス積: sin の無限積表示から\n\nπは円周率ですが、複素数を通じてあらゆる数学とつながっています。\n\nこれで複素数チュートリアルは完了です。おつかれさまでした！',
+      customScene: 'pi-from-complex-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

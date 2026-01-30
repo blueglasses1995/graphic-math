@@ -12,6 +12,7 @@ export const typeHaskellTutorial: Tutorial = {
       stepType: 'animation',
       content: 'Haskellの型を対象、関数を射と見なすとHask圏が得られます。Functor型クラスは関手、自然変換は多相関数に対応します。この対応をアニメーションで確認しましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'type-haskell-animation',
       interactive: false,
       nextCondition: 'click',
     },
@@ -21,6 +22,7 @@ export const typeHaskellTutorial: Tutorial = {
       stepType: 'interactive',
       content: 'Int, String, [a], Maybe a などの型（対象）と関数（射）を配置し、Hask圏の構造を視覚的に構築してみましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'type-haskell-interactive',
       interactive: true,
       nextCondition: 'interaction',
     },
@@ -76,6 +78,7 @@ export const typeHaskellTutorial: Tutorial = {
       stepType: 'interactive',
       content: 'Haskellの型システムは圏論の概念を自然に体現しています。Functor, Monad, Natural Transformationなどの型クラスは圏論からの直接的な翻訳です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'type-haskell-summary',
       interactive: true,
       nextCondition: 'interaction',
     }

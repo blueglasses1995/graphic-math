@@ -11,6 +11,7 @@ export const rateOfChangeTutorial: Tutorial = {
       title: '変化は至るところにある',
       content:
         'ボールが坂を転がるとき、速さはどんどん変わります。温度も、株価も、人口も――世界は「変化」でできています。その変化を数字でつかむ方法が「変化率」です。グラフが動く様子を見てみましょう。',
+      customScene: 'rate-of-change-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const rateOfChangeTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'スライダーを動かして、区間の幅 Δx を変えてみてください。Δx を小さくすると、平均変化率はどうなるでしょう？',
+      customScene: 'rate-of-change-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const rateOfChangeTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '変化率 = Δy/Δx。2点間の変化量の比です。グラフでは割線の傾きにあたります。\n\nこの「平均」の変化率を、ある一瞬の変化率（瞬間変化率）に進化させるのが「微分」です。次のチュートリアルで、その橋渡しを見ていきましょう。',
+      customScene: 'rate-of-change-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

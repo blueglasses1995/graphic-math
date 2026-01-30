@@ -1,3 +1,4 @@
+import { Vector3 } from '@learnmath/core';
 import { Tutorial } from '../types';
 
 export const tensorIntroTutorial: Tutorial = {
@@ -18,7 +19,8 @@ export const tensorIntroTutorial: Tutorial = {
         '扱うデータは全てテンソルです。\n\n' +
         'カラー画像は3階テンソル（高さ×幅×チャンネル）、\n' +
         '動画は4階テンソル（時間×高さ×幅×チャンネル）です。',
-      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      sceneConfig: { showGrid: true, showAxes: true, vectors: [{ id: 'v1', vector: new Vector3(1, 0, 0), color: '#ff5722', label: 'e₁' }, { id: 'v2', vector: new Vector3(0, 1, 0), color: '#4caf50', label: 'e₂' }], cameraPosition: [0, 0, 5] },
+      customScene: 'tensor-intro-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -36,6 +38,7 @@ export const tensorIntroTutorial: Tutorial = {
         '階数が上がるほどインデックスが増えます。\n' +
         'n階テンソルはn個のインデックスを持ちます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'tensor-intro-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -124,6 +127,7 @@ export const tensorIntroTutorial: Tutorial = {
         '5. 物理学では座標変換の規則で定義\n\n' +
         'テンソルは現代科学とAIの共通言語です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 6] },
+      customScene: 'tensor-intro-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

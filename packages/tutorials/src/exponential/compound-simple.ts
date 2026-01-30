@@ -11,6 +11,7 @@ export const compoundSimpleTutorial: Tutorial = {
       title: '利息に利息がつく魔法',
       content:
         '100万円を年利5%で30年間運用すると、単利では250万円、複利では432万円。同じ利率でもこんなに差がつくのはなぜ？単利と複利の成長をアニメーションで比較しましょう。',
+      customScene: "compound-simple-animation",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const compoundSimpleTutorial: Tutorial = {
       title: '利率と期間を変えてみよう',
       content:
         '利率と運用期間を変えて、単利と複利の差がどう広がるか観察しましょう。期間が長いほど複利の優位が際立ちます。',
+      customScene: "compound-simple-interactive",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +107,7 @@ export const compoundSimpleTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '複利と単利：\n• 単利 A = P(1+rt) → 線形成長\n• 複利 A = P(1+r/n)ⁿᵗ → 指数的成長\n• 連続複利 A = Peʳᵗ → 指数関数そのもの\n• 長期間ほど複利の効果が顕著\n• 72の法則で倍増時間を概算\n\n時間は最大の味方です。',
+      customScene: "compound-simple-summary",
       sceneConfig: {
         showGrid: true,
         showAxes: true,

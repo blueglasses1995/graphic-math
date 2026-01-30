@@ -15,6 +15,7 @@ export const determinantAreaTutorial: Tutorial = {
         '2倍に引き伸ばせば面積は4倍。斜めに傾けると面積は？\n\n' +
         '行列式（determinant）は、線形変換が面積をどれだけ変えるかを' +
         '1つの数値で教えてくれます。魔法のような数値です。',
+      customScene: 'determinant-area-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -47,6 +48,7 @@ export const determinantAreaTutorial: Tutorial = {
         '新しい長方形の面積は 2 × 3 = 6 です。\n\n' +
         'この場合の行列式 = 6。面積が6倍になったという意味です。\n\n' +
         '行列 [[2,0],[0,3]] の行列式 = 2×3 - 0×0 = 6',
+      customScene: 'determinant-area-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -215,6 +217,7 @@ export const determinantAreaTutorial: Tutorial = {
         '5. |det|：面積/体積の倍率\n' +
         '6. 3Dでは体積の変化率\n\n' +
         '次は det = 0 の特別な意味を学びます。',
+      customScene: 'determinant-area-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

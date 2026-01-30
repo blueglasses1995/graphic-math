@@ -12,6 +12,7 @@ export const sylowTheoremTutorial: Tutorial = {
       content:
         'ラグランジュの定理は「部分群の位数は群の位数の約数」と教えてくれますが、\n逆に「約数の位数の部分群が存在するか」は保証しません。\n\nシローの定理は、素数冪の位数については存在を保証する、\n驚くべき定理です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'sylow-theorem-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -22,6 +23,7 @@ export const sylowTheoremTutorial: Tutorial = {
       content:
         '位数12 = 2² × 3 の群を考えます。\n\nシローの定理により:\n• 位数4（= 2²）の部分群が存在\n• 位数3の部分群が存在\n\nそれぞれの個数にも制約があります。探してみましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'sylow-theorem-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -82,6 +84,7 @@ export const sylowTheoremTutorial: Tutorial = {
       content:
         'シローの定理は:\n\n• 素数冪位数の部分群の存在を保証\n• 共役性により本質的に一種類\n• 個数への合同条件と整除条件\n• 有限群の分類の最強の道具\n\nこの定理なくして群の構造解析は語れません。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'sylow-theorem-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

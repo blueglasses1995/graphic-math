@@ -1,3 +1,4 @@
+import { Vector3 } from '@learnmath/core';
 import { Tutorial } from '../types';
 
 export const eigenvalueNumericalTutorial: Tutorial = {
@@ -17,7 +18,8 @@ export const eigenvalueNumericalTutorial: Tutorial = {
         'ウィルキンソンの例：20次多項式の係数を10⁻⁷変えるだけで\n' +
         '根が大きく移動してしまいます。\n\n' +
         'では実際にはどうやって固有値を計算するのでしょうか？',
-      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      sceneConfig: { showGrid: true, showAxes: true, vectors: [{ id: 'v1', vector: new Vector3(1, 0, 0), color: '#ff5722', label: 'e₁' }, { id: 'v2', vector: new Vector3(0, 1, 0), color: '#4caf50', label: 'e₂' }], cameraPosition: [0, 0, 5] },
+      customScene: 'eigenvalue-numerical-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -36,6 +38,7 @@ export const eigenvalueNumericalTutorial: Tutorial = {
         'λ₁とλ₂が近いと収束が遅くなります。\n\n' +
         'Google PageRankは本質的にこの冪乗法です！',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'eigenvalue-numerical-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -128,6 +131,7 @@ export const eigenvalueNumericalTutorial: Tutorial = {
         '5. 逆反復法で固有ベクトルを高速計算\n\n' +
         '数値線形代数は理論と実装の両面の知識が重要です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 6] },
+      customScene: 'eigenvalue-numerical-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

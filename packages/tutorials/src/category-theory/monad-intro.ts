@@ -12,6 +12,7 @@ export const monadIntroTutorial: Tutorial = {
       stepType: 'animation',
       content: 'モナドは「構造を包む」操作とその合成規則を形式化したものです。随伴関手から自然に生まれるこの概念がどう機能するかをアニメーションで見てみましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'monad-intro-animation',
       interactive: false,
       nextCondition: 'click',
     },
@@ -21,6 +22,7 @@ export const monadIntroTutorial: Tutorial = {
       stepType: 'interactive',
       content: 'モナド (T, η, μ) の単位 η: Id→T と乗法 μ: T²→T の動きを視覚的に体験しましょう。μ∘Tη = id = μ∘ηT（単位律）と μ∘Tμ = μ∘μT（結合律）を確認できます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'monad-intro-interactive',
       interactive: true,
       nextCondition: 'interaction',
     },
@@ -76,6 +78,7 @@ export const monadIntroTutorial: Tutorial = {
       stepType: 'interactive',
       content: 'モナドは随伴関手から生まれる自己関手上のモノイド構造です。代数学（自由代数）、位相空間論（コンパクト化）、プログラミング（副作用の管理）など幅広い応用を持ちます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'monad-intro-summary',
       interactive: true,
       nextCondition: 'interaction',
     }

@@ -12,6 +12,7 @@ export const galoisIntroTutorial: Tutorial = {
       content:
         '2次方程式、3次方程式、4次方程式には「解の公式」があります。\nでは5次方程式は？\n\n20歳で決闘に倒れたガロアは、前夜に書き残しました。\n「5次以上の一般方程式には解の公式がない」\n\nその証明の鍵が「ガロア群」です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'galois-intro-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -22,6 +23,7 @@ export const galoisIntroTutorial: Tutorial = {
       content:
         'x² - 2 = 0 の根は √2 と -√2 です。\n\nこの2つの根を入れ替えても、有理数の関係式は保たれます。\nこの「根の入れ替え」がガロア群の元です。\n\n根の間の関係を壊さない置換を探してみましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'galois-intro-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -82,6 +84,7 @@ export const galoisIntroTutorial: Tutorial = {
       content:
         'ガロア理論:\n\n• 方程式の対称性をガロア群で捉える\n• 中間体と部分群の1対1対応\n• 可解性は群の可解性で判定\n• A₅の非可解性が5次方程式の限界を示す\n\n代数学で最も美しい理論の一つです。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'galois-intro-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

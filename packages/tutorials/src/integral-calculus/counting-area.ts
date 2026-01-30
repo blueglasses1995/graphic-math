@@ -11,6 +11,7 @@ export const countingAreaTutorial: Tutorial = {
       title: 'マス目を数えよう',
       content:
         '画面にグラフと格子が表示されています。\n\n曲線の下に色がついた領域がありますね。\n\nこの面積を「マス目を数える」ことで求めてみましょう。\n\nこれが積分の最も原始的なアイデアです。',
+      customScene: 'counting-area-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const countingAreaTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '曲線の下の領域をタッチして、マス目を数えてみてください。\n\n完全に含まれるマスと、一部だけのマスがありますね。\n\nどうやって「一部だけのマス」を扱えばよいでしょうか？',
+      customScene: 'counting-area-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const countingAreaTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '曲線の下の面積を求めること ── これが積分の出発点です。\n\n直線なら幾何学で計算できますが、曲線では「マス目を数える」近似が必要になります。\n\n次の単元では、この近似を長方形で体系的に行う方法を学びます。\n\n自由に曲線を触って、面積の感覚をつかんでください。',
+      customScene: 'counting-area-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

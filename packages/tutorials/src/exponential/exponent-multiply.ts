@@ -11,6 +11,7 @@ export const exponentMultiplyTutorial: Tutorial = {
       title: '指数の掛け算はなぜ足し算になる？',
       content:
         '2³ × 2⁴ を計算してみましょう。(2×2×2) × (2×2×2×2) = 2×2×2×2×2×2×2 = 2⁷。指数の3と4を足すと7。掛け算が足し算に変わる不思議をアニメーションで見てみましょう。',
+      customScene: "exponent-multiply-animation",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const exponentMultiplyTutorial: Tutorial = {
       title: '指数を組み合わせてみよう',
       content:
         '2つの指数 m と n をスライダーで変えて、aᵐ × aⁿ = aᵐ⁺ⁿ が常に成り立つことを確認してみましょう。',
+      customScene: "exponent-multiply-interactive",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +107,7 @@ export const exponentMultiplyTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '指数法則（掛け算・割り算）：\n• aᵐ × aⁿ = aᵐ⁺ⁿ（掛け算→指数の足し算）\n• aᵐ ÷ aⁿ = aᵐ⁻ⁿ（割り算→指数の引き算）\n• 底が同じときだけ使える\n\nこの法則で複雑な計算がシンプルになります。',
+      customScene: "exponent-multiply-summary",
       sceneConfig: {
         showGrid: true,
         showAxes: true,

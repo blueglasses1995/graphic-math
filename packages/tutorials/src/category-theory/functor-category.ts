@@ -12,6 +12,7 @@ export const functorCategoryTutorial: Tutorial = {
       stepType: 'animation',
       content: '関手を「対象」、自然変換を「射」と見なすと、新しい圏が得られます。これが関手圏 [C,D] です。圏論自身が圏論的に記述できる再帰的構造をアニメーションで見てみましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'functor-category-animation',
       interactive: false,
       nextCondition: 'click',
     },
@@ -21,6 +22,7 @@ export const functorCategoryTutorial: Tutorial = {
       stepType: 'interactive',
       content: '2つの自然変換 α: F⟹G と β: G⟹H の垂直合成 β∘α: F⟹H を構成してみましょう。各成分で合成 (β∘α)_A = β_A∘α_A となることを確認できます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'functor-category-interactive',
       interactive: true,
       nextCondition: 'interaction',
     },
@@ -76,6 +78,7 @@ export const functorCategoryTutorial: Tutorial = {
       stepType: 'interactive',
       content: '関手圏は「圏について語る圏」です。関手を対象として扱うことで、より高次の構造が見えてきます。2-圏、∞-圏へと続く高次圏論の入口でもあります。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'functor-category-summary',
       interactive: true,
       nextCondition: 'interaction',
     }

@@ -11,6 +11,7 @@ export const naturalLogTutorial: Tutorial = {
       title: 'なぜ e が自然なのか',
       content:
         'e ≈ 2.71828...。100%の利率で連続複利をかけると、1年後に元本は e 倍になります。この自然に現れる数を底にした対数が自然対数 ln です。',
+      customScene: 'natural-log-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const naturalLogTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '値を変えて ln(x) の値を確認してください。ln(1) = 0、ln(e) = 1 が基本です。',
+      customScene: 'natural-log-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const naturalLogTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '自然対数 ln は底が e の対数。ln(1) = 0、ln(e) = 1。微積分で最もシンプルな形を持ち、自然界の成長現象に直結します。\n\n自由に値を変えて ln の挙動を確認してください。',
+      customScene: 'natural-log-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

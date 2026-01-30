@@ -11,7 +11,10 @@ export const geometricDistTutorial: Tutorial = {
       title: '何回目に当たる？',
       content:
         'くじ引きで当たりが出るまで引き続けます。何回目に初めて当たるでしょうか？このような「初めて成功するまでの試行回数」を記述するのが幾何分布です。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'geometric-dist-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',
@@ -41,7 +44,10 @@ export const geometricDistTutorial: Tutorial = {
       title: 'シミュレーション',
       content:
         '成功確率pを変えて、初成功までの回数の分布を確認しましょう。pが小さいほど分布は右に広がり、待ち時間が長くなります。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'geometric-dist-interactive',
       interactive: true,
       nextCondition: 'click',
       stepType: 'interactive',
@@ -81,7 +87,10 @@ export const geometricDistTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '幾何分布 Geo(p) のポイント:\n\n• P(X=k) = (1-p)ᵏ⁻¹p\n• E[X] = 1/p\n• 初めて成功するまでの試行回数\n• 無記憶性を持つ唯一の離散分布\n\n待ち行列や信頼性工学で重要な分布です。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'geometric-dist-summary',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',

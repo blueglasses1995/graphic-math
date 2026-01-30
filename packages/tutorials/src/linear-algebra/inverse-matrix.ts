@@ -1,3 +1,4 @@
+import { Vector3 } from '@learnmath/core';
 import { Tutorial } from '../types';
 
 export const inverseMatrixTutorial: Tutorial = {
@@ -18,8 +19,10 @@ export const inverseMatrixTutorial: Tutorial = {
       sceneConfig: {
         showGrid: true,
         showAxes: true,
+        vectors: [{ id: 'v1', vector: new Vector3(1, 0, 0), color: '#ff5722', label: 'e₁' }, { id: 'v2', vector: new Vector3(0, 1, 0), color: '#4caf50', label: 'e₂' }],
         cameraPosition: [0, 0, 5],
       },
+      customScene: 'inverse-matrix-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -39,6 +42,7 @@ export const inverseMatrixTutorial: Tutorial = {
         animateTransform: true,
         cameraPosition: [0, 0, 5],
       },
+      customScene: 'inverse-matrix-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -144,6 +148,7 @@ export const inverseMatrixTutorial: Tutorial = {
         showAxes: true,
         cameraPosition: [0, 0, 5],
       },
+      customScene: 'inverse-matrix-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

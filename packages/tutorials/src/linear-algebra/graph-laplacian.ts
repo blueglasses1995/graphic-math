@@ -1,3 +1,4 @@
+import { Vector3 } from '@learnmath/core';
 import { Tutorial } from '../types';
 
 export const graphLaplacianTutorial: Tutorial = {
@@ -18,7 +19,8 @@ export const graphLaplacianTutorial: Tutorial = {
         'ラプラシアンの固有値はグラフの\n' +
         '「連結性」「クラスタ構造」「拡散速度」を表し、\n' +
         'スペクトラルクラスタリングやGNNの基盤です。',
-      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      sceneConfig: { showGrid: true, showAxes: true, vectors: [{ id: 'v1', vector: new Vector3(1, 0, 0), color: '#ff5722', label: 'e₁' }, { id: 'v2', vector: new Vector3(0, 1, 0), color: '#4caf50', label: 'e₂' }], cameraPosition: [0, 0, 5] },
+      customScene: 'graph-laplacian-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -37,6 +39,7 @@ export const graphLaplacianTutorial: Tutorial = {
         '・λ₁=0の固有ベクトル = (1,1,1,1)\n' +
         '・0の固有値の重複度 = 連結成分の数',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'graph-laplacian-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -130,6 +133,7 @@ export const graphLaplacianTutorial: Tutorial = {
         '5. チーガー不等式でグラフの連結性を評価\n\n' +
         'グラフラプラシアンはネットワーク解析の中心です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 6] },
+      customScene: 'graph-laplacian-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

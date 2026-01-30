@@ -11,7 +11,10 @@ export const markovChainTutorial: Tutorial = {
       title: '天気の予測',
       content:
         '今日が晴れなら明日も晴れの確率は70%、雨の確率は30%。今日が雨なら明日晴れは40%、雨は60%。このように「現在の状態だけで次が決まる」のがマルコフ連鎖です。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'markov-chain-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',
@@ -41,7 +44,10 @@ export const markovChainTutorial: Tutorial = {
       title: '遷移をシミュレーション',
       content:
         '遷移確率を変えて、状態の変化を観察しましょう。長い時間が経つと、ある定常分布に収束することが分かります。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'markov-chain-interactive',
       interactive: true,
       nextCondition: 'click',
       stepType: 'interactive',
@@ -81,7 +87,10 @@ export const markovChainTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'マルコフ連鎖:\n\n• 現在の状態だけで次が決まる（マルコフ性）\n• 遷移行列で確率を記述\n• 定常分布に収束する場合が多い\n• 検索エンジンからAIまで幅広く応用\n\nシンプルなルールから豊かな振る舞いが生まれます。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'markov-chain-summary',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',

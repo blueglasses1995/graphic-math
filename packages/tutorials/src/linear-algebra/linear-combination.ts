@@ -16,6 +16,7 @@ export const linearCombinationTutorial: Tutorial = {
         'すべての到達可能な点の集合、これが「スパン」です。\n\n' +
         '2つの矢印の伸縮と合成だけで、実は平面全体をカバーできるのです。' +
         '…ただし条件があります。',
+      customScene: 'linear-combination-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -51,6 +52,7 @@ export const linearCombinationTutorial: Tutorial = {
         '・-1a + 2b = (0, 5)\n\n' +
         'c₁とc₂を色々変えることで、平面上のあらゆる点に到達できます。' +
         'この「到達可能な全ての点の集合」を span{a, b} と書きます。',
+      customScene: 'linear-combination-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -232,6 +234,7 @@ export const linearCombinationTutorial: Tutorial = {
         '4. 2つの独立なベクトルのスパン → 平面\n' +
         '5. 3つの独立なベクトルのスパン → 3D空間全体\n\n' +
         '次は「独立」とは何かを正確に学びます。線形独立と線形従属の違いです。',
+      customScene: 'linear-combination-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

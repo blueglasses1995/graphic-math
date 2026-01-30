@@ -11,6 +11,7 @@ export const areaBetweenTutorial: Tutorial = {
       title: '2つの曲線の間',
       content:
         'y = x² と y = x の間に挟まれた領域の面積はいくつでしょう？\n\n「上の曲線 - 下の曲線」を積分すれば求められます。\n\nアニメーションで2つの曲線の間の領域を見てみましょう。',
+      customScene: 'area-between-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const areaBetweenTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '2つの関数を変えて、間の面積がどう変わるか確かめてみましょう。\n\n交点の位置が積分区間を決めます。',
+      customScene: 'area-between-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const areaBetweenTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '2曲線間の面積 A = ∫ₐᵇ |f(x) - g(x)| dx\n\n手順：交点を求める → 上下を確認 → 積分する。\n\n関数を変えて、さまざまな形の面積を求めてみてください。',
+      customScene: 'area-between-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

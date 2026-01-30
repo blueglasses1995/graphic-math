@@ -11,6 +11,7 @@ export const logGraphTutorial: Tutorial = {
       title: '指数のグラフを裏返す',
       content:
         'y = 2^x のグラフを y = x の線で鏡に映すと、y = log₂(x) のグラフが現れます。指数関数と対数関数は鏡像の関係です。',
+      customScene: 'log-graph-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const logGraphTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '底の値を変えてみてください。底が大きいほどグラフは緩やかに、底が1に近いほど急になります。底が1より小さいと減少関数になります。',
+      customScene: 'log-graph-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const logGraphTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '対数グラフは (1, 0) を必ず通り、x = 0 が漸近線。底 > 1 なら増加関数で、増加速度は徐々に緩やかになります。\n\n底を変えてグラフの形を確かめてみてください。',
+      customScene: 'log-graph-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

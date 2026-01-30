@@ -1,3 +1,4 @@
+import { Vector3 } from '@learnmath/core';
 import { Tutorial } from '../types';
 
 export const quaternionRotationTutorial: Tutorial = {
@@ -17,7 +18,8 @@ export const quaternionRotationTutorial: Tutorial = {
         'クォータニオン（四元数）はこの問題を解決し、\n' +
         'ゲーム・アニメーション・ロボティクスで\n' +
         '標準的に使われています。',
-      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      sceneConfig: { showGrid: true, showAxes: true, vectors: [{ id: 'v1', vector: new Vector3(1, 0, 0), color: '#ff5722', label: 'e₁' }, { id: 'v2', vector: new Vector3(0, 1, 0), color: '#4caf50', label: 'e₂' }], cameraPosition: [0, 0, 5] },
+      customScene: 'quaternion-rotation-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -35,6 +37,7 @@ export const quaternionRotationTutorial: Tutorial = {
         '角度が半分になるのがポイントです！\n' +
         '360°回転で q = -1 となり、720°で q = 1 に戻ります。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'quaternion-rotation-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -126,6 +129,7 @@ export const quaternionRotationTutorial: Tutorial = {
         '5. ジンバルロックを回避できる\n\n' +
         'クォータニオンは3D回転の最も実用的な表現です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 6] },
+      customScene: 'quaternion-rotation-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

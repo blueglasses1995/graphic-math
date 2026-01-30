@@ -11,6 +11,7 @@ export const probabilityDensityTutorial: Tutorial = {
       title: '確率は面積',
       content:
         'サイコロのように離散的な確率なら数えられます。\n\nでも「身長が 170cm から 175cm の確率」のような連続的な確率は？\n\n確率密度関数 f(x) の面積で計算します。\n\nP(a ≤ X ≤ b) = ∫ₐᵇ f(x) dx',
+      customScene: 'probability-density-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const probabilityDensityTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '区間 [a, b] を動かして、面積（確率）がどう変わるか観察してみましょう。\n\n密度が高い部分の面積は大きく、密度が低い部分は小さくなります。',
+      customScene: 'probability-density-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const probabilityDensityTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '連続確率では、確率 = 密度関数の積分（面積）です。\n\n期待値 E[X] = ∫ x·f(x) dx\n分散 Var(X) = ∫ (x-μ)²·f(x) dx\n\n積分は確率論の言語です。区間を操作して確率を体感してみてください。',
+      customScene: 'probability-density-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

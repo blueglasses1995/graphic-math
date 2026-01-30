@@ -11,6 +11,7 @@ export const numericalIntegrationTutorial: Tutorial = {
       title: '計算できない積分',
       content:
         '∫ e^(-x²) dx には初等関数による閉じた式がありません。\n\nでも「数値」としてなら計算できます。\n\n台形やカーブで曲線を近似して、面積を求めるのです。\n\nこれが数値積分（数値求積）です。',
+      customScene: 'numerical-integration-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const numericalIntegrationTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '分割数を変えて、台形近似の精度がどう変わるか確かめてみましょう。\n\n長方形法よりも台形法の方が、少ない分割で正確になることが分かります。',
+      customScene: 'numerical-integration-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const numericalIntegrationTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '数値積分：閉じた式がなくても積分値を計算できます。\n\n台形法：精度 O(1/n²)\nシンプソン法：精度 O(1/n⁴)\n\n分割数を変えて、近似の精度を体感してみてください。',
+      customScene: 'numerical-integration-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

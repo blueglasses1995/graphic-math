@@ -6,9 +6,12 @@
     "dev:mobile": "pnpm --filter @learnmath/mobile start",
     "build": "pnpm --filter @learnmath/web build",
     "test": "pnpm -r test",
-    "typecheck": "pnpm -r typecheck"
+    "typecheck": "pnpm -r typecheck",
+    "migrate": "tsx scripts/migrate-tutorials.ts",
+    "migrate:dry-run": "tsx scripts/migrate-tutorials.ts --dry-run --verbose"
   },
   "devDependencies": {
+    "tsx": "^4.21.0",
     "typescript": "^5.3.3"
   },
   "engines": {

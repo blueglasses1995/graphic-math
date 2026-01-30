@@ -15,6 +15,7 @@ export const vectorAdditionTutorial: Tutorial = {
         'ベクトルの足し算は、まさにこの「力の合成」です。\n\n' +
         '2つの矢印を「つなげる」と、合計の矢印が見えてきます。' +
         'この直感的な操作が、線形代数の最も基本的な演算です。',
+      customScene: 'vector-addition-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -47,6 +48,7 @@ export const vectorAdditionTutorial: Tutorial = {
         '原点から最終地点までの矢印が a + b = (3, 4) になります。\n\n' +
         '成分ごとに足すだけ：(3+0, 0+4) = (3, 4)\n\n' +
         'シンプルですが、これがベクトル演算の基本中の基本です。',
+      customScene: 'vector-addition-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -234,6 +236,7 @@ export const vectorAdditionTutorial: Tutorial = {
         '4. 交換法則が成り立つ：a + b = b + a\n' +
         '5. 引き算は逆ベクトルの足し算\n\n' +
         '次はベクトルを「伸ばしたり縮めたり」するスカラー倍を学びます。',
+      customScene: 'vector-addition-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

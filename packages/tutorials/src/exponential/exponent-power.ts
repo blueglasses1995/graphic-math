@@ -11,6 +11,7 @@ export const exponentPowerTutorial: Tutorial = {
       title: '累乗をさらに累乗する',
       content:
         '(2³)² とは何でしょう？2³を2回掛けること、つまり 8×8 = 64 = 2⁶。指数の3と2を掛けると6になります。累乗の累乗が展開されていく様子を見てみましょう。',
+      customScene: "exponent-power-animation",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const exponentPowerTutorial: Tutorial = {
       title: '指数を自由に組み合わせよう',
       content:
         '底a、内側の指数m、外側の指数nをスライダーで変えて、(aᵐ)ⁿ = aᵐˣⁿ が成り立つことを確認しましょう。',
+      customScene: "exponent-power-interactive",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +107,7 @@ export const exponentPowerTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '指数法則まとめ：\n• (aᵐ)ⁿ = aᵐˣⁿ（累乗の累乗→指数の掛け算）\n• (ab)ⁿ = aⁿbⁿ（積の累乗→それぞれ累乗）\n• (a/b)ⁿ = aⁿ/bⁿ（商の累乗→それぞれ累乗）\n\n前回の法則と合わせて、指数の計算ルールが揃いました。',
+      customScene: "exponent-power-summary",
       sceneConfig: {
         showGrid: true,
         showAxes: true,

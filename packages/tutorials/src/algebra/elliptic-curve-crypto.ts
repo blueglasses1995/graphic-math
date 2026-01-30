@@ -12,6 +12,7 @@ export const ellipticCurveCryptoTutorial: Tutorial = {
       content:
         'y² = x³ + ax + b\n\nこの美しい曲線の上で「足し算」を定義すると、群が生まれます。\n\nこの群上の離散対数問題は非常に難しく、\nRSAより遥かに短い鍵で同等の安全性を実現できます。\n\nスマートフォンからBitcoinまで、幅広く使われています。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'elliptic-curve-crypto-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -22,6 +23,7 @@ export const ellipticCurveCryptoTutorial: Tutorial = {
       content:
         '楕円曲線上の2点 P, Q を結ぶ直線は、曲線と第3の点 R で交わります。\n\nP + Q = -R（Rのx軸対称点）と定義します。\n\nこの「加法」で楕円曲線上の点は群を成します。\n\n点を選んで加法の幾何学的意味を確認しましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'elliptic-curve-crypto-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -82,6 +84,7 @@ export const ellipticCurveCryptoTutorial: Tutorial = {
       content:
         '楕円曲線暗号:\n\n• 楕円曲線上の点が成すアーベル群を利用\n• ECDLP の困難性が安全性の基盤\n• RSAより短い鍵で同等の安全性\n• ECDH, ECDSA が広く使用\n• Bitcoin, TLS 等で実用化\n\n現代暗号の主流技術です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'elliptic-curve-crypto-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

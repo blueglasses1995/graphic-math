@@ -11,6 +11,7 @@ export const expGraphTutorial: Tutorial = {
       title: 'グラフが描く曲線',
       content:
         'y = 2ˣ のグラフが左から右へ描かれていきます。左側はx軸にぴったり寄り添い、右側は急激に立ち上がる。この特徴的な形をアニメーションで確認しましょう。',
+      customScene: "exp-graph-animation",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const expGraphTutorial: Tutorial = {
       title: 'グラフを変形させてみよう',
       content:
         'y = a·bˣ + c のパラメータを変えて、グラフがどう変形するか試してみましょう。aは上下の伸縮、bは底、cは上下の移動です。',
+      customScene: "exp-graph-interactive",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +107,7 @@ export const expGraphTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '指数関数のグラフ：\n• (0,1)を通り、常にy>0\n• x軸が漸近線\n• 底>1なら増加、0<底<1なら減少\n• 平行移動・伸縮で変形可能\n• どんな直線もいずれ追い抜く急成長\n\nグラフの形をしっかり覚えておきましょう。',
+      customScene: "exp-graph-summary",
       sceneConfig: {
         showGrid: true,
         showAxes: true,

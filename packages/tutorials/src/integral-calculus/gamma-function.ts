@@ -11,6 +11,7 @@ export const gammaFunctionTutorial: Tutorial = {
       title: '0.5! は何？',
       content:
         '3! = 6、4! = 24。では 0.5! は？\n\n階乗は自然数でしか定義されていません。\n\nでもガンマ関数を使えば、実数（さらには複素数）にまで拡張できます。\n\nΓ(n+1) = n! を満たす関数 ── それが広義積分で定義されます。',
+      customScene: 'gamma-function-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const gammaFunctionTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'ガンマ関数のグラフを見てみましょう。\n\n自然数のところで Γ(n) = (n-1)! の値を取っています。\n\nその間を滑らかにつないだのがガンマ関数です。',
+      customScene: 'gamma-function-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const gammaFunctionTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'ガンマ関数 Γ(s) = ∫₀∞ t^(s-1)·e^(-t) dt は階乗の一般化です。\n\nΓ(n+1) = n!、Γ(1/2) = √π。\n\n広義積分の力で、整数から実数への拡張が実現しました。\n\nグラフを操作して、ガンマ関数の形を探ってみてください。',
+      customScene: 'gamma-function-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

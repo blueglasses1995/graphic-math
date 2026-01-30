@@ -11,6 +11,7 @@ export const logSummaryTutorial: Tutorial = {
       title: '対数の全体像',
       content:
         '対数は「何回かけた？」から始まり、グラフ、法則、微積分、応用まで広がりました。ここで全体を振り返りましょう。',
+      customScene: 'log-summary-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const logSummaryTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '対数関数のグラフと指数関数のグラフを重ねて、鏡像関係を確認してください。',
+      customScene: 'log-summary-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const logSummaryTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '対数は指数の逆演算。かけ算を足し算に変え、広い範囲を扱いやすくする道具です。科学から情報理論まで、あらゆる場面で活躍します。\n\n自由に触って対数の感覚を磨いてください。',
+      customScene: 'log-summary-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

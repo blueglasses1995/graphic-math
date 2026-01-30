@@ -11,6 +11,7 @@ export const complexQuadraticTutorial: Tutorial = {
       title: '判別式と解の種類',
       content:
         '二次方程式 ax² + bx + c = 0 の解の公式:\n\nx = (-b ± √(b²-4ac)) / (2a)\n\n判別式 D = b² - 4ac が:\n・D > 0: 異なる2つの実数解\n・D = 0: 重解（実数）\n・D < 0: 2つの複素数解\n\n複素数を学んだ今、D < 0 も解けます！',
+      customScene: 'complex-quadratic-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +106,7 @@ export const complexQuadraticTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '複素数と二次方程式:\n\n・D < 0 でも解の公式は使える（√(-D) = √D × i）\n・実数係数の方程式の複素数解は共役ペアで現れる\n・ヴィエタの公式は複素解でも成立\n・複素数により「すべての二次方程式に解がある」\n\n次は代数学の基本定理を学びましょう。',
+      customScene: 'complex-quadratic-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

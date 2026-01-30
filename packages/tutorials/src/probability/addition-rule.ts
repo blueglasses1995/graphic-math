@@ -11,7 +11,10 @@ export const additionRuleTutorial: Tutorial = {
       title: '「または」の確率',
       content:
         'サイコロで「1が出る、または6が出る」確率は？直感的に 1/6 + 1/6 = 2/6 = 1/3 ですね。これが確率の加法です。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'addition-rule-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',
@@ -41,7 +44,10 @@ export const additionRuleTutorial: Tutorial = {
       title: 'ベン図で確認',
       content:
         '2つの事象の重なり具合を動かして、P(A∪B) がどう変わるか観察しましょう。重なりが大きいほど、単純に足すと過大になることが分かります。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'addition-rule-interactive',
       interactive: true,
       nextCondition: 'click',
       stepType: 'interactive',
@@ -81,7 +87,10 @@ export const additionRuleTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '確率の足し算のルール:\n\n• 排反事象: P(A∪B) = P(A) + P(B)\n• 一般: P(A∪B) = P(A) + P(B) - P(A∩B)\n• 重複を引くことを忘れない\n\n「または」は足し算、でも重複に注意！',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'addition-rule-summary',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',

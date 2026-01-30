@@ -11,6 +11,7 @@ export const constantLinearDerivativeTutorial: Tutorial = {
       title: '変わらないものの傾き',
       content:
         'y = 5 のグラフは水平線。どこを見ても傾きはゼロ。変化しないものの変化率はゼロ。当たり前のようですが、これが微分の出発点です。',
+      customScene: 'constant-linear-derivative-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const constantLinearDerivativeTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '定数 c の値をスライダーで変えてみてください。y = c のグラフは上下に移動しますが、傾きは常にゼロ。位置が変わっても変化率は変わりません。',
+      customScene: 'constant-linear-derivative-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const constantLinearDerivativeTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '(c)\' = 0、(ax+b)\' = a、(c·f)\' = c·f\'。最もシンプルな微分のルールです。\n\nこれで定数・直線・べき乗の微分がわかりました。次は「和の微分」を学んで、もっと複雑な式を扱えるようにしましょう。',
+      customScene: 'constant-linear-derivative-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

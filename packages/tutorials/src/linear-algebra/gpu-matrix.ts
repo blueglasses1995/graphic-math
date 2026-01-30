@@ -1,3 +1,4 @@
+import { Vector3 } from '@learnmath/core';
 import { Tutorial } from '../types';
 
 export const gpuMatrixTutorial: Tutorial = {
@@ -17,7 +18,8 @@ export const gpuMatrixTutorial: Tutorial = {
         'NVIDIA A100 GPUは行列演算で\n' +
         '毎秒312兆回の浮動小数点演算が可能。\n' +
         'これが深層学習の爆発的進化を支えています。',
-      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      sceneConfig: { showGrid: true, showAxes: true, vectors: [{ id: 'v1', vector: new Vector3(1, 0, 0), color: '#ff5722', label: 'e₁' }, { id: 'v2', vector: new Vector3(0, 1, 0), color: '#4caf50', label: 'e₂' }], cameraPosition: [0, 0, 5] },
+      customScene: 'gpu-matrix-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -35,6 +37,7 @@ export const gpuMatrixTutorial: Tutorial = {
         '実際にはメモリ転送やスレッド管理のオーバーヘッドがありますが、\n' +
         '大きな行列では100倍以上の高速化が得られます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'gpu-matrix-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -125,6 +128,7 @@ export const gpuMatrixTutorial: Tutorial = {
         '5. TPU等の専用チップも進化中\n\n' +
         '行列演算のハードウェア最適化がAIの発展を支えています。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 6] },
+      customScene: 'gpu-matrix-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

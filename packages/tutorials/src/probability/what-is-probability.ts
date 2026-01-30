@@ -11,7 +11,10 @@ export const whatIsProbabilityTutorial: Tutorial = {
       title: '確率は「起こりやすさ」の数値化',
       content:
         'サイコロを振ったとき、1が出る確率は？答えは1/6。確率とは「ある出来事がどれくらい起こりやすいか」を0から1の数値で表したものです。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'what-is-probability-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',
@@ -41,7 +44,10 @@ export const whatIsProbabilityTutorial: Tutorial = {
       title: 'サイコロを振ってみよう',
       content:
         'サイコロを何回も振ると、各目の出る割合は1/6に近づいていきます。これが確率の本質です。試行回数を増やして確認しましょう。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'what-is-probability-interactive',
       interactive: true,
       nextCondition: 'click',
       stepType: 'interactive',
@@ -81,7 +87,10 @@ export const whatIsProbabilityTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '確率とは「起こりやすさ」を0〜1の数値で表したもの。\n\n• P(A) = 好ましい場合の数 / 全場合の数\n• 0 ≤ P(A) ≤ 1\n• P = 0 は不可能、P = 1 は確実\n\n次は「標本空間と事象」を学びましょう。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'what-is-probability-summary',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',

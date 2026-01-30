@@ -16,6 +16,7 @@ export const changeOfBasisTutorial: Tutorial = {
         '「千代田区丸の内1-9-1」と言う人。同じ場所ですよね。\n\n' +
         '基底を変えると、同じベクトルの「座標表示」が変わります。\n' +
         '基底の変換とは、この「座標の翻訳」のことです。',
+      customScene: 'change-of-basis-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -56,6 +57,7 @@ export const changeOfBasisTutorial: Tutorial = {
         'v = c₁b₁ + c₂b₂ を解きます。\n\n' +
         'これは連立方程式 Bc = v（B = [b₁ b₂]）です。\n' +
         'c = B⁻¹v が新基底での座標になります。',
+      customScene: 'change-of-basis-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -185,6 +187,7 @@ export const changeOfBasisTutorial: Tutorial = {
         '4. 変換の基底変換：A\' = P⁻¹AP（相似変換）\n' +
         '5. 良い基底を選ぶと問題が簡単になる\n\n' +
         '次は3Dへの拡張を学びます。',
+      customScene: 'change-of-basis-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

@@ -11,7 +11,10 @@ export const centralLimitTutorial: Tutorial = {
       title: '何でも正規分布になる？',
       content:
         'サイコロの出目は一様分布ですが、100個のサイコロの合計は正規分布に近くなります。元の分布が何であれ、合計や平均は正規分布に近づく。これが中心極限定理です。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'central-limit-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',
@@ -41,7 +44,10 @@ export const centralLimitTutorial: Tutorial = {
       title: 'シミュレーション',
       content:
         '様々な分布（一様分布、指数分布など）からn個のサンプルの平均を繰り返し計算します。nが大きくなるにつれて、平均の分布が正規分布に近づくことを確認しましょう。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'central-limit-interactive',
       interactive: true,
       nextCondition: 'click',
       stepType: 'interactive',
@@ -81,7 +87,10 @@ export const centralLimitTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '中心極限定理:\n\n• 独立な確率変数の和/平均は正規分布に近づく\n• 元の分布に関係なく成り立つ\n• 統計的推定・検定の理論的根拠\n• 目安: n ≥ 30\n\n確率論で最も美しく実用的な定理の一つです。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'central-limit-summary',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',

@@ -12,6 +12,7 @@ export const categoryDefinitionTutorial: Tutorial = {
       stepType: 'animation',
       content: '圏とは、点（対象）と矢印（射）の集まりです。矢印は「つなげる」ことができ、各点には「何もしない矢印」があります。この単純な構造がいかに豊かな数学を生むかをアニメーションで確認しましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'category-definition-animation',
       interactive: false,
       nextCondition: 'click',
     },
@@ -21,6 +22,7 @@ export const categoryDefinitionTutorial: Tutorial = {
       stepType: 'interactive',
       content: '対象A, B, Cと射f: A→B, g: B→Cを配置してください。合成射g∘f: A→Cが自動的に生成されることを確認しましょう。恒等射id_A, id_B, id_Cも表示されます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'category-definition-interactive',
       interactive: true,
       nextCondition: 'interaction',
     },
@@ -76,6 +78,7 @@ export const categoryDefinitionTutorial: Tutorial = {
       stepType: 'interactive',
       content: '圏は対象・射・合成・恒等射から構成され、結合律と単位律を満たします。自分で小さな圏を作り、すべての公理が成り立つことを確認してみましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'category-definition-summary',
       interactive: true,
       nextCondition: 'interaction',
     }

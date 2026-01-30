@@ -12,6 +12,7 @@ export const complexRotationTutorial: Tutorial = {
       title: '2つの回転表現',
       content:
         '2次元の回転を表す方法は2つあります:\n\n1. 回転行列:\n   [cos θ  -sin θ]\n   [sin θ   cos θ]\n\n2. 複素数の掛け算:\n   z × e^(iθ) = z(cos θ + i sin θ)\n\nこの2つは実は同じものです！',
+      customScene: 'complex-rotation-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -73,6 +74,7 @@ export const complexRotationTutorial: Tutorial = {
       title: '回転を体験',
       content:
         '回転角を変えて、点がどう動くか観察してみましょう。\n\n複素数 e^(iθ) を掛けることが、回転行列を適用することと同じであることを確認してください。',
+      customScene: 'complex-rotation-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -127,6 +129,7 @@ export const complexRotationTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '複素数と回転行列:\n\n・e^(iθ) を掛ける = θ回転行列を適用\n・複素数は行列より簡潔（2成分 vs 4成分）\n・連続回転 = 指数の足し算\n・逆回転 = 共役を取る\n・3次元への拡張 = 四元数\n\n複素数は回転を最もエレガントに表現する方法です。',
+      customScene: 'complex-rotation-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

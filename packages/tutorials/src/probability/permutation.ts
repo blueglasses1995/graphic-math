@@ -11,7 +11,10 @@ export const permutationTutorial: Tutorial = {
       title: '並べ方は何通り？',
       content:
         'A, B, C の3人を一列に並べる方法は？ABC, ACB, BAC, BCA, CAB, CBA の6通り。これが順列です。n個のものを並べる方法は n! (階乗) 通りです。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'permutation-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',
@@ -41,7 +44,10 @@ export const permutationTutorial: Tutorial = {
       title: '順列を数えてみよう',
       content:
         'n と r を変えて nPr がどう変わるか確認しましょう。nが大きくなると値は爆発的に増えます。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'permutation-interactive',
       interactive: true,
       nextCondition: 'click',
       stepType: 'interactive',
@@ -81,7 +87,10 @@ export const permutationTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '順列のポイント:\n\n• n! = n個全部の並べ方\n• nPr = n個からr個選んで並べる方法\n• 重複順列 nʳ = 繰り返しOKの並べ方\n• 「順序が大事」なら順列を使う\n\n次は「組合せ」で順序を気にしない数え方を学びます。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'permutation-summary',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',

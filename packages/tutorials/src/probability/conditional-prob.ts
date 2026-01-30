@@ -11,7 +11,10 @@ export const conditionalProbTutorial: Tutorial = {
       title: '情報で確率が変わる',
       content:
         'サイコロで偶数が出たと分かったとき、6である確率は？全体6通りが3通りに絞られるので 1/3 です。新しい情報は確率を変えます。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'conditional-prob-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',
@@ -41,7 +44,10 @@ export const conditionalProbTutorial: Tutorial = {
       title: '条件を変えてみよう',
       content:
         '条件（与えられる情報）を変えると、確率がどう変わるか観察しましょう。情報が多いほど、確率は0か1に近づきます。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'conditional-prob-interactive',
       interactive: true,
       nextCondition: 'click',
       stepType: 'interactive',
@@ -81,7 +87,10 @@ export const conditionalProbTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '条件付き確率は情報による確率の更新。\n\n• P(A|B) = P(A∩B) / P(B)\n• 新しい情報で標本空間が縮小する\n• 乗法定理: P(A∩B) = P(B)P(A|B)\n\nベイズの定理の基礎となる重要な概念です。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'conditional-prob-summary',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',

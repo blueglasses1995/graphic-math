@@ -11,6 +11,7 @@ export const earthquakeMagnitudeTutorial: Tutorial = {
       title: 'M7とM9の違い',
       content:
         'マグニチュード7とマグニチュード9。差はたった2ですが、エネルギーの差は約1000倍。東日本大震災（M9.0）は阪神大震災（M7.3）の約350倍のエネルギーでした。この指数的スケールをアニメーションで見てみましょう。',
+      customScene: "earthquake-magnitude-animation",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const earthquakeMagnitudeTutorial: Tutorial = {
       title: 'マグニチュードを比較しよう',
       content:
         '2つのマグニチュード値を選んで、エネルギーの比を確認しましょう。マグニチュードが1増えるとエネルギーが約31.6倍になることを体感してください。',
+      customScene: "earthquake-magnitude-interactive",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +107,7 @@ export const earthquakeMagnitudeTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '地震のマグニチュード：\n• logE = 4.8 + 1.5M\n• M+1でエネルギー約31.6倍\n• M+2でエネルギー1000倍\n• 対数スケールで巨大な差を表現\n• 震度とは異なる概念\n\nデシベルやpHと同じ、対数スケールの実例です。',
+      customScene: "earthquake-magnitude-summary",
       sceneConfig: {
         showGrid: true,
         showAxes: true,

@@ -11,6 +11,7 @@ export const eulerNumberTutorial: Tutorial = {
       title: '最も自然な底',
       content:
         '2でも3でも10でもない、e ≈ 2.71828... という不思議な数。なぜこの中途半端な数が「最も自然な底」と呼ばれるのか？複利計算からeが自然に現れるアニメーションを見てみましょう。',
+      customScene: "euler-number-animation",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const eulerNumberTutorial: Tutorial = {
       title: '複利の回数を増やしてみよう',
       content:
         '年利100%で1年間、複利の回数nを増やしてみましょう。n=1で2倍、n=2で2.25倍、n=12で2.613...倍。nを∞に近づけると、ある値に収束します。その値がeです。',
+      customScene: "euler-number-interactive",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +107,7 @@ export const eulerNumberTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'ネイピア数e：\n• e ≈ 2.71828...\n• e = lim(n→∞)(1+1/n)ⁿ\n• 連続複利から自然に現れる\n• (eˣ)\' = eˣ（微分しても変わらない）\n• 数学で最も重要な定数の一つ\n\neˣの特別さを次のチュートリアルで詳しく見ていきます。',
+      customScene: "euler-number-summary",
       sceneConfig: {
         showGrid: true,
         showAxes: true,

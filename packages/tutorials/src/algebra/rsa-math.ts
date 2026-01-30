@@ -12,6 +12,7 @@ export const rsaMathTutorial: Tutorial = {
       content:
         '15 = 3 × 5 は一瞬で分かります。\n\nでは 2,773 = ? × ? は？\n答えは 47 × 59 ですが、見つけるのは簡単ではありません。\n\n数百桁の数の素因数分解は、現代のスーパーコンピュータでも不可能。\nこの困難さがRSA暗号の安全性を保証します。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'rsa-math-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -22,6 +23,7 @@ export const rsaMathTutorial: Tutorial = {
       content:
         '小さい数でRSAを体験しましょう。\n\np=11, q=13 → n=143, φ(n)=120\n公開鍵 e=7（gcd(7,120)=1）\n秘密鍵 d=103（7×103 ≡ 1 mod 120）\n\n暗号化: c = m^7 mod 143\n復号: m = c^103 mod 143\n\nメッセージを暗号化・復号してみましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'rsa-math-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -82,6 +84,7 @@ export const rsaMathTutorial: Tutorial = {
       content:
         'RSA暗号の数学:\n\n• 素因数分解の困難性が安全性の基盤\n• オイラーの定理が正しさを保証\n• (Z/nZ)* の群構造上で動作\n• 実装にはパディング等の工夫が必要\n• 量子コンピュータで破られる可能性あり\n\n数論と暗号の最も有名な結びつきです。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'rsa-math-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

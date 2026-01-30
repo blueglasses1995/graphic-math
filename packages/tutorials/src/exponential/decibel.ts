@@ -11,6 +11,7 @@ export const decibelTutorial: Tutorial = {
       title: '10dB上がるとどれだけうるさい？',
       content:
         'ささやき声（30dB）とジェット機（130dB）の差は100dB。しかしエネルギーの差は10¹⁰ = 100億倍！人間の耳が扱う音のエネルギー範囲は膨大で、それを扱いやすくするのがデシベルです。',
+      customScene: "decibel-animation",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const decibelTutorial: Tutorial = {
       title: '音の大きさを比較してみよう',
       content:
         'デシベル値を変えて、実際の音の強さがどれだけ変わるか体感しましょう。10dBの変化が感覚的にどう感じるか確認してください。',
+      customScene: "decibel-interactive",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +107,7 @@ export const decibelTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'デシベル：\n• L = 10·log₁₀(I/I₀)\n• 10dB増で強さ10倍\n• 対数スケールで広い範囲を圧縮\n• 同じ音2つで+3dB（2倍のエネルギー）\n• 人間の感覚が対数的であることに対応\n\n指数関数と対数のつながりを実感できる例です。',
+      customScene: "decibel-summary",
       sceneConfig: {
         showGrid: true,
         showAxes: true,

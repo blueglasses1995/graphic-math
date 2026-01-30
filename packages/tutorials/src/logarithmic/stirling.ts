@@ -11,6 +11,7 @@ export const stirlingTutorial: Tutorial = {
       title: '巨大な階乗を手なずける',
       content:
         '100! は何桁？ 直接計算は困難ですが、スターリングの近似 ln(n!) ≈ n×ln(n) - n を使えば概算できます。対数が巨大な数を扱いやすくします。',
+      customScene: 'stirling-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const stirlingTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'n を変えて、ln(n!) の正確な値とスターリング近似の値を比較してください。n が大きいほど近似が正確になります。',
+      customScene: 'stirling-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const stirlingTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'スターリングの近似 ln(n!) ≈ n×ln(n) - n は、巨大な階乗を対数で扱えるようにします。統計力学や組合せ論で必須の道具です。\n\n近似の精度を確認してみてください。',
+      customScene: 'stirling-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

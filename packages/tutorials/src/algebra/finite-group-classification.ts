@@ -12,6 +12,7 @@ export const finiteGroupClassificationTutorial: Tutorial = {
       content:
         '有限単純群の分類 ── 数学史上最大の定理。\n\n証明は数百の論文、1万ページ以上。\n100人以上の数学者が50年以上かけて完成させました。\n\n全ての有限群は「原子」（単純群）に分解できます。\nその原子の完全なリストが存在するのです。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'finite-group-classification-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -22,6 +23,7 @@ export const finiteGroupClassificationTutorial: Tutorial = {
       content:
         '群を単純群に分解する過程を見てみましょう。\n\nS₄ の組成列:\nS₄ ▷ A₄ ▷ V₄ ▷ Z₂ ▷ {e}\n\n組成因子: S₄/A₄ ≅ Z₂, A₄/V₄ ≅ Z₃, V₄/Z₂ ≅ Z₂, Z₂/{e} ≅ Z₂\n\n群を選んで組成列を構成してみましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'finite-group-classification-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -82,6 +84,7 @@ export const finiteGroupClassificationTutorial: Tutorial = {
       content:
         '有限群の分類:\n\n• 組成列で単純群に分解（ジョルダン・ヘルダーの定理）\n• 有限単純群: 巡回群、交代群、リー型、26個の散在型\n• 分類定理の証明は数学史上最大の共同作業\n• モンスター群とムーンシャインの神秘的な繋がり\n\n代数学の最も壮大な成果の一つです。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'finite-group-classification-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

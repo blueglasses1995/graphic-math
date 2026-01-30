@@ -11,6 +11,7 @@ export const volumeRevolutionTutorial: Tutorial = {
       title: '曲線を回転させる',
       content:
         'y = f(x) のグラフを x 軸の周りに回転させると、立体ができます。\n\nこの回転体の体積をどうやって求めるでしょうか？\n\n薄い円盤に切り分けて足し合わせる ── これも積分のアイデアです。\n\nアニメーションで回転の様子を見てみましょう。',
+      customScene: 'volume-revolution-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const volumeRevolutionTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '回転体を回して、いろいろな角度から眺めてみましょう。\n\n断面を見ると円になっていることが分かります。\n\nその円の半径は f(x) です。',
+      customScene: 'volume-revolution-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const volumeRevolutionTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '回転体の体積は V = ∫ₐᵇ π[f(x)]² dx（円盤法）で求められます。\n\n円錐、球、円柱などおなじみの体積公式が積分から導けます。\n\n3Dモデルを回転させて、回転体の形を確かめてみてください。',
+      customScene: 'volume-revolution-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

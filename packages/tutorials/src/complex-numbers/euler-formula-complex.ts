@@ -12,6 +12,7 @@ export const eulerFormulaComplexTutorial: Tutorial = {
       title: '数学で最も美しい公式',
       content:
         'オイラーの公式:\n\ne^(iθ) = cos θ + i sin θ\n\n指数関数・三角関数・虚数単位を1つの等式で結びつけます。\n\nこの公式は数学で最も美しいと言われることがあります。',
+      customScene: 'euler-formula-complex-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -62,6 +63,7 @@ export const eulerFormulaComplexTutorial: Tutorial = {
       title: 'オイラーの公式を体験',
       content:
         'θを変化させて、e^(iθ) が単位円上をどう動くか観察してみましょう。\n\ncos θ と sin θ の値が実部と虚部に対応していることを確認してください。',
+      customScene: 'euler-formula-complex-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -116,6 +118,7 @@ export const eulerFormulaComplexTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'オイラーの公式:\n\n・e^(iθ) = cos θ + i sin θ\n・テイラー展開から導かれる\n・e^(iθ) は単位円上の点\n・極形式を z = re^(iθ) と書ける\n・指数法則が掛け算・割り算に使える\n\n次はオイラーの等式を見ましょう。',
+      customScene: 'euler-formula-complex-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

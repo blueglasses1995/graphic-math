@@ -11,6 +11,7 @@ export const conformalMappingTutorial: Tutorial = {
       title: '形を変えても角度を守る',
       content:
         '等角写像（conformal mapping）とは、局所的な角度を保存する変換です。\n\n複素関数 w = f(z) が正則（微分可能）なら、f\'(z) ≠ 0 の点で等角写像になります。\n\n2つの曲線が交わる角度が、写像後も保存されます。',
+      customScene: 'conformal-mapping-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -53,6 +54,7 @@ export const conformalMappingTutorial: Tutorial = {
       title: '等角写像を体験',
       content:
         'パラメータを変化させて、写像がどのように平面を変形するか観察しましょう。\n\n格子線が曲がっても、交差する角度（90°）が保存されることに注目してください。',
+      customScene: 'conformal-mapping-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -111,6 +113,7 @@ export const conformalMappingTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '等角写像:\n\n・複素関数による角度保存変換\n・正則関数 f(z) で f\'(z)≠0 なら等角\n・格子が変形しても交差角は保存\n・流体力学、電磁気学、地図学に応用\n・複雑な問題を単純な領域に変換する強力なツール\n\n複素関数論の美しさと実用性を体現した概念です。',
+      customScene: 'conformal-mapping-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

@@ -11,6 +11,7 @@ export const richterScaleTutorial: Tutorial = {
       title: 'マグニチュード1の差は32倍',
       content:
         'マグニチュード5とマグニチュード6の地震。数字では1しか違いませんが、エネルギーは約32倍も異なります。マグニチュードは対数スケールだからです。',
+      customScene: 'richter-scale-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const richterScaleTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'マグニチュードを変えて、対応するエネルギーの大きさを比較してください。線形スケールと対数スケールの違いを体感しましょう。',
+      customScene: 'richter-scale-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const richterScaleTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'リヒタースケールは対数スケール。マグニチュード1の差は振幅10倍、エネルギー約32倍。巨大な範囲を扱いやすい数値に圧縮しています。\n\nマグニチュードを変えてエネルギーの違いを体感してください。',
+      customScene: 'richter-scale-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

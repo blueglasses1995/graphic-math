@@ -11,7 +11,10 @@ export const montyHallTutorial: Tutorial = {
       title: '3つのドア',
       content:
         'テレビ番組で3つのドアがあり、1つに車、2つにヤギが隠されています。あなたがドアを選んだ後、司会者が残り2つのうちヤギのドアを1つ開けます。「ドアを変えますか？」',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'monty-hall-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',
@@ -41,7 +44,10 @@ export const montyHallTutorial: Tutorial = {
       title: 'シミュレーション',
       content:
         '実際にモンティ・ホール問題をシミュレーションしてみましょう。「変える」と「変えない」それぞれの勝率を100回試行で比較します。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'monty-hall-interactive',
       interactive: true,
       nextCondition: 'click',
       stepType: 'interactive',
@@ -81,7 +87,10 @@ export const montyHallTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'モンティ・ホール問題の教訓:\n\n• 変えた方が2/3で有利\n• 条件付き確率の直感的でない結果\n• 司会者の「知識」が情報を生む\n• シミュレーションで直感と理論を照合できる\n\n確率の直感がいかに当てにならないかを示す好例です。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'monty-hall-summary',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',

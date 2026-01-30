@@ -12,6 +12,7 @@ export const categorySummaryTutorial: Tutorial = {
       stepType: 'animation',
       content: '圏、関手、自然変換、随伴、極限、モナド——これらの概念がどのように関連しているかを全体マップとしてアニメーション表示します。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'category-summary-animation',
       interactive: false,
       nextCondition: 'click',
     },
@@ -21,6 +22,7 @@ export const categorySummaryTutorial: Tutorial = {
       stepType: 'interactive',
       content: '学んだ概念をドラッグして関連図を完成させましょう。圏→関手→自然変換の階層構造、随伴→モナドの導出関係を配置してください。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'category-summary-interactive',
       interactive: true,
       nextCondition: 'interaction',
     },
@@ -76,6 +78,7 @@ export const categorySummaryTutorial: Tutorial = {
       stepType: 'interactive',
       content: '圏論は「構造の科学」です。対象・射・関手・自然変換という少数の概念から驚くほど豊かな理論が構築されます。この基礎をもとに、応用分野を探検していきましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'category-summary-summary',
       interactive: true,
       nextCondition: 'interaction',
     }

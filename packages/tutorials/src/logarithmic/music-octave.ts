@@ -11,6 +11,7 @@ export const musicOctaveTutorial: Tutorial = {
       title: '周波数が2倍でオクターブ',
       content:
         'ピアノのA4 = 440Hz、A5 = 880Hz。周波数が2倍になると1オクターブ上がります。音階は周波数の対数スケールで等間隔に並んでいます。',
+      customScene: 'music-octave-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const musicOctaveTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '鍵盤を押して周波数を確認してください。隣り合う半音の周波数比は常に一定（2^(1/12) ≈ 1.0595）です。',
+      customScene: 'music-octave-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const musicOctaveTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '音階は周波数の対数スケール。オクターブは周波数2倍、半音は 2^(1/12) 倍。人間の聴覚が比を感じるため、対数的な構成が自然です。\n\n鍵盤を触って周波数と音程の関係を確認してください。',
+      customScene: 'music-octave-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

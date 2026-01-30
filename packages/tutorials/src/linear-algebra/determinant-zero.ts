@@ -15,6 +15,7 @@ export const determinantZeroTutorial: Tutorial = {
         '2次元の正方形が、線や点に潰れてしまう。情報が失われる瞬間です。\n\n' +
         '一度潰れると元には戻せません。この不可逆性が' +
         '行列式0の最も重要な性質です。',
+      customScene: 'determinant-zero-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -48,6 +49,7 @@ export const determinantZeroTutorial: Tutorial = {
         '2つの列ベクトルが同じ方向を向いているため、\n' +
         '変換後のすべての点は1本の直線上に乗ります。\n\n' +
         '2次元が1次元に「潰れた」のです。',
+      customScene: 'determinant-zero-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -182,6 +184,7 @@ export const determinantZeroTutorial: Tutorial = {
         '4. 連立方程式：det ≠ 0 なら唯一解\n' +
         '5. 情報の損失：一度潰れると元に戻せない\n\n' +
         '次は逆行列について詳しく学びましょう。',
+      customScene: 'determinant-zero-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

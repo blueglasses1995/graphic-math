@@ -18,6 +18,7 @@ export const laSummaryTutorial: Tutorial = {
         '固有値 = 変換の「本質的な伸縮」\n' +
         '逆行列 = 変換の「巻き戻し」\n\n' +
         'すべてが1つの物語を構成しているのです。',
+      customScene: 'la-summary-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -59,6 +60,7 @@ export const laSummaryTutorial: Tutorial = {
         '・基底：空間を張る線形独立なベクトルの集合\n' +
         '・次元：基底のベクトル数\n\n' +
         'これらが「舞台」を作ります。',
+      customScene: 'la-summary-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -187,6 +189,7 @@ export const laSummaryTutorial: Tutorial = {
         '固有値 → 固有ベクトル → 対角化\n\n' +
         'おめでとうございます！ これで基礎編は完了です。\n' +
         '実践編で、具体的な応用を体験しましょう。',
+      customScene: 'la-summary-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

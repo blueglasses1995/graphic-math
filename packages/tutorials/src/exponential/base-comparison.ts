@@ -11,6 +11,7 @@ export const baseComparisonTutorial: Tutorial = {
       title: '底が変わると何が変わる？',
       content:
         '2ˣ、3ˣ、10ˣ のグラフを同時に描いてみます。底が大きいほどグラフは急激に立ち上がります。その違いをアニメーションで見てみましょう。',
+      customScene: 'base-comparison-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const baseComparisonTutorial: Tutorial = {
       title: '底を自由に変えてみよう',
       content:
         'スライダーで底の値を0.1から10まで変えてみましょう。底が1より大きいとき、1のとき、1より小さいときで、グラフの形がまったく異なることに注目してください。',
+      customScene: 'base-comparison-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +107,7 @@ export const baseComparisonTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '底の違いによる指数関数の分類：\n• 底 > 1 → 増加関数（右上がり）\n• 底 = 1 → 定数関数（y=1）\n• 0 < 底 < 1 → 減少関数（右下がり）\n• 底 ≤ 0 → 定義しない\n\n共通点：(0,1)を通り、常にy>0、x軸が漸近線。',
+      customScene: 'base-comparison-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

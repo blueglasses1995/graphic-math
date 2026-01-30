@@ -11,6 +11,7 @@ export const imaginaryUnitTutorial: Tutorial = {
       title: 'iとは何か',
       content:
         '虚数単位 i は i² = -1 を満たす数です。\n\n「2乗すると-1になる」── ただそれだけのルールから、驚くほど豊かな数学が生まれます。\n\nまずは i の累乗を調べてみましょう。',
+      customScene: 'imaginary-unit-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -54,6 +55,7 @@ export const imaginaryUnitTutorial: Tutorial = {
       title: 'iの累乗を体験',
       content:
         '複素平面上で、1から始めて i を掛けるたびに点がどう動くか観察してみましょう。\n\n1（右）→ i（上）→ -1（左）→ -i（下）→ 1（右）\n\n反時計回りに90°ずつ回転しています。',
+      customScene: 'imaginary-unit-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -108,6 +110,7 @@ export const imaginaryUnitTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '虚数単位 i のポイント:\n\n・i² = -1（定義）\n・累乗は4周期: i, -1, -i, 1, i, ...\n・iを掛ける = 反時計回りに90°回転\n・i⁻¹ = -i（時計回りに90°回転）\n\n次は、実数と虚数を組み合わせた「複素数」の定義を学びましょう。',
+      customScene: 'imaginary-unit-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

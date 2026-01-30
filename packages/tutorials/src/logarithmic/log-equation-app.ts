@@ -11,6 +11,7 @@ export const logEquationAppTutorial: Tutorial = {
       title: '何年で2倍になる？',
       content:
         '年利3%の複利で預金が2倍になるのは何年後？ 1.03^n = 2 → n = log(2)/log(1.03) ≈ 23.4年。対数方程式は「いつ？」を答えます。',
+      customScene: 'log-equation-app-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const logEquationAppTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '利率を変えて、元本が2倍になるまでの年数がどう変わるか観察してください。',
+      customScene: 'log-equation-app-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const logEquationAppTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '対数方程式は「いつ目標値に達するか」を求める強力なツール。金融、化学、人口動態など幅広い応用があります。\n\n条件を変えていろいろな問題を解いてみてください。',
+      customScene: 'log-equation-app-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

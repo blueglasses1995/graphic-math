@@ -12,6 +12,7 @@ export const covariantContravariantTutorial: Tutorial = {
       stepType: 'animation',
       content: '共変関手は射の向きを保存しますが、反変関手は射の向きを逆転させます。この違いがどのように現れるかをアニメーションで確認しましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'covariant-contravariant-animation',
       interactive: false,
       nextCondition: 'click',
     },
@@ -21,6 +22,7 @@ export const covariantContravariantTutorial: Tutorial = {
       stepType: 'interactive',
       content: '共変関手と反変関手それぞれについて、射の向きがどう変わるかを視覚的に追跡しましょう。射をクリックして像を確認してください。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'covariant-contravariant-interactive',
       interactive: true,
       nextCondition: 'interaction',
     },
@@ -76,6 +78,7 @@ export const covariantContravariantTutorial: Tutorial = {
       stepType: 'interactive',
       content: '共変関手は構造を「そのまま」移し、反変関手は「逆向き」に移します。双対空間やHom関手など、数学の至る所に反変関手が現れます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'covariant-contravariant-summary',
       interactive: true,
       nextCondition: 'interaction',
     }

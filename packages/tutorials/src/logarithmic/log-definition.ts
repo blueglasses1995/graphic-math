@@ -11,6 +11,7 @@ export const logDefinitionTutorial: Tutorial = {
       title: '指数の逆演算',
       content:
         'a^c = b のとき、c = log_a(b) と書きます。指数の「答え」を求めるのではなく「指数そのもの」を求める演算が対数です。',
+      customScene: 'log-definition-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const logDefinitionTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '底 a と真数 b を変えて、対数の値がどう変わるか確認してください。底が大きいほど対数は小さくなります。',
+      customScene: 'log-definition-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const logDefinitionTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'log_a(b) = c ⇔ a^c = b。対数は指数の逆演算です。底 > 0（≠1）、真数 > 0 が条件。\n\n自由に値を変えて定義を体感してください。',
+      customScene: 'log-definition-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

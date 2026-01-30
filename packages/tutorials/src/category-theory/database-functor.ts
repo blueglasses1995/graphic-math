@@ -12,6 +12,7 @@ export const databaseFunctorTutorial: Tutorial = {
       stepType: 'animation',
       content: 'データベーススキーマは圏として、データインスタンスは関手として表現できます。テーブルが対象、外部キーが射、データ行が関手の像——この対応をアニメーションで見ましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'database-functor-animation',
       interactive: false,
       nextCondition: 'click',
     },
@@ -21,6 +22,7 @@ export const databaseFunctorTutorial: Tutorial = {
       stepType: 'interactive',
       content: 'テーブル（対象）と外部キー（射）をドラッグしてデータベーススキーマを圏として構築しましょう。データインスタンスが関手としてどう表現されるか確認できます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'database-functor-interactive',
       interactive: true,
       nextCondition: 'interaction',
     },
@@ -76,6 +78,7 @@ export const databaseFunctorTutorial: Tutorial = {
       stepType: 'interactive',
       content: 'データベース理論は圏論の実用的応用の好例です。スキーマ=圏、インスタンス=関手、マイグレーション=随伴という対応により、データ操作を数学的に厳密に扱えます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'database-functor-summary',
       interactive: true,
       nextCondition: 'interaction',
     }

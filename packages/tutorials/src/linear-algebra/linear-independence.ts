@@ -16,6 +16,7 @@ export const linearIndependenceTutorial: Tutorial = {
         '3つ目は新しい情報を何も追加していません。\n\n' +
         'これが「線形従属」です。逆に、どのベクトルも他から作れないとき' +
         '「線形独立」と言います。情報の冗長性を見抜く概念です。',
+      customScene: 'linear-independence-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -56,6 +57,7 @@ export const linearIndependenceTutorial: Tutorial = {
         'bの何倍でもaにはなりません。\n' +
         '→ {a, b} は線形独立\n\n' +
         '独立なベクトルは、それぞれが「新しい方向」を指しています。',
+      customScene: 'linear-independence-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -213,6 +215,7 @@ export const linearIndependenceTutorial: Tutorial = {
         '5. n次元空間で独立なベクトルは最大n本\n\n' +
         '線形独立なベクトルの集合が空間を張るとき、それを「基底」と呼びます。' +
         '次は基底ベクトルを深く学びましょう。',
+      customScene: 'linear-independence-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

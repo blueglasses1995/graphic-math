@@ -15,6 +15,7 @@ export const pcaIntroTutorial: Tutorial = {
         '主成分分析（PCA）は、データの中から「最も情報量の多い方向」を見つけます。\n\n' +
         'その数学的な正体は、共分散行列の固有値分解です。\n' +
         '線形代数の概念が実データに直結する瞬間です。',
+      customScene: 'pca-intro-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -51,6 +52,7 @@ export const pcaIntroTutorial: Tutorial = {
         '3. 固有ベクトル = 主成分の方向\n' +
         '4. 固有値 = その方向の分散\n\n' +
         '大きい固有値の方向が「重要な方向」です。',
+      customScene: 'pca-intro-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -195,6 +197,7 @@ export const pcaIntroTutorial: Tutorial = {
         '4. 固有値 = その方向の分散（重要度）\n' +
         '5. 寄与率で次元削減の度合いを決定\n\n' +
         '次はマルコフ連鎖を学びます。',
+      customScene: 'pca-intro-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

@@ -1,3 +1,4 @@
+import { Vector3 } from '@learnmath/core';
 import { Tutorial } from '../types';
 
 export const renderingPipelineTutorial: Tutorial = {
@@ -17,7 +18,8 @@ export const renderingPipelineTutorial: Tutorial = {
         'これらすべてが4×4行列の掛け算です！\n\n' +
         '毎秒60フレーム、数百万の頂点に対して\n' +
         '行列変換が適用されています。',
-      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      sceneConfig: { showGrid: true, showAxes: true, vectors: [{ id: 'v1', vector: new Vector3(1, 0, 0), color: '#ff5722', label: 'e₁' }, { id: 'v2', vector: new Vector3(0, 1, 0), color: '#4caf50', label: 'e₂' }], cameraPosition: [0, 0, 5] },
+      customScene: 'rendering-pipeline-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -34,6 +36,7 @@ export const renderingPipelineTutorial: Tutorial = {
         'MVP行列 = P × V × M を事前計算すれば\n' +
         '各頂点は1回の行列積で変換できます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'rendering-pipeline-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -126,6 +129,7 @@ export const renderingPipelineTutorial: Tutorial = {
         '5. GPUは毎秒数十億の行列演算を実行\n\n' +
         '3Dグラフィックスは線形代数の最も視覚的な応用です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 6] },
+      customScene: 'rendering-pipeline-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

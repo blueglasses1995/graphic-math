@@ -11,6 +11,7 @@ export const diffSummaryTutorial: Tutorial = {
       title: '19のステップを振り返る',
       content:
         '変化率から始まり、極限、導関数の定義、基本公式、そして応用まで。微分の世界を駆け抜けてきました。ここで全体像を整理しましょう。',
+      customScene: 'diff-summary-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const diffSummaryTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '好きな関数を選んで微分を確認してください。パワールール、積の微分、連鎖律を組み合わせて、どんな式でも微分できるようになりましたか？',
+      customScene: 'diff-summary-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const diffSummaryTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '基礎編はここまで。微分の定義・計算法・基本応用を学びました。\n\n実践編では、速度・加速度、最適化、ニュートン法、テイラー展開など、微分を使った具体的な問題解決に挑戦します。',
+      customScene: 'diff-summary-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

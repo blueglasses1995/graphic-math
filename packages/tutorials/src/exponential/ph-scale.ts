@@ -11,6 +11,7 @@ export const phScaleTutorial: Tutorial = {
       title: 'レモンと石鹸水の違い',
       content:
         'レモン汁（pH 2）と石鹸水（pH 10）。pHの差はたった8ですが、水素イオン濃度の差は10⁸ = 1億倍！pHスケールは指数的な差を対数で圧縮しています。そのしくみをアニメーションで見てみましょう。',
+      customScene: "ph-scale-animation",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const phScaleTutorial: Tutorial = {
       title: 'pHと水素イオン濃度を確認しよう',
       content:
         'pHスライダーを動かして、対応する水素イオン濃度[H⁺]がどう変わるか確認しましょう。pHが1変わると濃度は10倍変わります。',
+      customScene: "ph-scale-interactive",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +107,7 @@ export const phScaleTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'pH：\n• pH = -log₁₀[H⁺]\n• pH 1変化で濃度10倍\n• pH 0〜14のスケールに10¹⁴倍の範囲を圧縮\n• 生命はpH 7付近で機能\n• 海洋酸性化のように小さな変化が大きな影響\n\n対数スケールの重要な実用例です。',
+      customScene: "ph-scale-summary",
       sceneConfig: {
         showGrid: true,
         showAxes: true,

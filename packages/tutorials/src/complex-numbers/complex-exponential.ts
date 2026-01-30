@@ -11,6 +11,7 @@ export const complexExponentialTutorial: Tutorial = {
       title: '一般の複素指数',
       content:
         'オイラーの公式は e^(iθ) の場合でした。では e^(a+bi) は？\n\ne^(a+bi) = e^a × e^(ib) = e^a(cos b + i sin b)\n\n指数法則で実部と虚部を分離できます。\n\ne^a が絶対値（拡大率）、b が偏角（回転角）です。',
+      customScene: 'complex-exponential-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -54,6 +55,7 @@ export const complexExponentialTutorial: Tutorial = {
       title: '複素指数を体験',
       content:
         'aとbを変化させて、e^(a+bi)がどう変わるか観察してみましょう。\n\naは絶対値（原点からの距離）、bは偏角（角度）を制御します。',
+      customScene: 'complex-exponential-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -113,6 +115,7 @@ export const complexExponentialTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '複素指数関数のポイント:\n\n・e^(a+bi) = e^a(cos b + i sin b)\n・実部aが拡大率、虚部bが回転角\n・螺旋運動を記述できる\n・周期2πiを持つ\n・i^i = e^(-π/2) ≈ 0.2079（実数！）\n\n次は複素数と二次方程式の関係を学びましょう。',
+      customScene: 'complex-exponential-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

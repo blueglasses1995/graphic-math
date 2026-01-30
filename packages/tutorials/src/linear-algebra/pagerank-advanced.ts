@@ -1,3 +1,4 @@
+import { Vector3 } from '@learnmath/core';
 import { Tutorial } from '../types';
 
 export const pagerankAdvancedTutorial: Tutorial = {
@@ -18,7 +19,8 @@ export const pagerankAdvancedTutorial: Tutorial = {
         'e：全成分1のベクトル\n\n' +
         'このGは確率行列（列和=1、要素≥0）であり\n' +
         'ペロン・フロベニウスの定理が適用できます。',
-      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      sceneConfig: { showGrid: true, showAxes: true, vectors: [{ id: 'v1', vector: new Vector3(1, 0, 0), color: '#ff5722', label: 'e₁' }, { id: 'v2', vector: new Vector3(0, 1, 0), color: '#4caf50', label: 'e₂' }], cameraPosition: [0, 0, 5] },
+      customScene: 'pagerank-advanced-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -37,6 +39,7 @@ export const pagerankAdvancedTutorial: Tutorial = {
         '一意に存在し、すべての成分が正です。\n\n' +
         'つまり全てのページに正のランクが付きます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'pagerank-advanced-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -129,6 +132,7 @@ export const pagerankAdvancedTutorial: Tutorial = {
         '5. パーソナライズドPageRankで個別推薦\n\n' +
         '線形代数の理論が検索エンジンの品質を支えています。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 6] },
+      customScene: 'pagerank-advanced-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

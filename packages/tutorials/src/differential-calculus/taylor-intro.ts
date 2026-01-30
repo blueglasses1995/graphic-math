@@ -11,6 +11,7 @@ export const taylorIntroTutorial: Tutorial = {
       title: '多項式で何でも近似',
       content:
         '線形近似は1次式での近似でした。2次、3次…と項を増やせば、もっと精密に近似できます。これがテイラー展開のアイデアです。項を増やすたびに近似が改善される様子を見てみましょう。',
+      customScene: 'taylor-intro-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const taylorIntroTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'テイラー展開の次数をスライダーで上げてください。次数を増やすほど、多項式が元の関数にピタリと重なっていきます。',
+      customScene: 'taylor-intro-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const taylorIntroTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'テイラー展開: 関数を多項式の無限和で表す。各係数は導関数から決まる。線形近似の究極の一般化です。\n\n次は「ロピタルの法則」。不定形の極限を微分で求めます。',
+      customScene: 'taylor-intro-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

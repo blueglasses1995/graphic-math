@@ -15,6 +15,7 @@ export const rotationMatrixTutorial: Tutorial = {
         'これらすべてに使われるのが「回転行列」です。\n\n' +
         'たった4つの数（2Dの場合）で、あらゆる回転を表現できます。\n' +
         'その秘密はcos（コサイン）とsin（サイン）にあります。',
+      customScene: 'rotation-matrix-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -49,6 +50,7 @@ export const rotationMatrixTutorial: Tutorial = {
         '検証：(1, 0) → (0, 1) ✓ X軸が Y軸に移る\n' +
         '      (0, 1) → (-1, 0) ✓ Y軸が -X軸に移る\n\n' +
         '反時計回りに90度回転していることが確認できます。',
+      customScene: 'rotation-matrix-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -205,6 +207,7 @@ export const rotationMatrixTutorial: Tutorial = {
         '4. 3Dでは回転軸ごとに別の行列\n' +
         '5. 回転の合成順序は重要（非可換）\n\n' +
         '次は鏡映変換を学びます。',
+      customScene: 'rotation-matrix-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

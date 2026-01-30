@@ -11,6 +11,7 @@ export const limitImageTutorial: Tutorial = {
       title: '到達できないけれど、近づける',
       content:
         '0.9, 0.99, 0.999, 0.9999… この数列は 1 に「限りなく近づく」けれど、永遠に 1 にはなりません。でも極限値は 1。この「たどり着く先」が極限です。',
+      customScene: 'limit-image-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const limitImageTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'スライダーで x を動かして、f(x) の値がどこに収束するか観察しましょう。x がある値に近づくとき、f(x) が向かう先が極限値です。',
+      customScene: 'limit-image-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const limitImageTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '極限とは「限りなく近づいた先の値」。代入した値とは違うことがあるのが重要です。\n\n微分は lim(Δx→0) Δy/Δx という極限で定義されます。極限の感覚が身についたら、次はいよいよ導関数の定義に進みましょう。',
+      customScene: 'limit-image-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

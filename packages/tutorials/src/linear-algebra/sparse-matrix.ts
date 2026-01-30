@@ -1,3 +1,4 @@
+import { Vector3 } from '@learnmath/core';
 import { Tutorial } from '../types';
 
 export const sparseMatrixTutorial: Tutorial = {
@@ -17,7 +18,8 @@ export const sparseMatrixTutorial: Tutorial = {
         '疎行列を素朴に2次元配列で保存すると\n' +
         'メモリと計算の大部分がゼロの処理に費やされます。\n' +
         '効率的な扱い方を学びましょう。',
-      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      sceneConfig: { showGrid: true, showAxes: true, vectors: [{ id: 'v1', vector: new Vector3(1, 0, 0), color: '#ff5722', label: 'e₁' }, { id: 'v2', vector: new Vector3(0, 1, 0), color: '#4caf50', label: 'e₂' }], cameraPosition: [0, 0, 5] },
+      customScene: 'sparse-matrix-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -36,6 +38,7 @@ export const sparseMatrixTutorial: Tutorial = {
         '列方向のアクセスが高速。\n\n' +
         'scipy.sparse で簡単に使えます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'sparse-matrix-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -127,6 +130,7 @@ export const sparseMatrixTutorial: Tutorial = {
         '5. scipy.sparseやcuSPARSEで実装可能\n\n' +
         '疎行列の理解は大規模データ処理の基礎です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 6] },
+      customScene: 'sparse-matrix-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

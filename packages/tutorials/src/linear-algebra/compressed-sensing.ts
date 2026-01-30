@@ -1,3 +1,4 @@
+import { Vector3 } from '@learnmath/core';
 import { Tutorial } from '../types';
 
 export const compressedSensingTutorial: Tutorial = {
@@ -18,7 +19,8 @@ export const compressedSensingTutorial: Tutorial = {
         '信号を正確に復元できます。\n\n' +
         'これが「圧縮センシング」の革命的なアイデアで、\n' +
         'MRI撮像の高速化などに応用されています。',
-      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      sceneConfig: { showGrid: true, showAxes: true, vectors: [{ id: 'v1', vector: new Vector3(1, 0, 0), color: '#ff5722', label: 'e₁' }, { id: 'v2', vector: new Vector3(0, 1, 0), color: '#4caf50', label: 'e₂' }], cameraPosition: [0, 0, 5] },
+      customScene: 'compressed-sensing-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -37,6 +39,7 @@ export const compressedSensingTutorial: Tutorial = {
         '100次元の信号を30回の測定で復元する。\n' +
         'スパース性という「事前知識」が鍵です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'compressed-sensing-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -127,6 +130,7 @@ export const compressedSensingTutorial: Tutorial = {
         '5. MRI高速化に実用的に応用\n\n' +
         'スパース性と線形代数の融合が新しい計測理論を生みました。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 6] },
+      customScene: 'compressed-sensing-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

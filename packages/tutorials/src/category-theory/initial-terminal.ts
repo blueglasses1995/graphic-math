@@ -12,6 +12,7 @@ export const initialTerminalTutorial: Tutorial = {
       stepType: 'animation',
       content: 'すべての対象へ一意な射を持つ「始対象」と、すべての対象から一意な射を受ける「終対象」。これらは圏の中で特権的な位置を占めます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'initial-terminal-animation',
       interactive: false,
       nextCondition: 'click',
     },
@@ -21,6 +22,7 @@ export const initialTerminalTutorial: Tutorial = {
       stepType: 'interactive',
       content: '与えられた圏の図の中で、始対象と終対象を見つけてクリックしてください。すべての対象への（からの）一意な射が可視化されます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'initial-terminal-interactive',
       interactive: true,
       nextCondition: 'interaction',
     },
@@ -76,6 +78,7 @@ export const initialTerminalTutorial: Tutorial = {
       stepType: 'interactive',
       content: '始対象と終対象は「普遍性」の最も単純な例です。「すべての対象に対して一意な射が存在する」という性質で特徴づけられます。この考え方は積、余積、極限へと拡張されていきます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'initial-terminal-summary',
       interactive: true,
       nextCondition: 'interaction',
     }

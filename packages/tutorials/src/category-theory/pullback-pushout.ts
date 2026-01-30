@@ -12,6 +12,7 @@ export const pullbackPushoutTutorial: Tutorial = {
       stepType: 'animation',
       content: '引き戻しは2つの射が「共通の先」で出会う点を集めた構成です。押し出しはその双対です。幾何的なイメージをアニメーションで確認しましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'pullback-pushout-animation',
       interactive: false,
       nextCondition: 'click',
     },
@@ -21,6 +22,7 @@ export const pullbackPushoutTutorial: Tutorial = {
       stepType: 'interactive',
       content: '射 f: A→C と g: B→C から引き戻し A×_C B を構成してみましょう。普遍性を満たす一意の射が存在することを確認できます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'pullback-pushout-interactive',
       interactive: true,
       nextCondition: 'interaction',
     },
@@ -76,6 +78,7 @@ export const pullbackPushoutTutorial: Tutorial = {
       stepType: 'interactive',
       content: '引き戻しと押し出しは極限と余極限の最も幾何的な例です。「上で出会う」「下で貼り合わせる」という直感を持つことで、抽象的な普遍性の議論に具体的なイメージを与えられます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'pullback-pushout-summary',
       interactive: true,
       nextCondition: 'interaction',
     }

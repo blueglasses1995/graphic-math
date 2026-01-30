@@ -11,6 +11,7 @@ export const solveOdeTutorial: Tutorial = {
       title: '微分方程式とは',
       content:
         'dy/dx = 2x という式は「y の微分が 2x に等しい」と言っています。\n\nこの条件を満たす y を見つけるには？ 両辺を積分すればよいのです。\n\ny = ∫ 2x dx = x² + C\n\n積分は微分方程式を解くための基本道具です。',
+      customScene: 'solve-ode-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const solveOdeTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '方向場（各点での傾きを表す短い線分）が表示されています。\n\n解曲線がこの方向場に沿って流れる様子を観察してみましょう。\n\n初期値 C を変えると、解曲線が上下にシフトします。',
+      customScene: 'solve-ode-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const solveOdeTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '微分方程式を解くことは、本質的に「積分する」ことです。\n\n変数分離法は最も基本的な解法で、両辺を積分します。\n\n初期条件で積分定数 C が決まります。\n\n方向場を操作して、解曲線の振る舞いを観察してみてください。',
+      customScene: 'solve-ode-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

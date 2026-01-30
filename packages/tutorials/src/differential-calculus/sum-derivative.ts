@@ -11,6 +11,7 @@ export const sumDerivativeTutorial: Tutorial = {
       title: '足し算と微分は仲良し',
       content:
         'f(x) + g(x) を微分すると f\'(x) + g\'(x)。足し算を微分すると、微分の足し算になります。このシンプルな性質が、複雑な式をバラバラに処理できる理由です。',
+      customScene: 'sum-derivative-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const sumDerivativeTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'f(x) と g(x) それぞれの導関数と、f+g の導関数を比べてみてください。色分けされたグラフを切り替えて確認しましょう。',
+      customScene: 'sum-derivative-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const sumDerivativeTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '(f+g)\' = f\' + g\'、(f−g)\' = f\' − g\'。微分は足し算・引き算を素通しにします。\n\nでは掛け算はどうでしょう？(f·g)\' = f\'·g\' ではありません。次は「積の微分」を学びましょう。',
+      customScene: 'sum-derivative-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

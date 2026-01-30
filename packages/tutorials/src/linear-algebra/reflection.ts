@@ -16,6 +16,7 @@ export const reflectionTutorial: Tutorial = {
         '行列で表すと、回転との違いが鮮明にわかります。\n\n' +
         '最大の違い：行列式が -1 になること。\n' +
         '空間の「向き」が反転するのです。',
+      customScene: 'reflection-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -52,6 +53,7 @@ export const reflectionTutorial: Tutorial = {
         '原点に関する鏡映（= 180°回転）：\n' +
         'Mo = [[-1, 0], [0, -1]]\n' +
         '(2, 3) → (-2, -3)',
+      customScene: 'reflection-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -193,6 +195,7 @@ export const reflectionTutorial: Tutorial = {
         '4. 鏡映 × 鏡映 = 回転\n' +
         '5. 対称群：回転と鏡映の組み合わせ\n\n' +
         '次はせん断変形を学びます。',
+      customScene: 'reflection-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

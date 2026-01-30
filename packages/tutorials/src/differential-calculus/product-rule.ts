@@ -11,6 +11,7 @@ export const productRuleTutorial: Tutorial = {
       title: '掛け算の微分は素直じゃない',
       content:
         '(f·g)\' ≠ f\'·g\'。掛け算を微分すると、単純に各パーツを微分して掛けるだけでは済みません。長方形の面積が変化するアニメーションで理由を見てみましょう。',
+      customScene: 'product-rule-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const productRuleTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '縦 f(x)、横 g(x) の長方形を想像してください。x を変えると面積 f·g が変わります。スライダーで確認しましょう。',
+      customScene: 'product-rule-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const productRuleTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '(f·g)\' = f\'·g + f·g\'。積の微分は「交互に微分して足す」。ライプニッツが発見したこの法則は、微分の最重要公式の1つです。\n\n次は「合成関数の微分（連鎖律）」を学びましょう。',
+      customScene: 'product-rule-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

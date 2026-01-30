@@ -1,3 +1,4 @@
+import { Vector3 } from '@learnmath/core';
 import { Tutorial } from '../types';
 
 export const matrixCompletionTutorial: Tutorial = {
@@ -17,7 +18,8 @@ export const matrixCompletionTutorial: Tutorial = {
         'カギは「低ランク性」：実世界のデータ行列は\n' +
         '見た目は大きくても、本質的なランクは低いことが多い。\n' +
         'この性質を使って欠損値を埋められるのです。',
-      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      sceneConfig: { showGrid: true, showAxes: true, vectors: [{ id: 'v1', vector: new Vector3(1, 0, 0), color: '#ff5722', label: 'e₁' }, { id: 'v2', vector: new Vector3(0, 1, 0), color: '#4caf50', label: 'e₂' }], cameraPosition: [0, 0, 5] },
+      customScene: 'matrix-completion-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -36,6 +38,7 @@ export const matrixCompletionTutorial: Tutorial = {
         '「近似的に低ランク」なので補完が可能です。\n' +
         '推薦システムの行列分解はまさにこの応用です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'matrix-completion-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -130,6 +133,7 @@ export const matrixCompletionTutorial: Tutorial = {
         '5. ロバストPCAは低ランク+スパース分解\n\n' +
         '低ランク構造の発見は現代データ科学の中心テーマです。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 6] },
+      customScene: 'matrix-completion-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

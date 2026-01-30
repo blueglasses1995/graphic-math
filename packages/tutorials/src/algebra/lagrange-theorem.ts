@@ -12,6 +12,7 @@ export const lagrangeTheoremTutorial: Tutorial = {
       content:
         '6人のグループで「チーム分け」をするとき、\n全員が同じ大きさのチームに入るには、チームの人数は1, 2, 3, 6人のいずれかです。\n\n群にも同じ法則が成り立ちます。\n部分群の大きさは、群全体の大きさの約数でなければなりません。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'lagrange-theorem-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -22,6 +23,7 @@ export const lagrangeTheoremTutorial: Tutorial = {
       content:
         'S₃（位数6）の部分群 H = {e, (12)}（位数2）を考えます。\n\n左剰余類で S₃ を分割すると:\nH, (13)H, (23)H の3つに分かれます。\n\n各剰余類の大きさは |H| = 2 で、6 = 2 × 3 です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'lagrange-theorem-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -82,6 +84,7 @@ export const lagrangeTheoremTutorial: Tutorial = {
       content:
         'ラグランジュの定理:\n\n• |H| は |G| の約数（部分群の位数は群の位数を割る）\n• 剰余類による分割が証明の鍵\n• フェルマーの小定理など重要な結果の基礎\n• 逆は一般に不成立だが、シローの定理で部分的に回復\n\n群論で最初に学ぶ強力な定理です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'lagrange-theorem-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

@@ -11,6 +11,7 @@ export const doublingTimeTutorial: Tutorial = {
       title: '2倍になるのはいつ？',
       content:
         '世界の人口は約60年で2倍になりました。GDPが年3%成長なら2倍になるのは？投資が年5%なら？「倍増時間」を知れば未来が見通せます。成長する量が次々と2倍を超えていくアニメーションを見てみましょう。',
+      customScene: "doubling-time-animation",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const doublingTimeTutorial: Tutorial = {
       title: '成長率で倍増時間を調べよう',
       content:
         '成長率(%)を変えて、倍増時間がどう変わるか確認しましょう。成長率が2倍になると、倍増時間はおよそ半分になります。',
+      customScene: "doubling-time-interactive",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +107,7 @@ export const doublingTimeTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '倍増時間：\n• T = ln2/r ≈ 0.693/r\n• 72の法則：T ≈ 72/成長率(%)\n• 半減期と同じ構造\n• 成長率が2倍→倍増時間は半分\n\n成長の速さを直感的に理解するための強力なツールです。',
+      customScene: "doubling-time-summary",
       sceneConfig: {
         showGrid: true,
         showAxes: true,

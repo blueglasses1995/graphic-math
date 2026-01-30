@@ -12,6 +12,7 @@ export const latticeCryptoTutorial: Tutorial = {
       content:
         '量子コンピュータはRSAも楕円曲線暗号も破ります。\n\nでは何が安全なのか？\n\n「格子」上の困難な問題に基づく暗号は、\n量子コンピュータでも効率的に解けないと考えられています。\n\n格子暗号は次世代暗号の最有力候補です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'lattice-crypto-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -22,6 +23,7 @@ export const latticeCryptoTutorial: Tutorial = {
       content:
         '格子とは、基底ベクトルの整数結合で生成される点の集合です。\n\nL = {n₁b₁ + n₂b₂ | n₁, n₂ ∈ Z}\n\n同じ格子でも基底の取り方は多数あります。\n「良い基底」を見つけるのは難しい！\n\n基底を変えて格子の形を観察しましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'lattice-crypto-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -82,6 +84,7 @@ export const latticeCryptoTutorial: Tutorial = {
       content:
         '格子暗号:\n\n• 格子上の困難な問題（SVP, LWE等）に基づく\n• 量子コンピュータにも耐性あり\n• LWE暗号: ノイズ付き線形方程式の困難性を利用\n• NIST標準化で実用段階に\n• 環論・格子理論が数学的基盤\n\n次世代暗号のスタンダードです。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'lattice-crypto-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

@@ -11,6 +11,7 @@ export const secantToTangentTutorial: Tutorial = {
       title: '2点をどんどん近づけると…',
       content:
         'グラフ上の2点を結ぶ直線（割線）を見てください。片方の点をもう一方に近づけると、割線はどうなるでしょう？アニメーションで確認しましょう。',
+      customScene: 'secant-to-tangent-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const secantToTangentTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'スライダーで点Qを点Pに近づけてみてください。割線がだんだん接線に変わっていく様子を観察しましょう。',
+      customScene: 'secant-to-tangent-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const secantToTangentTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '割線の傾き Δy/Δx を、Δx→0 の極限にしたものが接線の傾き。これが瞬間変化率であり、微分の根本アイデアです。\n\n次は「極限」そのものをもう少し丁寧に見ていきましょう。',
+      customScene: 'secant-to-tangent-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

@@ -1,3 +1,4 @@
+import { Vector3 } from '@learnmath/core';
 import { Tutorial } from '../types';
 
 export const gradientDescentTutorial: Tutorial = {
@@ -17,7 +18,8 @@ export const gradientDescentTutorial: Tutorial = {
         '-∇f(x) 方向に進めば関数値が減少します。\n\n' +
         'x_{n+1} = x_n - α∇f(x_n)\n\n' +
         'αは学習率（ステップサイズ）です。',
-      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      sceneConfig: { showGrid: true, showAxes: true, vectors: [{ id: 'v1', vector: new Vector3(1, 0, 0), color: '#ff5722', label: 'e₁' }, { id: 'v2', vector: new Vector3(0, 1, 0), color: '#4caf50', label: 'e₂' }], cameraPosition: [0, 0, 5] },
+      customScene: 'gradient-descent-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -35,6 +37,7 @@ export const gradientDescentTutorial: Tutorial = {
         'f(2,1) = 8 → f(1.6,0.2) = 2.72\n' +
         '一歩で大幅に値が減りました！',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'gradient-descent-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -127,6 +130,7 @@ export const gradientDescentTutorial: Tutorial = {
         '5. ニュートン法はH⁻¹で方向を補正\n\n' +
         '最適化は線形代数と微分の融合分野です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 6] },
+      customScene: 'gradient-descent-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

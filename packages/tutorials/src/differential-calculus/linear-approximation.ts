@@ -11,6 +11,7 @@ export const linearApproximationTutorial: Tutorial = {
       title: '曲線を直線で置き換える',
       content:
         'ある点の近くでは、曲線は接線とほぼ一致します。この性質を使うと、複雑な関数の値を簡単な掛け算と足し算で近似できます。電卓がなかった時代の必須テクニックです。',
+      customScene: 'linear-approximation-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const linearApproximationTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'ズームレベルを変えて、曲線と接線がどの範囲で一致するか確認してください。拡大するほど、曲線は直線に近づきます。',
+      customScene: 'linear-approximation-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const linearApproximationTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'f(a+Δx) ≈ f(a) + f\'(a)Δx。接線で曲線を近似する。これが微分の最も実用的な応用の1つです。\n\n次は「暗黙の微分」。陽に y = f(x) と書けない関数を微分する技法を学びます。',
+      customScene: 'linear-approximation-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

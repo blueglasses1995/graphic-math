@@ -12,6 +12,7 @@ export const polarMultiplyTutorial: Tutorial = {
       title: '回転と拡大',
       content:
         '極形式での掛け算は驚くほどシンプルです。\n\nz₁ = r₁(cos θ₁ + i sin θ₁)\nz₂ = r₂(cos θ₂ + i sin θ₂)\n\nz₁ × z₂ = r₁r₂(cos(θ₁+θ₂) + i sin(θ₁+θ₂))\n\n絶対値は掛け算、偏角は足し算！',
+      customScene: 'polar-multiply-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -74,6 +75,7 @@ export const polarMultiplyTutorial: Tutorial = {
       title: '掛け算を体験',
       content:
         '2つの複素数の偏角と絶対値を変えて、積がどう変わるか実験してみましょう。\n\n偏角が足し算、絶対値が掛け算になることを確認してください。',
+      customScene: 'polar-multiply-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -135,6 +137,7 @@ export const polarMultiplyTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '極形式での掛け算:\n\n・r₁∠θ₁ × r₂∠θ₂ = r₁r₂∠(θ₁+θ₂)\n・絶対値は積、偏角は和\n・加法定理から自然に導かれる\n・|z|=1 なら純粋な回転\n\n次は極形式での割り算を学びましょう。',
+      customScene: 'polar-multiply-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

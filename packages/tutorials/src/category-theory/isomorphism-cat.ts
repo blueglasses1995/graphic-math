@@ -12,6 +12,7 @@ export const isomorphismCatTutorial: Tutorial = {
       stepType: 'animation',
       content: '射 f: A→B に逆射 g: B→A が存在し、g∘f = id_A かつ f∘g = id_B となるとき、fは同型射です。同型な対象は「本質的に同じ」と見なせます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'isomorphism-cat-animation',
       interactive: false,
       nextCondition: 'click',
     },
@@ -21,6 +22,7 @@ export const isomorphismCatTutorial: Tutorial = {
       stepType: 'interactive',
       content: '与えられた圏の中から同型射のペアを見つけてクリックしてください。合成して恒等射になることを確認しましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'isomorphism-cat-interactive',
       interactive: true,
       nextCondition: 'interaction',
     },
@@ -76,6 +78,7 @@ export const isomorphismCatTutorial: Tutorial = {
       stepType: 'interactive',
       content: '同型射は圏論における「同じ」の概念です。厳密な等しさではなく、構造を保つ対応関係により「本質的に同じ」と判断します。この考え方は現代数学の根幹です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'isomorphism-cat-summary',
       interactive: true,
       nextCondition: 'interaction',
     }

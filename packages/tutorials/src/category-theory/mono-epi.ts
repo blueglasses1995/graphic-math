@@ -12,6 +12,7 @@ export const monoEpiTutorial: Tutorial = {
       stepType: 'animation',
       content: '集合論では単射と全射が基本的ですが、圏論ではこれを「左簡約可能」「右簡約可能」として一般化します。モノ射とエピ射の振る舞いをアニメーションで見てみましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'mono-epi-animation',
       interactive: false,
       nextCondition: 'click',
     },
@@ -21,6 +22,7 @@ export const monoEpiTutorial: Tutorial = {
       stepType: 'interactive',
       content: 'モノ射mに対して m∘f = m∘g ならば f = g となることを確認しましょう。射を選んで合成し、簡約性を体験してください。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'mono-epi-interactive',
       interactive: true,
       nextCondition: 'interaction',
     },
@@ -76,6 +78,7 @@ export const monoEpiTutorial: Tutorial = {
       stepType: 'interactive',
       content: 'モノ射とエピ射は単射・全射の圏論的一般化です。「要素」を使わず「他の射との関係」だけで特徴づけるのが圏論流です。様々な圏でモノ射・エピ射を見つけてみましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'mono-epi-summary',
       interactive: true,
       nextCondition: 'interaction',
     }

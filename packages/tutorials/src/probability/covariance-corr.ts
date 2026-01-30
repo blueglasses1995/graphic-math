@@ -11,7 +11,10 @@ export const covarianceCorrTutorial: Tutorial = {
       title: '一緒に動く？逆に動く？',
       content:
         '気温が上がるとアイスの売上が増える。勉強時間が増えるとゲーム時間が減る。2つの変数が「一緒に動くか、逆に動くか」を数値で表すのが共分散と相関です。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'covariance-corr-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',
@@ -41,7 +44,10 @@ export const covarianceCorrTutorial: Tutorial = {
       title: '散布図と相関',
       content:
         'データの散布図を見ながら相関係数を確認しましょう。点の散らばりが直線的なほど|ρ|は1に近くなります。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'covariance-corr-interactive',
       interactive: true,
       nextCondition: 'click',
       stepType: 'interactive',
@@ -81,7 +87,10 @@ export const covarianceCorrTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '共分散と相関:\n\n• Cov(X,Y): 関連の方向と大きさ（単位依存）\n• ρ: -1〜1の標準化された指標\n• ρ=0 ≠ 独立（非線形関係の可能性あり）\n• Var(X+Y) = Var(X)+Var(Y)+2Cov(X,Y)\n\nデータ分析の基本ツールです。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'covariance-corr-summary',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',

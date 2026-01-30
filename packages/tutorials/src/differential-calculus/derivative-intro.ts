@@ -11,6 +11,7 @@ export const derivativeIntroTutorial: Tutorial = {
       title: '傾きが関数になる',
       content:
         '曲線の各点で接線の傾きを求めると、その傾き自体が新しい関数になります。元の関数 f(x) から「傾きの関数」f\'(x) を作る操作――それが微分です。',
+      customScene: 'derivative-intro-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const derivativeIntroTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'x の位置を動かして、接線の傾きがどう変わるか観察してください。傾きの値をプロットしていくと、新しいグラフ（導関数）が浮かび上がります。',
+      customScene: 'derivative-intro-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const derivativeIntroTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '導関数 f\'(x) = lim(h→0) [f(x+h)−f(x)]/h。各点での接線の傾きをまとめた「傾きの関数」です。\n\n次は具体的に x² や x³ を微分して、パターンを発見しましょう。',
+      customScene: 'derivative-intro-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

@@ -16,6 +16,7 @@ export const scalarMultiplyTutorial: Tutorial = {
         'それがスカラー倍です。\n\n' +
         '数字（スカラー）をかけるだけで、矢印が伸びたり縮んだり、' +
         '反転したりします。シンプルだけど奥が深い操作です。',
+      customScene: 'scalar-multiply-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -49,6 +50,7 @@ export const scalarMultiplyTutorial: Tutorial = {
         '-1v = (-2, -1) → 反対方向に同じ長さ\n\n' +
         'スカラーが正なら同じ方向、負なら反対方向になります。' +
         'スカラーの絶対値が長さの倍率です。',
+      customScene: 'scalar-multiply-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -216,6 +218,7 @@ export const scalarMultiplyTutorial: Tutorial = {
         '5. 単位ベクトル = v / |v|（方向だけ取り出す）\n\n' +
         '足し算とスカラー倍。この2つの操作を組み合わせた' +
         '「線形結合」が次のテーマです。',
+      customScene: 'scalar-multiply-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

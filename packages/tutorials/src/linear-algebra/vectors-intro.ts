@@ -18,6 +18,7 @@ export const vectorsIntroTutorial: Tutorial = {
         '画面の矢印を見てください。矢印の向きが「方向」、長さが「大きさ」を表しています。' +
         'ベクトルは、数学だけでなく物理学やコンピュータグラフィックスなど、' +
         'あらゆる分野の基礎となる重要な概念です。',
+      customScene: 'vectors-intro-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -44,6 +45,7 @@ export const vectorsIntroTutorial: Tutorial = {
         '同じ方向、同じ長さの矢印は、位置が違っても同じベクトルを表しています。\n\n' +
         'これは「自由ベクトル」と呼ばれる考え方です。' +
         '風速3m/sの北風は、東京でも大阪でも同じ「ベクトル」なのです。',
+      customScene: 'vectors-intro-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -181,6 +183,7 @@ export const vectorsIntroTutorial: Tutorial = {
         '5. 「矢印」としても「数のリスト」としても理解できる\n\n' +
         '次の章では、ベクトル同士の足し算を学びます。' +
         '2つの力を合わせるとどうなるか？ ベクトルの足し算が答えてくれます。',
+      customScene: 'vectors-intro-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

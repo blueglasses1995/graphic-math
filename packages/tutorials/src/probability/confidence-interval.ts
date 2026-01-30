@@ -11,7 +11,10 @@ export const confidenceIntervalTutorial: Tutorial = {
       title: '「内閣支持率45%（±3%）」',
       content:
         'ニュースで見る「支持率45%、誤差±3%」。これは42%〜48%の間に真の支持率がある「確率が高い」ということです。この区間が信頼区間です。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'confidence-interval-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',
@@ -41,7 +44,10 @@ export const confidenceIntervalTutorial: Tutorial = {
       title: 'サンプルサイズを変えてみよう',
       content:
         'サンプルサイズnを変えて信頼区間の幅がどう変わるか確認しましょう。nを増やすと区間が狭まり、推定が精密になります。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'confidence-interval-interactive',
       interactive: true,
       nextCondition: 'click',
       stepType: 'interactive',
@@ -81,7 +87,10 @@ export const confidenceIntervalTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '信頼区間:\n\n• X̄ ± z × σ/√n で構成\n• 手法の成功率を表す（95%、99%など）\n• 幅は 1/√n に比例して狭くなる\n• 解釈を正しく理解することが重要\n\n統計的推定の最も基本的なツールです。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'confidence-interval-summary',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',

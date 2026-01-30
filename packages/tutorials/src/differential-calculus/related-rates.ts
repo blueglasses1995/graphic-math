@@ -11,6 +11,7 @@ export const relatedRatesTutorial: Tutorial = {
       title: '風船が膨らむ速さ',
       content:
         '風船に空気を入れると半径が増えます。半径の増加率がわかれば、体積の増加率もわかる。2つの変化率を結びつけるのが「関連変化率（Related Rates）」の問題です。',
+      customScene: 'related-rates-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const relatedRatesTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '風船の半径をスライダーで変えて、体積の変化率がどう変わるか観察してください。半径が大きいほど、同じ Δr でも体積の増え方が激しくなります。',
+      customScene: 'related-rates-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const relatedRatesTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '関連変化率: 等式を時間で微分して、変化率同士を結びつける。物理・工学の問題で頻出のテクニックです。\n\n次は「テイラー展開」の入口を覗いてみましょう。',
+      customScene: 'related-rates-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

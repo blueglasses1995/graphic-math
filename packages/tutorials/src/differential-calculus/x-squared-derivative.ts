@@ -11,6 +11,7 @@ export const xSquaredDerivativeTutorial: Tutorial = {
       title: '放物線の傾きを追え',
       content:
         'y = x² のグラフ上を接線が滑っていきます。左側では傾きがマイナス、原点でゼロ、右側ではプラス。この傾きの変化を式で表すとどうなるでしょう？',
+      customScene: 'x-squared-derivative-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const xSquaredDerivativeTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'x の位置を動かして、接線の傾きを確認してください。x=1 で傾き 2、x=2 で傾き 4、x=−1 で傾き −2。何か法則がありそうですね。',
+      customScene: 'x-squared-derivative-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const xSquaredDerivativeTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '(x²)\' = 2x。べき乗を前に出して、指数を1下げる。これが「べきの微分」の最初の例です。\n\n次は x³ を微分して、パターンをさらに確認しましょう。',
+      customScene: 'x-squared-derivative-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

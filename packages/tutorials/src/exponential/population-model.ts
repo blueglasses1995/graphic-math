@@ -11,6 +11,7 @@ export const populationModelTutorial: Tutorial = {
       title: '地球は何人まで住める？',
       content:
         '世界人口は1800年に10億人、1927年に20億人、1974年に40億人、2022年に80億人。ほぼ一定の期間で2倍になっています。このままのペースで増え続けたらどうなるでしょう？人口増加のアニメーションを見てみましょう。',
+      customScene: "population-model-animation",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const populationModelTutorial: Tutorial = {
       title: '成長率を変えてみよう',
       content:
         '人口の成長率を変えて、将来の人口予測がどう変わるか観察しましょう。わずかな成長率の差が長期的には巨大な差になります。',
+      customScene: "population-model-interactive",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +107,7 @@ export const populationModelTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '人口モデル：\n• マルサスモデル P(t) = P₀·eʳᵗ\n• 一定割合で増加すると仮定\n• 短期的には有効な近似\n• 長期的には資源の制約で破綻\n• より現実的なモデル→ロジスティック成長\n\n次はそのロジスティック成長を学びます。',
+      customScene: "population-model-summary",
       sceneConfig: {
         showGrid: true,
         showAxes: true,

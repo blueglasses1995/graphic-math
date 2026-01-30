@@ -11,7 +11,10 @@ export const varianceStdTutorial: Tutorial = {
       title: 'バラつきの大きさ',
       content:
         '平均点が60点のテスト2つ。A: 全員58〜62点、B: 30〜90点。平均は同じでもバラつきが違います。分散と標準偏差はこのバラつきを数値で表します。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'variance-std-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',
@@ -41,7 +44,10 @@ export const varianceStdTutorial: Tutorial = {
       title: '分布を変えてみよう',
       content:
         '確率分布の形を変えて、分散がどう変わるか観察しましょう。均等に広がるほど分散は大きくなります。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'variance-std-interactive',
       interactive: true,
       nextCondition: 'click',
       stepType: 'interactive',
@@ -81,7 +87,10 @@ export const varianceStdTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '分散と標準偏差はバラつきの指標。\n\n• Var(X) = E[(X-μ)²]\n• σ = √Var(X)\n• 標準偏差は元の単位と同じ\n• 独立なら分散は足せる\n\n期待値が「中心」、分散が「広がり」。この2つで分布の特徴を掴めます。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'variance-std-summary',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',

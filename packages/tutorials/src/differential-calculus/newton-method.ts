@@ -11,6 +11,7 @@ export const newtonMethodTutorial: Tutorial = {
       title: '接線で根を探す',
       content:
         'f(x) = 0 の解を見つけたい。適当な初期値から接線を引き、x軸との交点を次の近似値にする。この繰り返しで解に高速収束するのがニュートン法です。',
+      customScene: 'newton-method-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const newtonMethodTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '初期値 x₀ をクリックで選んで、ニュートン法の反復を観察してください。何回で解に収束するかカウントしてみましょう。',
+      customScene: 'newton-method-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const newtonMethodTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'ニュートン法: xₙ₊₁ = xₙ − f(xₙ)/f\'(xₙ)。接線で根を近似する反復法。二次収束で非常に高速。コンピュータの数値計算で広く使われています。\n\n次は「関連変化率」の問題に挑戦しましょう。',
+      customScene: 'newton-method-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

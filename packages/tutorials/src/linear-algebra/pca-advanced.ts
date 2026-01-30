@@ -1,3 +1,4 @@
+import { Vector3 } from '@learnmath/core';
 import { Tutorial } from '../types';
 
 export const pcaAdvancedTutorial: Tutorial = {
@@ -19,7 +20,8 @@ export const pcaAdvancedTutorial: Tutorial = {
         'PCA（主成分分析）は共分散行列の固有値分解により\n' +
         'データの本質的な次元を発見し、\n' +
         '高次元データを低次元に圧縮します。',
-      sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      sceneConfig: { showGrid: true, showAxes: true, vectors: [{ id: 'v1', vector: new Vector3(1, 0, 0), color: '#ff5722', label: 'e₁' }, { id: 'v2', vector: new Vector3(0, 1, 0), color: '#4caf50', label: 'e₂' }], cameraPosition: [0, 0, 5] },
+      customScene: 'pca-advanced-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -38,6 +40,7 @@ export const pcaAdvancedTutorial: Tutorial = {
         '第2主成分はw₁に直交する方向で分散最大 → λ₂の固有ベクトル。\n' +
         '以降同様に続きます。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'pca-advanced-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -129,6 +132,7 @@ export const pcaAdvancedTutorial: Tutorial = {
         '5. IPCA、ランダム化PCAで大規模対応\n\n' +
         'PCAは次元削減の最も基本的で強力な手法です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 6] },
+      customScene: 'pca-advanced-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

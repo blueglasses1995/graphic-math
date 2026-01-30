@@ -11,6 +11,7 @@ export const definiteIntegralTutorial: Tutorial = {
       title: '∫ の記号',
       content:
         '∫ₐᵇ f(x) dx という記号を見たことがありますか？\n\n∫ は「Sum（和）」の S を引き伸ばした文字です。\n\ndx は「微小な幅」を意味します。\n\nつまり「f(x) × 微小幅 dx を a から b まで足し合わせる」── これが定積分です。',
+      customScene: 'definite-integral-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const definiteIntegralTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '積分区間 [a, b] の端点を動かしてみてください。\n\n区間を広げると面積が増え、狭めると減ります。\n\na と b を入れ替えるとどうなるでしょうか？',
+      customScene: 'definite-integral-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const definiteIntegralTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '定積分 ∫ₐᵇ f(x) dx は「f(x) の微小量を a から b まで足し合わせた値」です。\n\n幾何学的には「曲線の下の面積」、物理的には「累積量」を意味します。\n\n区間の端点を動かして、積分値がどう変わるか体感してみてください。',
+      customScene: 'definite-integral-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

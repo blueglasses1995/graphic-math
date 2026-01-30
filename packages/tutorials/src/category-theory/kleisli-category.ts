@@ -12,6 +12,7 @@ export const kleisliCategoryTutorial: Tutorial = {
       stepType: 'animation',
       content: 'モナドTから「装飾された射」A→T(B)を射とする新しい圏が作れます。これがクライスリ圏です。Haskellのdo記法の背後にある構造をアニメーションで見ましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'kleisli-category-animation',
       interactive: false,
       nextCondition: 'click',
     },
@@ -21,6 +22,7 @@ export const kleisliCategoryTutorial: Tutorial = {
       stepType: 'interactive',
       content: 'クライスリ射 f: A→T(B) と g: B→T(C) のクライスリ合成 g ∘_K f = μ_C∘T(g)∘f: A→T(C) を構成してみましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'kleisli-category-interactive',
       interactive: true,
       nextCondition: 'interaction',
     },
@@ -76,6 +78,7 @@ export const kleisliCategoryTutorial: Tutorial = {
       stepType: 'interactive',
       content: 'クライスリ圏はモナドの構造を圏として表現し、「装飾された計算」の合成を形式化します。関数型プログラミングでの副作用処理の理論的基盤として重要です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'kleisli-category-summary',
       interactive: true,
       nextCondition: 'interaction',
     }

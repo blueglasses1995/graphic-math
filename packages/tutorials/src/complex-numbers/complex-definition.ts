@@ -11,6 +11,7 @@ export const complexDefinitionTutorial: Tutorial = {
       title: '実数と虚数の合体',
       content:
         '実数 a と虚数 bi を足し合わせた数を「複素数」と呼びます。\n\nz = a + bi\n\nここで a を実部（Real part）、b を虚部（Imaginary part）と呼びます。\n\n例: z = 3 + 2i なら、実部は3、虚部は2です。',
+      customScene: 'complex-definition-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +106,7 @@ export const complexDefinitionTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '複素数のポイント:\n\n・z = a + bi（a: 実部、b: 虚部）\n・実数は b = 0 の複素数\n・等しさは実部・虚部がそれぞれ一致\n・Re(z), Im(z) で実部・虚部を表す\n・ℂ は数の世界で最も広い集合\n\n次は、複素数を「点」として表す複素平面を学びましょう。',
+      customScene: 'complex-definition-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

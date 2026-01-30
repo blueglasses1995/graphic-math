@@ -11,7 +11,10 @@ export const probSummaryTutorial: Tutorial = {
       title: '確率の全体像',
       content:
         'ここまで学んだ確率の概念を整理しましょう。基礎→数え上げ→確率変数→分布→極限定理という流れで全体を俯瞰します。',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'prob-summary-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',
@@ -71,7 +74,10 @@ export const probSummaryTutorial: Tutorial = {
       title: '次のステップ',
       content:
         '確率の基礎を学び終えました。次は実践編で具体的な問題に取り組みましょう。\n\n• モンティ・ホール問題\n• 誕生日問題\n• モンテカルロ法\n• ベイズ更新\n\n理論と直感のギャップを埋める面白い問題が待っています！',
-      sceneConfig: { showGrid: false, showAxes: false },
+      sceneConfig: {
+        showGrid: false, showAxes: false,
+      },
+      customScene: 'prob-summary-summary',
       interactive: false,
       nextCondition: 'click',
       stepType: 'explanation',

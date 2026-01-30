@@ -11,6 +11,7 @@ export const doublingGameTutorial: Tutorial = {
       title: '紙を42回折ると月に届く？',
       content:
         '1枚の紙（厚さ0.1mm）を42回折ると、厚さは約44万kmになります。地球から月までの距離とほぼ同じ！アニメーションで折り重なっていく様子を見てみましょう。',
+      customScene: "doubling-game-animation",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const doublingGameTutorial: Tutorial = {
       title: '何回折れるか試してみよう',
       content:
         'スライダーで折る回数を変えてみましょう。1回折るごとに厚さが2倍になります。10回、20回、30回…どんどん増えていく速さを感じてください。',
+      customScene: "doubling-game-interactive",
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -105,6 +107,7 @@ export const doublingGameTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '倍々ゲームのポイント：\n• n回繰り返すと2ⁿ倍になる\n• 最初は緩やかでも、やがて爆発的に増える\n• 紙を42回折ると月に届く距離になる\n• この「倍々の数学」が指数関数の基本\n\nこれから指数関数の世界を詳しく探検していきましょう！',
+      customScene: "doubling-game-summary",
       sceneConfig: {
         showGrid: true,
         showAxes: true,

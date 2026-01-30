@@ -12,6 +12,7 @@ export const quantumCryptoTutorial: Tutorial = {
       content:
         '量子コンピュータはRSAも楕円曲線暗号も破ります。\n\nしかし量子力学は脅威だけでなく、\n「物理法則で安全性を保証する」新しい暗号も可能にします。\n\n量子鍵配送（QKD）は盗聴を物理的に検出できます。\n数学と物理の融合した世界を見ていきましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'quantum-crypto-animation',
       interactive: false,
       nextCondition: 'click',
       stepType: 'animation',
@@ -22,6 +23,7 @@ export const quantumCryptoTutorial: Tutorial = {
       content:
         'BB84量子鍵配送:\n\nアリスが偏光光子を送り、ボブが測定します。\n\n基底の選択が一致すればビットを共有。\n盗聴者がいると、量子状態が乱されてエラーが増加。\n\n基底を選んで鍵共有の過程をシミュレーションしましょう。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'quantum-crypto-interactive',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',
@@ -82,6 +84,7 @@ export const quantumCryptoTutorial: Tutorial = {
       content:
         '量子暗号:\n\n• ショアのアルゴリズムでRSA・ECCが破られる\n• 量子鍵配送は物理法則で安全性を保証\n• 量子計算はユニタリ群上の演算\n• 線形代数・群論が量子情報の基盤\n\n量子時代の暗号は代数学の新しい応用分野です。',
       sceneConfig: { showGrid: true, showAxes: true, cameraPosition: [0, 0, 5] },
+      customScene: 'quantum-crypto-summary',
       interactive: true,
       nextCondition: 'interaction',
       stepType: 'interactive',

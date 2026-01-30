@@ -11,6 +11,7 @@ export const logGrowthRateTutorial: Tutorial = {
       title: 'どこまでも遅い増加',
       content:
         'log₂(x) は x = 1000000 でもたった約20。x が100万倍になっても対数は20しか増えません。指数関数の爆発的増加の逆で、対数は驚くほどゆっくり増加します。',
+      customScene: 'log-growth-rate-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const logGrowthRateTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'x の値を大きくしていって、log(x) の増加がどんどん鈍くなる様子を観察してください。',
+      customScene: 'log-growth-rate-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const logGrowthRateTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '対数関数は非常にゆっくり増加します。xが10倍になっても対数は1しか増えません。アルゴリズムや人間の感覚にも関わる重要な性質です。\n\n自由に値を変えて増加の遅さを体感してください。',
+      customScene: 'log-growth-rate-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

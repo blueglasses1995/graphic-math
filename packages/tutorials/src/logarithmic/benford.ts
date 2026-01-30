@@ -11,6 +11,7 @@ export const benfordTutorial: Tutorial = {
       title: '先頭の数字は1が多い',
       content:
         '人口、株価、川の長さなど、自然界のデータでは先頭の数字が1である確率は約30%。均等なら11%のはず。この偏りを対数が説明します。',
+      customScene: 'benford-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const benfordTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         '様々なデータセットの先頭数字の分布を確認してください。ベンフォードの法則 P(d) = log₁₀(1 + 1/d) と比較してみましょう。',
+      customScene: 'benford-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const benfordTutorial: Tutorial = {
       title: 'まとめ',
       content:
         'ベンフォードの法則は対数スケールの等間隔性から自然に導かれます。先頭が1の確率は約30%。不正検出にも応用される美しい法則です。\n\nデータセットを変えてこの法則を確認してみてください。',
+      customScene: 'benford-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,

@@ -11,6 +11,7 @@ export const trigIntegralTutorial: Tutorial = {
       title: '波を積分する',
       content:
         'sin と cos の波を積分するとどうなるでしょう？\n\n微分では sin → cos → -sin → -cos → sin と循環しました。\n\n積分はその逆方向に回ります。\n\nアニメーションで波の面積が変化する様子を見てみましょう。',
+      customScene: 'trig-integral-animation',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -25,6 +26,7 @@ export const trigIntegralTutorial: Tutorial = {
       title: '触ってみよう',
       content:
         'sin x のグラフの下の面積がどう変化するか観察してみましょう。\n\n区間の右端を動かすと、面積が増えたり減ったりします。\n\nこの面積関数のグラフはどんな形でしょうか？',
+      customScene: 'trig-integral-interactive',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
@@ -106,6 +108,7 @@ export const trigIntegralTutorial: Tutorial = {
       title: 'まとめ',
       content:
         '∫ sin x dx = -cos x + C\n∫ cos x dx = sin x + C\n\n微分と積分で sin, cos, -sin, -cos が循環します。\n\n1周期分の定積分は 0 になります（正負が打ち消し合う）。\n\n波のグラフを動かして、面積の変化を確かめてみてください。',
+      customScene: 'trig-integral-summary',
       sceneConfig: {
         showGrid: true,
         showAxes: true,
