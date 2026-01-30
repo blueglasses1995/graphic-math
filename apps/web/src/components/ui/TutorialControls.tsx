@@ -8,7 +8,8 @@ export default function TutorialControls() {
   const isFirst = currentStepIndex === 0;
   const isLast = currentStepIndex === currentTutorial.steps.length - 1;
   const currentStep = currentTutorial.steps[currentStepIndex];
-  const hasAnimation = currentStep?.sceneConfig?.animateTransform === true || !!currentStep?.customScene;
+  const hasAnimation = currentStep?.sceneConfig?.animateTransform === true
+    || (!!currentStep?.customScene && !currentStep.customScene.startsWith('interactive'));
 
   return (
     <div className="space-y-4">

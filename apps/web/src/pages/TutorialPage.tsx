@@ -1,11 +1,14 @@
 import { useParams, Link } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { getTutorialById } from '@learnmath/tutorials';
 import { useTutorialStore } from '@/store';
 import Scene3D from '@/components/scene/Scene3D';
 import TrigGraphScene from '@/components/scene/TrigGraphScene';
+import InteractiveUnitCircle from '@/components/scene/InteractiveUnitCircle';
+import PendulumScene from '@/components/scene/PendulumScene';
 import TutorialControls from '@/components/ui/TutorialControls';
 import GlossaryText from '@/components/ui/GlossaryText';
+import QuizOverlay from '@/components/ui/QuizOverlay';
 
 function renderScene(customScene: string | undefined, sceneConfig: import('@learnmath/tutorials').SceneConfig) {
   switch (customScene) {
@@ -15,6 +18,20 @@ function renderScene(customScene: string | undefined, sceneConfig: import('@lear
       return <TrigGraphScene mode="sin" />;
     case 'trig-sync-animation':
       return <TrigGraphScene mode="both" />;
+    case 'pendulum':
+      return <PendulumScene />;
+    case 'interactive-unit-circle':
+      return (
+        <InteractiveUnitCircle
+          showCos
+          showSin
+          showQuadrants={sceneConfig.highlightElements?.includes('quadrants') ?? false}
+        />
+      );
+    case 'interactive-cos':
+      return <InteractiveUnitCircle showCos showSin={false} />;
+    case 'interactive-sin':
+      return <InteractiveUnitCircle showCos={false} showSin />;
     default:
       return <Scene3D sceneConfig={sceneConfig} />;
   }
@@ -23,6 +40,7 @@ function renderScene(customScene: string | undefined, sceneConfig: import('@lear
 export default function TutorialPage() {
   const { id } = useParams<{ id: string }>();
   const { currentTutorial, currentStepIndex, setTutorial } = useTutorialStore();
+  const [quizCompleted, setQuizCompleted] = useState<boolean>(false);
 
   useEffect(() => {
     if (id) {
@@ -30,6 +48,11 @@ export default function TutorialPage() {
       if (tutorial) setTutorial(tutorial);
     }
   }, [id, setTutorial]);
+
+  // Reset quiz state on step change
+  useEffect(() => {
+    setQuizCompleted(false);
+  }, [currentStepIndex]);
 
   if (!currentTutorial) {
     return (
@@ -54,6 +77,12 @@ export default function TutorialPage() {
       <div className="flex-1 flex">
         <div className="flex-1 relative">
           {renderScene(currentStep.customScene, currentStep.sceneConfig)}
+          {currentStep.stepType === 'quiz' && currentStep.quiz && !quizCompleted && (
+            <QuizOverlay
+              quiz={currentStep.quiz}
+              onComplete={() => setQuizCompleted(true)}
+            />
+          )}
         </div>
         <aside className="w-80 bg-slate-800 p-4 flex flex-col">
           <h2 className="text-xl font-semibold mb-2">{currentStep.title}</h2>
