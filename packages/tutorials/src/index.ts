@@ -1,4 +1,5 @@
 export * from './types';
+export * from './categories';
 export { linearAlgebraCategory } from './linear-algebra';
 export { trigonometryCategory } from './trigonometry';
 export { differentialCalculusCategory } from './differential-calculus';
