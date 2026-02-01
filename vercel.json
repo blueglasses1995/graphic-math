@@ -1,6 +1,0 @@
-{
-  "buildCommand": "cd ../.. && pnpm --filter @learnmath/web... build",
-  "outputDirectory": "apps/web/dist",
-  "installCommand": "pnpm install",
-  "framework": null
-}

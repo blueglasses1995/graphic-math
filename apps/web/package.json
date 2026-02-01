@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "cd ../.. && pnpm --filter @learnmath/core build && pnpm --filter @learnmath/tutorials build && cd apps/web && tsc && vite build",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit"
   },
