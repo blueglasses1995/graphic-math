@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "pnpm --filter @learnmath/web dev",
     "dev:mobile": "pnpm --filter @learnmath/mobile start",
-    "build": "pnpm --filter @learnmath/web build",
+    "build": "pnpm -r --filter=@learnmath/core build && pnpm -r --filter=@learnmath/tutorials build && pnpm --filter @learnmath/web build",
     "test": "pnpm -r test",
     "typecheck": "pnpm -r typecheck",
     "migrate": "tsx scripts/migrate-tutorials.ts",
