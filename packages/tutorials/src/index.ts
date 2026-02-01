@@ -21,7 +21,7 @@ export { laplaceCategory } from './laplace';
 export { fourierCategory } from './fourier';
 export * from './glossary';
 
-import { TutorialCategory } from './types';
+import { CategoryWithTutorials } from './types';
 import { trigonometryCategory } from './trigonometry';
 import { linearAlgebraCategory } from './linear-algebra';
 import { differentialCalculusCategory } from './differential-calculus';
@@ -42,7 +42,7 @@ import { pdeCategory } from './pde';
 import { laplaceCategory } from './laplace';
 import { fourierCategory } from './fourier';
 
-export const allCategories: TutorialCategory[] = [
+export const allCategories: CategoryWithTutorials[] = [
   trigonometryCategory,
   linearAlgebraCategory,
   differentialCalculusCategory,
@@ -66,7 +66,7 @@ export const allCategories: TutorialCategory[] = [
 
 export function getTutorialById(id: string) {
   for (const category of allCategories) {
-    const tutorial = category.tutorials.find((t) => t.id === id);
+    const tutorial = category.tutorials.find((t: { id: string }) => t.id === id);
     if (tutorial) return tutorial;
   }
   return null;

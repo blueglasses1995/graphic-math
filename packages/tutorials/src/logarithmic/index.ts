@@ -29,7 +29,7 @@ export { zipfTutorial } from './zipf';
 export { logAlgorithmTutorial } from './log-algorithm';
 export { sigmoidTutorial } from './sigmoid';
 
-import { TutorialCategory } from '../types';
+import { CategoryWithTutorials } from '../types';
 import { howManyTimesTutorial } from './how-many-times';
 import { logDefinitionTutorial } from './log-definition';
 import { logGraphTutorial } from './log-graph';
@@ -61,7 +61,7 @@ import { zipfTutorial } from './zipf';
 import { logAlgorithmTutorial } from './log-algorithm';
 import { sigmoidTutorial } from './sigmoid';
 
-export const logarithmicCategory: TutorialCategory = {
+export const logarithmicCategory: CategoryWithTutorials = {
   id: 'logarithmic',
   name: '対数関数',
   description: '指数の逆・スケールの変換を視覚的に理解する',

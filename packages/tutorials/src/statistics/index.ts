@@ -29,7 +29,7 @@ export { regressionPracticeTutorial } from './regression-practice';
 export { multipleTestingTutorial } from './multiple-testing';
 export { bayesianStatsTutorial } from './bayesian-stats';
 
-import { TutorialCategory } from '../types';
+import { CategoryWithTutorials } from '../types';
 import { dataOverviewTutorial } from './data-overview';
 import { meanMedianModeTutorial } from './mean-median-mode';
 import { varianceStdDevTutorial } from './variance-std-dev';
@@ -61,7 +61,7 @@ import { regressionPracticeTutorial } from './regression-practice';
 import { multipleTestingTutorial } from './multiple-testing';
 import { bayesianStatsTutorial } from './bayesian-stats';
 
-export const statisticsCategory: TutorialCategory = {
+export const statisticsCategory: CategoryWithTutorials = {
   id: 'statistics',
   name: '統計',
   description: 'データの要約・推定・検定を視覚的に理解する',

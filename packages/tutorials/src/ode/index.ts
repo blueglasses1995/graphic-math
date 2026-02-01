@@ -29,7 +29,7 @@ export { climateModelTutorial } from './climate-model';
 export { neuronModelTutorial } from './neuron-model';
 export { odeOverviewTutorial } from './ode-overview';
 
-import { TutorialCategory } from '../types';
+import { CategoryWithTutorials } from '../types';
 import { whatIsOdeTutorial } from './what-is-ode';
 import { directionFieldTutorial } from './direction-field';
 import { separationVariablesTutorial } from './separation-variables';
@@ -61,7 +61,7 @@ import { climateModelTutorial } from './climate-model';
 import { neuronModelTutorial } from './neuron-model';
 import { odeOverviewTutorial } from './ode-overview';
 
-export const odeCategory: TutorialCategory = {
+export const odeCategory: CategoryWithTutorials = {
   id: 'ode',
   name: '常微分方程式',
   description: '変化の法則・力学系・安定性を視覚的に理解する',

@@ -1,4 +1,4 @@
-import { TutorialCategory } from '../types';
+import { CategoryWithTutorials } from '../types';
 
 import { decomposeSoundTutorial } from './decompose-sound';
 import { fourierSeriesIntuitionTutorial } from './fourier-series-intuition';
@@ -64,7 +64,7 @@ export {
   fourierOverviewTutorial,
 };
 
-export const fourierCategory: TutorialCategory = {
+export const fourierCategory: CategoryWithTutorials = {
   id: 'fourier',
   name: 'フーリエ解析',
   description: '周波数分解・スペクトル・信号処理を視覚的に理解する',

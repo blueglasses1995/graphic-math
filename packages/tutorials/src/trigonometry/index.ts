@@ -29,7 +29,7 @@ export { fourierIntroTutorial } from './fourier-intro';
 export { polarArtTutorial } from './polar-art';
 export { triangulationTutorial } from './triangulation';
 
-import { TutorialCategory } from '../types';
+import { CategoryWithTutorials } from '../types';
 import { unitCircleTutorial } from './unit-circle';
 import { cosineTutorial } from './cosine';
 import { sineTutorial } from './sine';
@@ -61,7 +61,7 @@ import { fourierIntroTutorial } from './fourier-intro';
 import { polarArtTutorial } from './polar-art';
 import { triangulationTutorial } from './triangulation';
 
-export const trigonometryCategory: TutorialCategory = {
+export const trigonometryCategory: CategoryWithTutorials = {
   id: 'trigonometry',
   name: '三角関数',
   description: '単位円、波形、回転を使って三角関数を視覚的に理解する',

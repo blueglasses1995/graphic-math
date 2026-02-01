@@ -223,3 +223,18 @@ export interface CategoryMetadata {
   /** Whether this is a foundational category */
   isFoundational: boolean;
 }
+
+/**
+ * Category object with tutorials array
+ * This is what the category exports actually contain at runtime
+ */
+export interface CategoryWithTutorials {
+  /** Category identifier matching TutorialCategory */
+  id: string;
+  /** Display name */
+  name: string;
+  /** Category description */
+  description: string;
+  /** Array of tutorials in this category */
+  tutorials: TransitionTutorial[];
+}

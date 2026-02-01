@@ -59,7 +59,7 @@ export { informationTheoryTutorial } from './information-theory';
 export { quantumComputingTutorial } from './quantum-computing';
 export { discreteCsOverviewTutorial } from './discrete-cs-overview';
 
-import { TutorialCategory } from '../types';
+import { CategoryWithTutorials } from '../types';
 import { bridgesTutorial } from './bridges';
 import { graphIntroTutorial } from './graph-intro';
 import { degreeHandshakeTutorial } from './degree-handshake';
@@ -121,7 +121,7 @@ import { informationTheoryTutorial } from './information-theory';
 import { quantumComputingTutorial } from './quantum-computing';
 import { discreteCsOverviewTutorial } from './discrete-cs-overview';
 
-export const discreteMathCategory: TutorialCategory = {
+export const discreteMathCategory: CategoryWithTutorials = {
   id: 'discrete-math',
   name: '離散数学',
   description: '論理・グラフ・組合せ・アルゴリズムを視覚的に理解する',

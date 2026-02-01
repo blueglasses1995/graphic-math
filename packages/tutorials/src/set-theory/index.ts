@@ -1,4 +1,4 @@
-import { TutorialCategory } from '../types';
+import { CategoryWithTutorials } from '../types';
 
 import { whatIsSetTutorial } from './what-is-set';
 import { elementMembershipTutorial } from './element-membership';
@@ -64,7 +64,7 @@ export {
   cardinalityTutorial,
 };
 
-export const setTheoryCategory: TutorialCategory = {
+export const setTheoryCategory: CategoryWithTutorials = {
   id: 'set-theory',
   name: '集合',
   description: 'ベン図・集合演算・論理の基礎を視覚的に理解する',

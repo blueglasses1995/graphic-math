@@ -2,6 +2,14 @@ import { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { getTutorialById, allCategories } from '@learnmath/tutorials';
 import type { Tutorial } from '@learnmath/tutorials';
+
+// Type for category objects that include tutorials
+interface CategoryWithTutorials {
+  id: string;
+  name: string;
+  description: string;
+  tutorials: Tutorial[];
+}
 import Scene3D from './scene/Scene3D';
 import TrigGraphScene from './scene/TrigGraphScene';
 import InteractiveUnitCircle from './scene/InteractiveUnitCircle';
@@ -114,7 +122,8 @@ export default function TutorialPage() {
   }
 
   // Get category info
-  const category = allCategories.find((cat) => cat.tutorials.some((t) => t.id === id));
+  const categoriesWithTutorials = allCategories as unknown as CategoryWithTutorials[];
+  const category = categoriesWithTutorials.find((cat) => cat.tutorials.some((t: Tutorial) => t.id === id));
   const categoryName = category?.name || tutorial.category;
   const categoryId = category?.id || tutorial.category;
 

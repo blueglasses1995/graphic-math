@@ -196,10 +196,7 @@ export const TutorialTreeView: React.FC = () => {
   // Get all tutorials with their dependencies
   const allTutorials = useMemo(() => {
     return (allCategories as unknown as CategoryObject[]).flatMap((category) =>
-      category.tutorials.map((tutorial) => ({
-        ...tutorial,
-        category: category.id,
-      }))
+      category.tutorials
     );
   }, []);
 

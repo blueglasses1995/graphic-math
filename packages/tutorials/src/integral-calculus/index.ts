@@ -29,7 +29,7 @@ export { pappusTheoremTutorial } from './pappus-theorem';
 export { gammaFunctionTutorial } from './gamma-function';
 export { fourierIntegralTutorial } from './fourier-integral';
 
-import { TutorialCategory } from '../types';
+import { CategoryWithTutorials } from '../types';
 import { countingAreaTutorial } from './counting-area';
 import { rectangleApproxTutorial } from './rectangle-approx';
 import { riemannSumTutorial } from './riemann-sum';
@@ -61,7 +61,7 @@ import { pappusTheoremTutorial } from './pappus-theorem';
 import { gammaFunctionTutorial } from './gamma-function';
 import { fourierIntegralTutorial } from './fourier-integral';
 
-export const integralCalculusCategory: TutorialCategory = {
+export const integralCalculusCategory: CategoryWithTutorials = {
   id: 'integral-calculus',
   name: '積分',
   description: '面積・累積・逆微分を視覚的に理解する',

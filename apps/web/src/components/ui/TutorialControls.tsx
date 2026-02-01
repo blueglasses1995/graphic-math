@@ -4,7 +4,7 @@ import ProgressBar from './ProgressBar';
 
 export default function TutorialControls() {
   const { currentTutorial, currentStepIndex, isPlaying, nextStep, prevStep, goToStep, setPlaying } = useTutorialStore();
-  if (!currentTutorial) return null;
+  if (!currentTutorial || !currentTutorial.steps) return null;
   const isFirst = currentStepIndex === 0;
   const isLast = currentStepIndex === currentTutorial.steps.length - 1;
   const currentStep = currentTutorial.steps[currentStepIndex];

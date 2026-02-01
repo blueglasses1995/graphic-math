@@ -1,4 +1,4 @@
-import { TutorialCategory } from '../types';
+import { CategoryWithTutorials } from '../types';
 import { doublingGameTutorial } from './doubling-game';
 import { exponentIntroTutorial } from './exponent-intro';
 import { baseComparisonTutorial } from './base-comparison';
@@ -63,7 +63,7 @@ export {
   ruleOf72Tutorial,
 };
 
-export const exponentialCategory: TutorialCategory = {
+export const exponentialCategory: CategoryWithTutorials = {
   id: 'exponential',
   name: '指数関数',
   description: '倍々に増える世界を視覚的に理解する',

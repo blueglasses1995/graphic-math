@@ -1,4 +1,4 @@
-import { TutorialCategory } from '../types';
+import { CategoryWithTutorials } from '../types';
 
 export { whyCategoryTutorial } from './why-category';
 export { categoryDefinitionTutorial } from './category-definition';
@@ -62,7 +62,7 @@ import { databaseFunctorTutorial } from './database-functor';
 import { quantumCategoryTutorial } from './quantum-category';
 import { categoryOutlookTutorial } from './category-outlook';
 
-export const categoryTheoryCategory: TutorialCategory = {
+export const categoryTheoryCategory: CategoryWithTutorials = {
   id: 'category-theory',
   name: '圏論',
   description: '対象・射・関手・自然変換を視覚的に理解する',

@@ -21,7 +21,7 @@ interface KaTeXRendererProps {
  * - Inline math: $x^2 + y^2 = r^2$
  * - Block math: $$\int_0^\infty e^{-x} dx = 1$$
  */
-export function KaTeXRenderer({ content }: KaTeXRendererProps) {
+export function KaTeXRenderer({ content: _content }: KaTeXRendererProps) {
   // Placeholder implementation
   // When KaTeX is installed, this will use:
   // - BlockMath for $$...$$ expressions
@@ -95,7 +95,7 @@ export function extractLatexExpressions(content: string): {
 
   // Find block math ($$...$$)
   const blockRegex = /\$\$([\s\S]+?)\$\$/g;
-  let match;
+  let match: RegExpExecArray | null;
   while ((match = blockRegex.exec(content)) !== null) {
     expressions.push({
       type: 'block',
@@ -110,7 +110,7 @@ export function extractLatexExpressions(content: string): {
   while ((match = inlineRegex.exec(content)) !== null) {
     // Skip if this is part of a block expression
     const isPartOfBlock = expressions.some(
-      (exp) => match.index >= exp.start && match.index < exp.end
+      (exp) => match!.index >= exp.start && match!.index < exp.end
     );
     if (!isPartOfBlock) {
       expressions.push({

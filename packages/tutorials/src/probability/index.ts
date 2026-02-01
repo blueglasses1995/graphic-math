@@ -1,4 +1,4 @@
-import { TutorialCategory } from '../types';
+import { CategoryWithTutorials } from '../types';
 import { whatIsProbabilityTutorial } from './what-is-probability';
 import { sampleSpaceTutorial } from './sample-space';
 import { additionRuleTutorial } from './addition-rule';
@@ -63,7 +63,7 @@ export {
   confidenceIntervalTutorial,
 };
 
-export const probabilityCategory: TutorialCategory = {
+export const probabilityCategory: CategoryWithTutorials = {
   id: 'probability',
   name: '確率',
   description: '偶然の法則・確率分布を視覚的に理解する',

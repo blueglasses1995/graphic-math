@@ -1,4 +1,4 @@
-import { TutorialCategory } from '../types';
+import { CategoryWithTutorials } from '../types';
 import { xSquaredNegativeTutorial } from './x-squared-negative';
 import { imaginaryUnitTutorial } from './imaginary-unit';
 import { complexDefinitionTutorial } from './complex-definition';
@@ -63,7 +63,7 @@ export {
   piFromComplexTutorial,
 };
 
-export const complexNumbersCategory: TutorialCategory = {
+export const complexNumbersCategory: CategoryWithTutorials = {
   id: 'complex-numbers',
   name: '複素数',
   description: '複素平面・オイラーの公式・回転を視覚的に理解する',

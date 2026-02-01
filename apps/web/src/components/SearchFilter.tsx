@@ -2,10 +2,17 @@ import { useState, useEffect, useMemo, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
   Tutorial,
-  TutorialCategory as CategoryType,
   allCategories
 } from '@learnmath/tutorials';
 import { useCompletedTutorials, useInProgressTutorials } from '../store/userProgress';
+
+// Type for category objects that include tutorials
+interface CategoryWithTutorials {
+  id: string;
+  name: string;
+  description: string;
+  tutorials: Tutorial[];
+}
 
 // Types
 type CompletionStatus = 'not-started' | 'in-progress' | 'completed';
@@ -50,7 +57,9 @@ const CATEGORY_LABELS: Record<string, string> = {
 
 // Get all tutorials from all categories
 const getAllTutorials = (): Tutorial[] => {
-  return allCategories.flatMap(category => category.tutorials);
+  // Cast allCategories to the correct runtime type
+  const categoriesWithTutorials = allCategories as unknown as CategoryWithTutorials[];
+  return categoriesWithTutorials.flatMap(category => category.tutorials);
 };
 
 // Get all unique tags from tutorials
@@ -101,7 +110,8 @@ const SearchFilter = () => {
 
   // Get all available category options with counts
   const categoryOptions = useMemo((): CategoryOption[] => {
-    return allCategories.map(category => ({
+    const categoriesWithTutorials = allCategories as unknown as CategoryWithTutorials[];
+    return categoriesWithTutorials.map(category => ({
       id: category.id,
       name: CATEGORY_LABELS[category.id] || category.name,
       count: category.tutorials.length,

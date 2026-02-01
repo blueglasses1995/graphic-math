@@ -1,4 +1,4 @@
-import { TutorialCategory } from '../types';
+import { CategoryWithTutorials } from '../types';
 import { whatIsPdeTutorial } from './what-is-pde';
 import { partialDerivativeReviewTutorial } from './partial-derivative-review';
 import { heatEquationTutorial } from './heat-equation';
@@ -63,7 +63,7 @@ export {
   pdeOverviewTutorial,
 };
 
-export const pdeCategory: TutorialCategory = {
+export const pdeCategory: CategoryWithTutorials = {
   id: 'pde',
   name: '偏微分方程式',
   description: '波動・熱伝導・流体の数学を視覚的に理解する',

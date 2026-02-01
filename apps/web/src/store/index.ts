@@ -25,7 +25,7 @@ export const useTutorialStore = create<TutorialState>((set, get) => ({
   setTutorial: (tutorial) => set({ currentTutorial: tutorial, currentStepIndex: 0, animationProgress: 0 }),
   nextStep: () => {
     const { currentTutorial, currentStepIndex } = get();
-    if (currentTutorial && currentStepIndex < currentTutorial.steps.length - 1)
+    if (currentTutorial?.steps && currentStepIndex < currentTutorial.steps.length - 1)
       set({ currentStepIndex: currentStepIndex + 1, animationProgress: 0, isPlaying: false });
   },
   prevStep: () => {

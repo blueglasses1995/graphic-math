@@ -59,7 +59,7 @@ export { postQuantumTutorial } from './post-quantum';
 export { cryptoProtocolTutorial } from './crypto-protocol';
 export { algebraCryptoOverviewTutorial } from './algebra-crypto-overview';
 
-import { TutorialCategory } from '../types';
+import { CategoryWithTutorials } from '../types';
 import { symmetryIntroTutorial } from './symmetry-intro';
 import { triangleRotationTutorial } from './triangle-rotation';
 import { clockArithmeticTutorial } from './clock-arithmetic';
@@ -121,7 +121,7 @@ import { postQuantumTutorial } from './post-quantum';
 import { cryptoProtocolTutorial } from './crypto-protocol';
 import { algebraCryptoOverviewTutorial } from './algebra-crypto-overview';
 
-export const algebraCategory: TutorialCategory = {
+export const algebraCategory: CategoryWithTutorials = {
   id: 'algebra',
   name: '代数学',
   description: '群・環・体・暗号理論の構造を視覚的に理解する',

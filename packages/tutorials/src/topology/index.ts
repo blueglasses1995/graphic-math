@@ -29,7 +29,7 @@ export { torusWorldTutorial } from './torus-world';
 export { projectivePlaneTutorial } from './projective-plane';
 export { topologyMlTutorial } from './topology-ml';
 
-import { TutorialCategory } from '../types';
+import { CategoryWithTutorials } from '../types';
 import { rubberGeometryTutorial } from './rubber-geometry';
 import { openSetTutorial } from './open-set';
 import { closedSetTutorial } from './closed-set';
@@ -61,7 +61,7 @@ import { torusWorldTutorial } from './torus-world';
 import { projectivePlaneTutorial } from './projective-plane';
 import { topologyMlTutorial } from './topology-ml';
 
-export const topologyCategory: TutorialCategory = {
+export const topologyCategory: CategoryWithTutorials = {
   id: 'topology',
   name: '位相',
   description: '連続変形・開集合・位相空間を視覚的に理解する',

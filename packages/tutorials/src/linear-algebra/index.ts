@@ -64,7 +64,7 @@ export { graphLaplacianTutorial } from './graph-laplacian';
 export { compressedSensingTutorial } from './compressed-sensing';
 export { laCsOverviewTutorial } from './la-cs-overview';
 
-import { TutorialCategory } from '../types';
+import { CategoryWithTutorials } from '../types';
 
 // ── 基礎編 ──
 import { vectorsIntroTutorial } from './vectors-intro';
@@ -132,7 +132,7 @@ import { graphLaplacianTutorial } from './graph-laplacian';
 import { compressedSensingTutorial } from './compressed-sensing';
 import { laCsOverviewTutorial } from './la-cs-overview';
 
-export const linearAlgebraCategory: TutorialCategory = {
+export const linearAlgebraCategory: CategoryWithTutorials = {
   id: 'linear-algebra',
   name: '線形代数',
   description: 'ベクトル・行列・変換・CS応用を視覚的に理解する',

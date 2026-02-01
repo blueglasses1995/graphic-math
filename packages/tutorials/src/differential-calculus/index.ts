@@ -29,7 +29,7 @@ export { curvatureTutorial } from './curvature';
 export { partialDerivativeTutorial } from './partial-derivative';
 export { gradientVectorTutorial } from './gradient-vector';
 
-import { TutorialCategory } from '../types';
+import { CategoryWithTutorials } from '../types';
 import { rateOfChangeTutorial } from './rate-of-change';
 import { secantToTangentTutorial } from './secant-to-tangent';
 import { limitImageTutorial } from './limit-image';
@@ -61,7 +61,7 @@ import { curvatureTutorial } from './curvature';
 import { partialDerivativeTutorial } from './partial-derivative';
 import { gradientVectorTutorial } from './gradient-vector';
 
-export const differentialCalculusCategory: TutorialCategory = {
+export const differentialCalculusCategory: CategoryWithTutorials = {
   id: 'differential-calculus',
   name: '微分',
   description: '変化率・傾き・導関数を視覚的に理解する',

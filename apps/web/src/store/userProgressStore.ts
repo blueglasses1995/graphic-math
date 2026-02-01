@@ -43,11 +43,11 @@ export const useUserProgressStore = create<UserProgressState>()(
           tutorialProgress: {
             ...state.tutorialProgress,
             [tutorialId]: {
+              ...state.tutorialProgress[tutorialId],
               tutorialId,
               status: 'in-progress',
               lastAccessedAt: new Date(),
               progress,
-              ...state.tutorialProgress[tutorialId],
             },
           },
         })),
@@ -67,3 +67,22 @@ export const useUserProgressStore = create<UserProgressState>()(
     }
   )
 );
+
+// Helper hooks for filtering tutorials by status
+export const useCompletedTutorials = () => {
+  const tutorialProgress = useUserProgressStore((state) => state.tutorialProgress);
+  return new Set(
+    Object.entries(tutorialProgress)
+      .filter(([, progress]) => progress.status === 'completed')
+      .map(([id]) => id)
+  );
+};
+
+export const useInProgressTutorials = () => {
+  const tutorialProgress = useUserProgressStore((state) => state.tutorialProgress);
+  return new Set(
+    Object.entries(tutorialProgress)
+      .filter(([, progress]) => progress.status === 'in-progress')
+      .map(([id]) => id)
+  );
+};

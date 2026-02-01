@@ -70,7 +70,7 @@ export default function TutorialPage() {
     setQuizCompleted(false);
   }, [currentStepIndex]);
 
-  if (!currentTutorial) {
+  if (!currentTutorial || !currentTutorial.steps) {
     return (
       <div className="flex items-center justify-center min-h-screen">
         <div className="text-center">

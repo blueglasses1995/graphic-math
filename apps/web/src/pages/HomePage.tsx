@@ -1,13 +1,24 @@
 import { Link } from 'react-router-dom';
-import { allCategories } from '@learnmath/tutorials';
+import { allCategories, Tutorial } from '@learnmath/tutorials';
+
+// Type for category objects that include tutorials
+interface CategoryWithTutorials {
+  id: string;
+  name: string;
+  description: string;
+  tutorials: Tutorial[];
+}
 
 export default function HomePage() {
+  // Cast allCategories to the correct runtime type
+  const categoriesWithTutorials = allCategories as unknown as CategoryWithTutorials[];
+
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold mb-8 text-center">LearnMath</h1>
       <p className="text-xl text-gray-400 text-center mb-12">数学を視覚的に学ぶ</p>
       <div className="grid gap-8">
-        {allCategories.map((category) => (
+        {categoriesWithTutorials.map((category) => (
           <div key={category.id} className="bg-slate-800 rounded-lg p-6">
             <h2 className="text-2xl font-semibold mb-4">{category.name}</h2>
             <p className="text-gray-400 mb-6">{category.description}</p>

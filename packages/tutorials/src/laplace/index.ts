@@ -1,4 +1,4 @@
-import { TutorialCategory } from '../types';
+import { CategoryWithTutorials } from '../types';
 import { whyLaplaceTutorial } from './why-laplace';
 import { laplaceDefinitionTutorial } from './laplace-definition';
 import { basicTransformTableTutorial } from './basic-transform-table';
@@ -63,7 +63,7 @@ export {
   laplaceOverviewTutorial,
 };
 
-export const laplaceCategory: TutorialCategory = {
+export const laplaceCategory: CategoryWithTutorials = {
   id: 'laplace',
   name: 'ラプラス解析',
   description: 's領域変換・伝達関数・制御を視覚的に理解する',

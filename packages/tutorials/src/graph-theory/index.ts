@@ -1,4 +1,4 @@
-import { TutorialCategory } from '../types';
+import { CategoryWithTutorials } from '../types';
 
 export { graphIntroTutorial } from './graph-intro';
 export { directedUndirectedTutorial } from './directed-undirected';
@@ -122,7 +122,7 @@ import { anomalyDetectionTutorial } from './anomaly-detection';
 import { biologicalNetworkTutorial } from './biological-network';
 import { graphTheoryOverviewTutorial } from './graph-theory-overview';
 
-export const graphTheoryCategory: TutorialCategory = {
+export const graphTheoryCategory: CategoryWithTutorials = {
   id: 'graph-theory',
   name: 'グラフ理論',
   description: 'ネットワーク・アルゴリズム・CS応用を視覚的に理解する',
