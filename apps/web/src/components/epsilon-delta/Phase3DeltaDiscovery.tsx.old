@@ -1,0 +1,517 @@
+import { useState, useEffect } from 'react';
+
+interface Phase3DeltaDiscoveryProps {
+  onComplete: () => void;
+}
+
+/**
+ * 段階3: δ発見フェーズ「作戦を立てる」
+ *
+ * 目標：δを「ユーザーが決める安全地帯」として能動的に発見
+ * 認知負荷：中〜高（εとδの関係を理解）
+ * 重要な概念：後出しジャンケン（εが先、δが後）
+ */
+export default function Phase3DeltaDiscovery({
+  onComplete,
+}: Phase3DeltaDiscoveryProps) {
+  const [epsilon, setEpsilon] = useState(0.4);
+  const [delta, setDelta] = useState(0.2);
+  const [testX, setTestX] = useState(2.9);
+  const [isTestMode, setIsTestMode] = useState(false);
+  const [attempts, setAttempts] = useState(0);
+  const [successCount, setSuccessCount] = useState(0);
+  const [showHint, setShowHint] = useState(false);
+
+  const targetX = 3.0;
+  const targetY = 6.0;
+  const f = (x: number) => 2 * x;
+
+  // δの範囲内か判定（絶対値：両側）
+  const isInDeltaRange = Math.abs(testX - targetX) < delta && testX !== targetX;
+
+  // y がε範囲内か判定
+  const testY = f(testX);
+  const isInEpsilonRange = Math.abs(testY - targetY) < epsilon;
+
+  // ゴールは必ず関数線上の (targetX, targetY) = (3.0, 6.0)
+
+  // δが適切か（全てのx で成功する）
+  const isValidDelta = delta <= epsilon / 2; // f(x) = 2x の場合
+
+  const handleTest = () => {
+    setIsTestMode(true);
+    setAttempts((prev) => prev + 1);
+
+    // ランダムなx位置でテスト
+    const randomX = targetX + (Math.random() - 0.5) * delta * 1.8;
+    setTestX(randomX);
+
+    setTimeout(() => {
+      if (isInDeltaRange && isInEpsilonRange) {
+        setSuccessCount((prev) => {
+          const newCount = prev + 1;
+          if (newCount >= 3) {
+            setTimeout(() => {
+              onComplete();
+            }, 2000);
+          }
+          return newCount;
+        });
+      }
+    }, 500);
+  };
+
+  const handleNewChallenge = () => {
+    const newEpsilon = Math.max(0.1, Math.random() * 0.5);
+    setEpsilon(parseFloat(newEpsilon.toFixed(2)));
+    setDelta(parseFloat((newEpsilon / 3).toFixed(2)));
+    setIsTestMode(false);
+    setTestX(2.9);
+  };
+
+  return (
+    <div className="max-w-5xl mx-auto">
+      {/* ヘッダー */}
+      <div className="text-center mb-8">
+        <h1 className="text-4xl font-bold text-white mb-4">
+          📐 第2章-1: ε-δ論法の基本（1次関数）
+        </h1>
+        <p className="text-2xl text-slate-300 mb-2">
+          目標：lim<sub>x→3</sub> 2x = 6 を証明
+        </p>
+        <p className="text-lg text-slate-400 mb-4">
+          挑戦者がε（許容範囲）を決めたら、<br />
+          あなたはδ（安全地帯）を決めて確実に勝とう！
+        </p>
+        <p className="text-sm text-yellow-400 font-bold">
+          ⚡ ポイント：|x - 3.0| {'<'} δ なら |f(x) - 6.0| {'<'} ε
+        </p>
+      </div>
+
+      {/* ゲーム説明 */}
+      <div className="bg-purple-900/30 border border-purple-500/50 rounded-xl p-6 mb-6">
+        <div className="grid md:grid-cols-2 gap-6">
+          <div>
+            <h3 className="text-purple-400 font-bold mb-3 flex items-center">
+              <span className="text-2xl mr-2">👤</span>
+              挑戦者のルール
+            </h3>
+            <div className="space-y-2 text-slate-300">
+              <p className="flex items-start">
+                <span className="text-red-400 mr-2">1.</span>
+                挑戦者が先に <strong>ε（イプシロン）</strong> を決める
+              </p>
+              <p className="flex items-start">
+                <span className="text-red-400 mr-2">2.</span>
+                「y がゴール±εに入れ！」と要求
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-blue-400 font-bold mb-3 flex items-center">
+              <span className="text-2xl mr-2">🤖</span>
+              あなたのルール
+            </h3>
+            <div className="space-y-2 text-slate-300">
+              <p className="flex items-start">
+                <span className="text-blue-400 mr-2">1.</span>
+                εを見てから <strong>δ（デルタ）</strong> を決める（後出し！）
+              </p>
+              <p className="flex items-start">
+                <span className="text-blue-400 mr-2">2.</span>
+                「<strong>|x - 3.0| {'<'} δ</strong>（両側！）なら必ず成功」となるδを見つける
+              </p>
+              <p className="flex items-start">
+                <span className="text-blue-400 mr-2">3.</span>
+                δは<strong>絶対値</strong>なので、ゴールの左右両側に同じ幅で存在
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* メインビジュアライゼーション */}
+      <div className="bg-slate-800 rounded-2xl shadow-2xl p-8 mb-6">
+        {/* 現在の挑戦 */}
+        <div className="grid md:grid-cols-2 gap-4 mb-6">
+          {/* 挑戦者の要求（ε） */}
+          <div className="bg-red-900/30 border border-red-500/50 rounded-lg p-4">
+            <div className="flex items-center justify-between mb-2">
+              <h4 className="text-red-400 font-bold">👤 挑戦者の要求</h4>
+              <span className="text-2xl font-bold text-red-400">ε = {epsilon}</span>
+            </div>
+            <p className="text-slate-300 text-sm">
+              y の値がゴール±{epsilon}に入ればOK
+            </p>
+          </div>
+
+          {/* あなたの作戦（δ） */}
+          <div className="bg-blue-900/30 border border-blue-500/50 rounded-lg p-4">
+            <div className="flex items-center justify-between mb-2">
+              <h4 className="text-blue-400 font-bold">🛡️ あなたの作戦</h4>
+              <span className="text-2xl font-bold text-blue-400">δ = {delta}</span>
+            </div>
+            <p className="text-slate-300 text-sm">
+              x の値をゴール±{delta}に保つ
+            </p>
+          </div>
+        </div>
+
+        {/* グラフエリア */}
+        <div className="relative bg-slate-900 rounded-xl p-8 mb-6" style={{ height: '450px' }}>
+          {/* 軸 */}
+          <div className="absolute left-8 top-8 bottom-8 w-0.5 bg-slate-600" />
+          <div className="absolute left-8 right-8 bottom-8 h-0.5 bg-slate-600" />
+
+          {/* Y軸ラベル */}
+          <div className="absolute left-2 top-1/4 text-slate-400 text-xs">6</div>
+          <div className="absolute left-2 top-1/2 text-slate-400 text-xs">4</div>
+          <div className="absolute left-2 top-3/4 text-slate-400 text-xs">2</div>
+
+          {/* ε帯（Y軸方向） */}
+          <div
+            className="absolute left-8 right-8 bg-red-500/10 border-t-2 border-b-2 border-red-500 transition-all"
+            style={{
+              bottom: `${((targetY - epsilon) / 8) * 100}%`,
+              height: `${((epsilon * 2) / 8) * 100}%`,
+            }}
+          >
+            <div className="absolute right-4 top-1/2 transform -translate-y-1/2 text-red-400 text-xs font-bold">
+              挑戦ゾーン →<br />ε={epsilon}
+            </div>
+          </div>
+
+          {/* δ帯（X軸方向）- 両側性を強調 */}
+          <div
+            className="absolute top-8 bottom-8 bg-blue-500/10 border-l-2 border-r-2 border-blue-500 transition-all"
+            style={{
+              left: `${8 + ((targetX - delta) / 4) * (100 - 16)}%`,
+              width: `${((delta * 2) / 4) * (100 - 16)}%`,
+            }}
+          >
+            {/* 左側のδ表示 */}
+            <div className="absolute left-0 bottom-4 transform -translate-x-full text-blue-400 text-xs font-bold whitespace-nowrap pr-2">
+              ← δ
+            </div>
+            {/* 中央の説明 */}
+            <div className="absolute left-1/2 bottom-4 transform -translate-x-1/2 text-blue-400 text-xs font-bold whitespace-nowrap">
+              安全地帯 (|x-3.0| {'<'} {delta})
+            </div>
+            {/* 右側のδ表示 */}
+            <div className="absolute right-0 bottom-4 transform translate-x-full text-blue-400 text-xs font-bold whitespace-nowrap pl-2">
+              δ →
+            </div>
+          </div>
+
+          {/* 関数 f(x) = 2x の線 */}
+          <svg className="absolute inset-0 w-full h-full pointer-events-none">
+            {/* f(x) = 2x: (0,0)から(4,8)まで */}
+            {/* 画面座標: 左下(8%, 92%)から右上(92%, 8%)まで */}
+            <line
+              x1="8%"
+              y1="92%"
+              x2="92%"
+              y2="8%"
+              stroke="#94a3b8"
+              strokeWidth="3"
+              strokeDasharray="5,5"
+              opacity="0.8"
+            />
+            {/* ゴール地点を強調する縦線 */}
+            <line
+              x1="71%"
+              y1="92%"
+              x2="71%"
+              y2="29%"
+              stroke="#eab308"
+              strokeWidth="1"
+              strokeDasharray="2,2"
+              opacity="0.3"
+            />
+          </svg>
+
+          {/* ゴール（必ず関数線上、ε帯・δ帯の中心） */}
+          <div
+            className="absolute w-6 h-6 bg-yellow-400 rounded-full shadow-lg shadow-yellow-400/50 z-10 animate-pulse"
+            style={{
+              left: `${8 + (targetX / 4) * (100 - 16)}%`,
+              bottom: `${8 + (targetY / 8) * (100 - 16)}%`,
+              transform: 'translate(-50%, 50%)',
+            }}
+          >
+            <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 whitespace-nowrap text-yellow-400 text-sm font-bold">
+              ⭐ ゴール<br />(3.0, 6.0)
+            </div>
+          />
+
+          {/* テスト位置 */}
+          {isTestMode && (
+            <div
+              className={`absolute w-6 h-6 rounded-full transition-all duration-500 z-20 ${
+                isInEpsilonRange
+                  ? 'bg-green-400 shadow-lg shadow-green-400/50 animate-bounce'
+                  : 'bg-red-400 shadow-lg shadow-red-400/50'
+              }`}
+              style={{
+                left: `${8 + (testX / 4) * (100 - 16)}%`,
+                bottom: `${8 + (testY / 8) * (100 - 16)}%`,
+                transform: 'translate(-50%, 50%)',
+              }}
+            >
+              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 whitespace-nowrap text-xs font-bold">
+                テスト
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* δコントロール */}
+        <div className="space-y-4 mb-6">
+          <div className="flex items-center justify-between">
+            <label className="text-white font-medium">
+              🛡️ あなたの作戦: δ（安全地帯の幅）
+            </label>
+            <div className="flex items-center gap-4">
+              <span className="text-2xl font-bold text-blue-400">δ = {delta}</span>
+              {isValidDelta ? (
+                <span className="text-green-400 text-sm">✓ 良い作戦！</span>
+              ) : (
+                <span className="text-yellow-400 text-sm">⚠ もっと小さく</span>
+              )}
+            </div>
+          </div>
+
+          <input
+            type="range"
+            min="0.01"
+            max={epsilon}
+            step="0.01"
+            value={delta}
+            onChange={(e) => {
+              setDelta(parseFloat(e.target.value));
+              setIsTestMode(false);
+            }}
+            className="w-full h-4 bg-slate-700 rounded-lg appearance-none cursor-pointer slider-blue"
+          />
+
+          <div className="flex justify-between text-xs text-slate-400">
+            <span>狭い (確実だが厳しい)</span>
+            <span>広い (楽だが危険)</span>
+          </div>
+        </div>
+
+        {/* テストボタン */}
+        <div className="flex gap-4">
+          <button
+            onClick={handleTest}
+            disabled={!isValidDelta}
+            className={`flex-1 font-bold py-4 px-6 rounded-lg transition-all ${
+              isValidDelta
+                ? 'bg-blue-500 hover:bg-blue-600 text-white shadow-lg hover:shadow-xl'
+                : 'bg-slate-700 text-slate-500 cursor-not-allowed'
+            }`}
+          >
+            ⚔️ 作戦をテストする
+          </button>
+
+          <button
+            onClick={handleNewChallenge}
+            className="bg-purple-500 hover:bg-purple-600 text-white font-bold py-4 px-6 rounded-lg transition-colors"
+          >
+            🔄 新しい挑戦
+          </button>
+
+          <button
+            onClick={() => setShowHint(!showHint)}
+            className="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-4 px-6 rounded-lg transition-colors"
+          >
+            💡 ヒント
+          </button>
+        </div>
+
+        {/* テスト結果 */}
+        {isTestMode && (
+          <div
+            className={`mt-6 rounded-lg p-6 animate-slideUp ${
+              isInEpsilonRange
+                ? 'bg-green-900/50 border-2 border-green-500'
+                : 'bg-red-900/50 border-2 border-red-500'
+            }`}
+          >
+            <div className="text-center">
+              <div className="text-4xl mb-3">
+                {isInEpsilonRange ? '✅' : '❌'}
+              </div>
+              <h3
+                className={`text-2xl font-bold mb-4 ${
+                  isInEpsilonRange ? 'text-green-400' : 'text-red-400'
+                }`}
+              >
+                {isInEpsilonRange ? '成功！' : '失敗...'}
+              </h3>
+              <div className="grid grid-cols-2 gap-4 text-left">
+                <div>
+                  <p className="text-slate-400 text-sm">テストx:</p>
+                  <p className="text-white font-bold">{testX.toFixed(3)}</p>
+                </div>
+                <div>
+                  <p className="text-slate-400 text-sm">結果y:</p>
+                  <p className="text-white font-bold">{testY.toFixed(3)}</p>
+                </div>
+                <div>
+                  <p className="text-slate-400 text-sm">xの距離:</p>
+                  <p className="text-white font-bold">
+                    {Math.abs(testX - targetX).toFixed(3)}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-slate-400 text-sm">yの距離:</p>
+                  <p
+                    className={`font-bold ${
+                      isInEpsilonRange ? 'text-green-400' : 'text-red-400'
+                    }`}
+                  >
+                    {Math.abs(testY - targetY).toFixed(3)}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* ヒント */}
+        {showHint && (
+          <div className="mt-6 bg-yellow-900/30 border border-yellow-500/50 rounded-lg p-6 animate-slideDown">
+            <h4 className="text-yellow-400 font-bold mb-3">💡 攻略のヒント</h4>
+            <ul className="space-y-2 text-slate-300 text-sm">
+              <li className="flex items-start">
+                <span className="text-yellow-400 mr-2">•</span>
+                <span>
+                  この関数は f(x) = 2x なので、x が動くと y は <strong>2倍</strong>動く
+                </span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-yellow-400 mr-2">•</span>
+                <span>
+                  つまり、δ は ε の <strong>半分以下</strong>にすれば安全！
+                </span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-yellow-400 mr-2">•</span>
+                <span>
+                  例：ε=0.4 なら δ=0.2 が最適（ε ÷ 2）
+                </span>
+              </li>
+            </ul>
+          </div>
+        )}
+      </div>
+
+      {/* 進捗 */}
+      {successCount > 0 && (
+        <div className="bg-slate-800 rounded-xl p-6 mb-6">
+          <div className="text-center">
+            <p className="text-slate-400 mb-2">成功回数</p>
+            <div className="flex justify-center gap-3">
+              {[1, 2, 3].map((i) => (
+                <div
+                  key={i}
+                  className={`w-4 h-4 rounded-full transition-all ${
+                    i <= successCount
+                      ? 'bg-green-400 scale-125'
+                      : 'bg-slate-700'
+                  }`}
+                />
+              ))}
+            </div>
+            {successCount >= 3 && (
+              <p className="text-green-400 font-bold mt-4 animate-pulse">
+                完璧！次のステップへ...
+              </p>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* 学習ポイント */}
+      <div className="bg-blue-900/30 border border-blue-500/50 rounded-xl p-6">
+        <h3 className="text-blue-400 font-bold mb-3">🎯 重要なポイント</h3>
+        <ul className="space-y-3 text-slate-300">
+          <li className="flex items-start">
+            <span className="text-blue-400 mr-2 text-xl">1.</span>
+            <div>
+              <strong className="text-white">後出しジャンケン：</strong>
+              <br />
+              挑戦者が先にεを決め、あなたは<strong className="text-yellow-400">それを見てから</strong>δを決められる
+            </div>
+          </li>
+          <li className="flex items-start">
+            <span className="text-blue-400 mr-2 text-xl">2.</span>
+            <div>
+              <strong className="text-white">δはεより小さく：</strong>
+              <br />
+              関数の傾きによって、適切なδの大きさが決まる（今回は ε/2）
+            </div>
+          </li>
+          <li className="flex items-start">
+            <span className="text-blue-400 mr-2 text-xl">3.</span>
+            <div>
+              <strong className="text-white">これがε-δ論法の核心：</strong>
+              <br />
+              どんなεが来ても、適切なδで必ず対応できる = 極限が存在
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <style>{`
+        @keyframes slideUp {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes slideDown {
+          from {
+            opacity: 0;
+            transform: translateY(-20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .animate-slideUp {
+          animation: slideUp 0.4s ease-out;
+        }
+
+        .animate-slideDown {
+          animation: slideDown 0.3s ease-out;
+        }
+
+        .slider-blue::-webkit-slider-thumb {
+          appearance: none;
+          width: 28px;
+          height: 28px;
+          border-radius: 50%;
+          background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+          cursor: pointer;
+          box-shadow: 0 0 15px rgba(59, 130, 246, 0.6);
+          transition: all 0.2s;
+        }
+
+        .slider-blue::-webkit-slider-thumb:hover {
+          transform: scale(1.2);
+          box-shadow: 0 0 25px rgba(59, 130, 246, 0.9);
+        }
+      `}</style>
+    </div>
+  );
+}

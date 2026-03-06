@@ -3,6 +3,7 @@ import { useState } from 'react';
 import HomePage from './pages/HomePage';
 import TutorialPage from './pages/TutorialPage';
 import SandboxPage from './pages/SandboxPage';
+import EpsilonDeltaPage from './pages/EpsilonDeltaPage';
 import TutorialTreeView from './components/TutorialTreeView';
 import SearchFilter from './components/SearchFilter';
 import Dashboard from './pages/Dashboard';
@@ -41,8 +42,19 @@ export default function App() {
 
       <main className={shouldShowLayout ? 'flex-1' : 'flex-1 h-screen'}>
         <Routes>
-          {/* Home Page - Category Grid */}
-          <Route path="/" element={<HomePage />} />
+          {/* Home Page - Dynamic based on viewMode */}
+          <Route
+            path="/"
+            element={
+              viewMode === 'grid' ? (
+                <HomePage />
+              ) : viewMode === 'tree' ? (
+                <TutorialTreeView />
+              ) : (
+                <SearchFilter />
+              )
+            }
+          />
 
           {/* Category View - Tree view filtered by category */}
           <Route path="/category/:id" element={<TutorialTreeView />} />
@@ -58,6 +70,9 @@ export default function App() {
 
           {/* Sandbox Page */}
           <Route path="/sandbox" element={<SandboxPage />} />
+
+          {/* Epsilon-Delta Learning */}
+          <Route path="/epsilon-delta" element={<EpsilonDeltaPage />} />
 
           {/* 404 - Not Found */}
           <Route
